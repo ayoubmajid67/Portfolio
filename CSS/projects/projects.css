@@ -1,0 +1,181 @@
+.navbar {
+    background-color: rgba(255, 255, 255, 0.715);
+
+    width: 100%;
+
+}
+
+body {
+    background-image: url('../../testBack/projects.jpg');
+    background-size: cover;
+    background-blend-mode: color;
+    background-attachment: fixed;
+
+    background-color: rgba(31, 30, 30, 0.262);
+    background-position: center top;
+}
+
+.mainSection {
+
+    display: flex;
+    flex-flow: column nowrap;
+    gap: 40px;
+    padding: 10px;
+}
+
+.mainSection .Title {
+    display: flex;
+    text-align: center;
+    flex-flow: column nowrap;
+    gap: 13px;
+    padding: 6px;
+    margin-top: 7px;
+}
+
+.mainSection .Title h4 {
+    opacity: 0.9;
+    font-weight: 600;
+    font-size: 1em;
+    align-self: center;
+}
+
+.mainSection .Title h1 {
+    font-variant: small-caps;
+    text-wrap: nowrap;
+    align-self: center;
+
+}
+
+.CppContainerDomain span,
+.webContainer article h3 span,
+.webContainer .webContainerDomain span,
+.mainSection .Title h1 span {
+    color: #088376;
+}
+
+.CppContainer,
+.webContainer {
+
+    display: flex;
+    width: 100%;
+    height: fit-content;
+    padding: 10px;
+
+    flex-flow: column nowrap;
+    gap: 10px;
+    gap: 5%;
+}
+
+.CppContainerDomain,
+.webContainer .webContainerDomain {
+    font-variant: small-caps;
+    padding: 10px 0;
+    margin-bottom: 14px;
+   
+}
+
+.CppContainerProjects,
+.weContainerProjects {
+
+    display: flex;
+    flex-flow: row wrap;
+    width: 100%;
+    padding: 20px;
+    justify-content: space-around;
+    gap: 7%;
+
+}
+
+.CppContainerProjects article,
+.webContainer article {
+    display: flex;
+    flex-flow: column nowrap;
+    gap: 15px;
+    justify-content: space-between;
+    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.417);
+    width: 415px;
+
+    background-color: rgb(255, 255, 255);
+
+    border-radius: 0px 0px 12px 12px;
+    margin-bottom: 50px;
+    background-color: #e3e9deba;
+}
+
+.CppContainerProjects img,
+.weContainerProjects img {
+    width: 100%;
+}
+
+
+article h3 {
+    padding: 0 10px;
+    margin-top: 5px;
+    font-size: 1.1em;
+    font-style: italic;
+}
+
+
+article p {
+    font-size: 0.72em;
+    padding: 0 12px;
+    opacity: 0.9;
+    font-weight: 500;
+}
+
+
+article .ProjectResource {
+    background-color: rgb(0, 0, 0);
+    padding: 7px;
+    text-align: center;
+    border-radius: 0px 0px 12px 12px;
+}
+
+.ProjectResource a {
+    text-decoration: none;
+    color: white;
+    font-size: 1.2em;
+    text-transform: capitalize;
+    text-wrap: nowrap;
+    transition: 0.4s;
+}
+
+.CppContainerProjects article h3 span,
+.ProjectResource a:hover {
+    color: #088376;
+}
+
+.CppContainerProjects article h3 span {
+    color: red;
+}
+
+.CppContainerProjects article {
+    background-color: #032522ba;
+    color: white;
+
+}
+
+article {
+    transition: 0.8s;
+
+    filter: brightness(96%);
+}
+
+article:hover {
+    transform: scale(1.04);
+}
+
+article img {
+    filter: grayscale(10%) saturate(70%);
+}
+
+@media (max-width:500px) {
+
+
+    .webContainer article,
+    .CppContainerProjects article {
+        width: 90%;
+        overflow: hidden;
+    }
+
+}

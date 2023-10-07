@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<meta name="description" content="My new portfolio project is designed with simplicity and functionality in mind, featuring five distinct sections. The Home section offers a concise introduction to me, providing a glimpse into my background. 'About' delves deeper into my story, showcasing my skills and achievements. 'Contact' makes it easy to reach out and connect through various social media channels. In 'Certificates', you'll find a comprehensive list of my achievements, and in 'Projects', a showcase of my
+		work. Together, these sections create a dynamic and informative representation of my professional journey.">
+		<meta name="keywords" content="CEO, Portfolio, Business, Projects">
+		<title>Document</title>
+		<link rel="icon" href="../incons/webSiteIcon.ico">
+		<link rel="stylesheet" href="../CSS/main.css" />
+		<link rel="stylesheet" href="../CSS/nav.css" />
+
+		<link rel="stylesheet" href="../CSS/remixicon.css" />
+
+		<!-- contact Styling css  File  -->
+		<link rel="stylesheet" href="../CSS/contactCss/contact.css" />
+	</head>
+	<body>
+		<!-- contact page  -->
+		<div class="container">
+			<nav class="navbar">
+				<h1 class="navTitle"><span>M</span>ajid</h1>
+				<ul>
+					<li><a href="home.html" onmouseover=" navOver(this);" onmouseout="navOut(this);">home</a></li>
+					<li><a href="about.html" onmouseover=" navOver(this);" onmouseout="navOut();">about</a></li>
+					<li><a href="#" class="currentPage" onmouseover=" navOver(this);" onmouseout="navOut();">contact</a></li>
+					<li><a href="Certificates.html" onmouseover=" navOver(this);" onmouseout="navOut();">Certificates</a></li>
+					<li><a href="project.html" onmouseover=" navOver(this);" onmouseout="navOut();">projects</a></li>
+				</ul>
+			</nav>
+
+			<div class="mainSection">
+				<div class="textContent">
+					<h1>Contact <span>Us</span></h1>
+					<p>I am available for freelance work,Connect with me via phone or email or any Social media you Want</p>
+					<div class="profileContainer"><img src="../img/profile.jpeg" alt="profile img " class="profile" /></div>
+					<div class="SocialMedia">
+						<a href="https://www.instagram.com/ayoub_majid2022/" target="_blank"><img src="../incons/insta.svg" alt="" style="width: 50px" /></a>
+						<a href="https://www.linkedin.com/in/ayoub-majid-9285a0240/" target="_blank"><img src="../incons/link.svg" alt="" style="width: 50px" class="linkedIn" /></a>
+						<a href="https://www.facebook.com/ayoub.majid.5243" target="_blank"><img src="../incons/face.svg" alt="" style="width: 50px" /></a>
+						<a href="https://api.whatsapp.com/qr/3E5PH5CXOGEDJ1?autoload=1&app_absent=0" target="_blank"><img src="../incons/whats.svg" alt="" style="width: 50px" /></a>
+					</div>
+				</div>
+
+				<div class="SendEmailContainer">
+					<form onsubmit="sendEmail();reset();return false;">
+						<input type="text" name="" id="" class="UserName" placeholder="Your Name" maxlength="30" minlength="4" />
+						<input type="email" name="" id="" class="UserEmail" placeholder="Your Email" maxlength="50" minlength="12" required />
+						<input type="text" name="" id="" class="Subject" placeholder="Write a Subject " max="300" />
+
+						<textarea name="" id="" cols="30" rows="10" placeholder="Your Message" class="UserMessage" required></textarea>
+						<input type="submit" value="Submit" />
+					</form>
+				</div>
+			</div>
+		</div>
+
+		<!-- sharing script  -->
+		<script src="../JS/source.js"></script>
+		<script src="../JS/logic.js"></script>
+		<script src="../JS/main.js"></script>
+
+		<!-- contact script  -->
+		<script src="../JS/contact/contact.js"></script>
+		<!-- send email cdn  -->
+		<script src="https://smtpjs.com/v3/smtp.js"></script>
+		<!-- user form  -->
+		<script src="../JS/contact/UserForm.js"></script>
+	</body>
+</html>

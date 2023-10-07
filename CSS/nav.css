@@ -1,0 +1,114 @@
+.container {
+    display: flex;
+    flex-direction: column;
+    flex-grow: 1;
+
+}
+
+.container .navbar {
+    align-items: center;
+    flex-grow: 0.01;
+    box-shadow: 1px 1px 10px rgba(9, 92, 78, 0.608);
+    display: flex;
+    flex-direction: row;
+    padding: 5px;
+}
+
+
+.container .navbar h1 {
+    flex-grow: 0.2;
+    flex-basis: auto;
+}
+
+.container .navbar h1 span {
+    color: rgb(12, 175, 159);
+
+
+}
+
+.container .navbar h1 span:hover {
+    color: red;
+}
+
+.container .navbar ul {
+    display: flex;
+    flex-grow: 0.8;
+
+    padding: 10px;
+    justify-content: space-around;
+}
+
+ul li {
+    text-align: center;
+    list-style-type: none;
+
+}
+
+ul li a {
+    color: rgb(0, 109, 128);
+    font-weight: 550;
+    font-size: 17.6px;
+    text-decoration: none;
+    text-transform: capitalize;
+    transition: 0.4s ease-in-out, padding 0.25s, border-radius 0.25s;
+    padding: 4.6px;
+    text-align: center;
+}
+
+
+ul li a:hover,
+ul li .currentPage {
+    transform: scale(1.01);
+    color: rgb(12, 175, 159);
+    font-weight: 600;
+    padding-bottom: 11px;
+    border-bottom: 3px solid rgb(8, 131, 118);
+    border-radius: 20%;
+
+
+}
+
+ul li a:hover {
+    opacity: 0.56;
+    font-weight: 550;
+    border-bottom: 3px solid rgba(18, 219, 199, 0.69);
+}
+
+ul li .currentPage:hover {
+    opacity: 1;
+    border-bottom: 3px solid rgb(8, 131, 118);
+    font-weight: 600;
+}
+
+.container .mainSection {
+    display: flex;
+    padding: 5px;
+    flex-grow: 1;
+}
+
+
+
+
+
+
+@media (max-width: 718px) {
+
+    .navTitle {
+        display: none;
+    }
+
+    .container nav ul {
+
+        width: 100%;
+
+    }
+}
+
+@media (max-width: 530px) {
+
+    .container ul li a i {
+        font-size: 30px;
+    }
+}
+
+@media (max-width) {}

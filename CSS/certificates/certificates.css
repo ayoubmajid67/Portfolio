@@ -1,0 +1,154 @@
+body {
+    background-image: url('../../img/certificatesback.jpg');
+    background-color: rgba(0, 0, 0, 0.789);
+    background-blend-mode: color;
+    background-size: cover;
+    background-position: top;
+
+
+}
+
+.mainSection {
+    flex-direction: column;
+    gap: 20px;
+    align-content: center;
+    /* test 1 maybe  */
+    background-image: url('../../testBack/certificates.jpg');
+
+    background-blend-mode: color;
+    background-color: rgba(0, 0, 0, 0.686);
+
+    background-size: cover;
+    background-position: top;
+    background-attachment: fixed;
+
+
+}
+
+.navbar {
+
+    opacity: 1;
+    z-index: 99;
+    font-weight: 600;
+    border: none;
+    box-shadow: none !important;
+}
+
+.navbar ul li a {
+    color: white;
+
+}
+
+ul li .currentPage {
+    border-bottom: 3px solid #98732a;
+}
+
+ul li a:hover {
+    border-bottom: 3px solid #7e642f !important;
+}
+
+
+
+
+
+
+
+.certificateContainer {
+    margin-top: 30px;
+    display: flex;
+    flex-flow: row wrap;
+    width: 100%;
+    padding: 20px;
+    justify-content: space-around;
+    gap: 5%;
+}
+
+.certificateContainer img {
+    width: 100%;
+}
+
+.certificateContainer figure {
+    opacity: 0.94;
+    display: flex;
+    gap: 5%;
+    padding: 15px;
+    flex-wrap: nowrap;
+    background-color: rgba(255, 255, 255, 0.991);
+    background-color: transparent;
+    color: white;
+    opacity: 0.94;
+
+    flex-basis: 400px;
+
+    flex-direction: column;
+    box-shadow: 0px 0px 20px #60420260;
+    border-bottom: 1px double rgba(17, 38, 107, 0.578);
+
+    border-radius: 7px 10px;
+    margin-bottom: 50px;
+    justify-content: space-between;
+    min-height: 500px;
+    transition: 0.5s;
+
+}
+
+.certificateContainer figure:hover {
+    transform: scale(1.04);
+
+    box-shadow: 0px 0px 20px #60420257;
+}
+
+
+.certificateContainer .certificateInfo {
+
+
+
+    display: flex;
+    flex-flow: column nowrap;
+    align-content: center;
+    justify-content: space-evenly;
+
+}
+
+.certificateInfo h2 {
+    color: rgb(17, 38, 107);
+    font-size: 0.8em;
+    padding: 5px;
+}
+
+.certificateInfo h2 span {
+    color: #0CAF9F;
+}
+
+.certificateContainer a {
+
+    font-size: 1.1em;
+    padding: 5px;
+    text-align: center;
+    margin-top: 25px;
+    background-color: black;
+    color: white;
+    text-decoration: none;
+    transition: 1s;
+}
+
+.certificateContainer a:hover {
+    background-color: #09655cc7;
+}
+
+
+.certificateInfo p {
+    font-size: 0.55em;
+    padding: 7px;
+    padding-right: 0;
+
+}
+
+@media (max-width:1383px) {
+
+    #MantainGapFigure {
+        display: none;
+
+    }
+
+}

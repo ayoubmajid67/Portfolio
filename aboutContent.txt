@@ -1,0 +1,61 @@
+Certainly, here are the revised three lines about each of the skills:
+
+1. **C:**
+   - Proficient in C programming, with experience in low-level system development.
+   - Skilled in memory management and efficient code optimization.
+   - Able to create robust and high-performance applications using C.
+
+2. **C++:**
+   - Experienced in C++ development, including object-oriented programming.
+   - Proficient in using C++ for software development and system-level programming.
+   - Capable of designing complex and efficient algorithms in C++.
+
+3. **Algorithms:**
+   - Strong algorithmic problem-solving skills, with a focus on efficiency and optimization.
+   - Experienced in designing, analyzing, and implementing algorithms for various domains.
+   - Proficient in data structures and algorithmic paradigms like dynamic programming and greedy algorithms.
+
+4. **Data Structures:**
+   - In-depth knowledge of fundamental data structures such as arrays, linked lists, trees, and graphs.
+   - Proficient in selecting and implementing the right data structure for specific programming tasks.
+   - Skilled in optimizing data structure usage for memory and time efficiency.
+
+5. **Problem Solving:**
+   - Excellent problem-solving skills, with a systematic and analytical approach.
+   - Experienced in breaking down complex problems into smaller, manageable parts.
+   - Proficient in using algorithms and data structures to devise effective solutions.
+
+6. **OOP (Object-Oriented Programming):**
+   - Strong understanding of OOP principles, including encapsulation, inheritance, and polymorphism.
+   - Skilled in designing and implementing modular and maintainable code using OOP concepts.
+
+7. **HTML:**
+   - Expert in HTML, including HTML5, for structuring web content and documents.
+   - Proficient in creating accessible and semantic HTML markup.
+   - Skilled in using HTML for building responsive and interactive web pages.
+
+8. **CSS:**
+   - Proficient in CSS for styling and layout design of web pages.
+   - Experienced in responsive web design.
+   - Capable of creating visually appealing and user-friendly web interfaces.
+
+9. **JavaScript:**
+   - Strong proficiency in JavaScript, including ES6+ features.
+   - Skilled in front-end development using JavaScript for interactivity and user experience.
+   - Experienced in back-end development with Node.js and building interactive web applications.
+
+10-MySQL:
+
+Proficient in MySQL database design, SQL query optimization, and database management.
+Skilled in data modeling, indexing, and database normalization.
+Capable of building and maintaining relational database systems.
+
+11-English (Language Proficiency):
+
+Intermediate proficiency in English, with the ability to communicate effectively in professional settings.
+Capable of participating in technical discussions and collaborating with team members.
+
+12-French (Language Proficiency):
+
+Intermediate proficiency in French, with the ability to communicate in everyday situations.
+Capable of using French for basic interactions and understanding simple conversations.
