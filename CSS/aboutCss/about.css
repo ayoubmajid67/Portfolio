@@ -327,7 +327,6 @@ body {
 .card-image {
 
   height: 255px;
-  background: url("../../img/img3.jpg");
   background-position: 0 -20px;
   border-top-left-radius: 15px;
   border-top-right-radius: 15px;
@@ -363,63 +362,63 @@ body {
 
 .cpp,
 .c {
-  background-image: url('/img/c.svg');
+  background-image: url('../../img/c.svg');
   background-position: 20px -12px;
   background-size: contain;
   background-repeat: no-repeat;
 }
 
 .cpp {
-  background-image: url('/img/cpp.png');
+  background-image: url('../../img/cpp.png');
 }
 
 .html {
-  background-image: url('/img/html.svg');
+  background-image: url('../../img/html.svg');
 }
 
 .css {
-  background-image: url('/img/css.svg');
+  background-image: url('../../img/css.svg');
 }
 
 .JavaScript {
   background-position: -5px -34px;
-  background-image: url('/img/js.svg');
+  background-image: url('../../img/js.svg');
 }
 
 .mySql {
-  background-image: url('/img/mySql.svg');
+  background-image: url('../../img/mySql.svg');
 }
 
 .french {
 
-  background-image: url('/img/french.svg');
+  background-image: url('../../img/french.svg');
 }
 
 .english {
-  background-image: url('/img/english.svg');
+  background-image: url('../../img/english.svg');
 
 }
 
 .algo {
   background-position: 0px -21px;
-  background-image: url('/img/algo.svg');
+  background-image: url('../../img/algo.svg');
 }
 
 .dataStructure {
 
-  background-image: url('/img/dataStructure.svg');
+  background-image: url('../../img/dataStructure.svg');
 }
 
 .problemSolving {
   background-repeat: no-repeat;
   background-position: 0 -4px;
-  background-image: url('/img/problemSolving.svg');
+  background-image: url('../../img/problemSolving.svg');
 }
 
 .OOP {
   background-repeat: no-repeat;
   background-position: 4px 1px;
-  background-image: url('/img/OOP.svg');
+  background-image: url('../../img/OOP.svg');
 }
 
 @media (max-width:1731px) {
