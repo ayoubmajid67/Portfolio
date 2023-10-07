@@ -53,17 +53,13 @@
   text-align: center;
   opacity: 0.8;
   text-wrap: nowrap;
+
 }
 
 .name span {
   color: rgb(9, 92, 78);
-
+  transition: 0.4s;
 }
-
-.name span:hover {
-  color: red;
-}
-
 
 .Cv {
 
@@ -87,7 +83,8 @@
   text-wrap: nowrap;
   transition: 0.4s;
 }
-.Cv a:hover{
+
+.Cv a:hover {
   color: black;
 }
 
