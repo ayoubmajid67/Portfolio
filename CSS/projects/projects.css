@@ -62,8 +62,9 @@ body {
     padding: 10px;
 
     flex-flow: column nowrap;
-    gap: 10px;
-    gap: 5%;
+    gap: 15px;
+
+    
 }
 
 .CppContainerDomain,
@@ -83,7 +84,9 @@ body {
     width: 100%;
     padding: 20px;
     justify-content: space-around;
+    align-content:space-around;
     gap: 7%;
+    
 
 }
 
@@ -102,7 +105,7 @@ body {
     border-radius: 0px 0px 12px 12px;
     margin-bottom: 50px;
     background-color: #e3e9deba;
-    /* scale: 0.7; */
+   
 }
 
 .CppContainerProjects img,
