@@ -1,6 +1,5 @@
-
 body {
-   
+
     background-image: url('../../img/certificatesback.jpg');
     background-color: rgba(0, 0, 0, 0.789);
     background-blend-mode: color;
@@ -13,6 +12,7 @@ body {
     flex-direction: column;
     gap: 20px;
     align-content: center;
+
     /* test 1 maybe  */
     background-image: url('../../testBack/certificates.jpg');
 
@@ -22,8 +22,8 @@ body {
     background-size: cover;
     background-position: top;
     background-attachment: fixed;
-   
-    
+
+
 }
 
 .navbar {
@@ -60,27 +60,28 @@ ul li a:hover {
     width: 100%;
     padding: 20px;
     justify-content: space-around;
+    align-items: center;
     gap: 5%;
-    
 
 }
-.certificateContainer div{
-  
- width: 100%;
- height: fit-content;
- display: flex;
- justify-content: center;
+
+.certificateContainer div {
+
+    width: 100%;
+    height: fit-content;
+    display: flex;
+    justify-content: center;
 }
+
 .certificateContainer img {
     width: 97%;
 
 }
 
 .certificateContainer figure {
-    opacity: 0.94;
+
     display: flex;
     gap: 5%;
-    padding: 15px;
     flex-wrap: nowrap;
     background-color: rgba(255, 255, 255, 0.991);
     background-color: transparent;
@@ -162,4 +163,23 @@ ul li a:hover {
 
     }
 
+}
+
+@media (max-width:550px) {
+
+    .certificateContainer {
+        width: 98%;
+        flex-direction: column;
+        justify-content: center;
+        gap: 2%;
+        padding: 0;
+
+    }
+
+    .certificateContainer figure {
+        scale: 0.85;
+        margin-bottom: 6px;
+    }
+
+   
 }

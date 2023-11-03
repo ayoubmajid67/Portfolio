@@ -80,6 +80,7 @@ ul li a:hover {
     opacity: 0.56;
     font-weight: 550;
     border-bottom: 3px solid rgba(18, 219, 199, 0.69);
+
 }
 
 ul li .currentPage:hover {
@@ -108,7 +109,10 @@ ul li .currentPage:hover {
     .container nav ul {
 
         width: 100%;
-
+        flex-grow: 1;
+    
+        padding-right: 3.4% !important;
+    
     }
 }
 

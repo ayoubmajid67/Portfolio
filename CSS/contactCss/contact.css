@@ -72,15 +72,7 @@ body {
 
 }
 
-.mainSection .textContent .profile {
 
-    filter: blur(1px) brightness(75%) contrast(120%) hue-rotate(140);
-}
-
-.mainSection .textContent .profile:hover {
-    transform: rotate(-1deg) translateY(20px);
-
-}
 
 .mainSection .textContent p {
     font-size: 99%;
@@ -89,8 +81,9 @@ body {
 
 .textContent .SocialMedia {
     display: flex;
-    width: 60%;
+    width: 85%;
     justify-content: space-between;
+    gap: 15px;
 }
 
 .textContent .SocialMedia a {
@@ -116,11 +109,11 @@ body {
     display: flex;
     align-items: center;
     justify-content: center;
-    padding: 20px;
+
 }
 
 .SendEmailContainer form {
-     /* background-color: red; */
+    /* background-color: red; */
     height: 60%;
     width: 100%;
     gap: 32px;
@@ -131,7 +124,7 @@ body {
 
     display: flex;
     flex-direction: column;
-    align-items: flex-end;    
+    align-items: flex-end;
     justify-content: center;
 
 }
@@ -145,8 +138,8 @@ form input {
 
     box-shadow: 0px 6px 10px 2px #3a322f51;
     opacity: 0.8;
-    width: 60%;
-  
+    width: 80%;
+
     padding: 10px;
     padding-bottom: 15px;
     font-size: 0.75em;
@@ -181,15 +174,35 @@ input:focus {
 }
 
 @media (max-width:700px) {
-   
-  .SendEmailContainer form{
+    .mainSection {
 
- align-items: center;
+        flex-direction: column;
+        align-items: center;
+    }
 
-  }
-  .form input{
-    margin-right: 0;
-  }
+    .SendEmailContainer {
+        width: 100%;
+        justify-content: center;
+
+    }
+
+    .SendEmailContainer form {
+
+        width: 100%;
+        align-items: center;
+
+        height: fit-content;
+        justify-content: center;
+        margin: 0;
+        padding: 0;
+        width: 100%;
+
+    }
+
+    .form input {
+        margin-right: 0;
+        
+    }
 
     .navbar {
         opacity: 0.4;
@@ -208,8 +221,13 @@ input:focus {
     }
 
     .mainSection .textContent {
+        margin-top: 40px;
         width: 100%;
         align-items: center;
+        height: 50vh;
+
+        margin-bottom: 5vh;
+        padding: 10px;
     }
 
     .mainSection .textContent p {
@@ -218,9 +236,7 @@ input:focus {
         font-size: 78%;
     }
 
-    .mainSection .textContent .profile {
-        width: 49%;
-    }
+
 
     .mainSection .SendEmailContainer {
         width: 100%;
