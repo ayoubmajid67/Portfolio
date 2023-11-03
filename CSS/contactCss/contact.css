@@ -58,13 +58,7 @@ body {
 }
 
 
-.mainSection .textContent .profileContainer {
-    width: 60%;
-    display: flex;
-    justify-content: center;
 
-
-}
 
 .mainSection .textContent img {
     margin-top: 3%;
@@ -88,7 +82,7 @@ body {
 }
 
 .mainSection .textContent p {
-    font-size: 98%;
+    font-size: 99%;
 
 }
 
@@ -117,7 +111,7 @@ body {
 }
 
 .mainSection .SendEmailContainer {
-    width: 45%;
+    width: 50%;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -125,9 +119,9 @@ body {
 }
 
 .SendEmailContainer form {
-    height: 50%;
+    height: 60%;
     width: 100%;
-    gap: 30px;
+    gap: 32px;
 
     display: flex;
     flex-direction: column;
@@ -147,7 +141,7 @@ form input {
     width: 60%;
     padding: 10px;
     padding-bottom: 15px;
-    font-size: 0.7em;
+    font-size: 0.75em;
     transition: 0.4s ease-in-out;
     outline: none;
     border-radius: 2px 4px;
