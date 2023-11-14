@@ -106,15 +106,15 @@
 @media (max-width:700px) {
 
 
-  .homeContainer {
-    font-size: 0.76rem;
+  .homeContainer .paragraph  {
+    font-size: 1.3rem;
   }
 
 }
 
 @media (max-width:640px) {
   .homeContainer {
-    width: 90%;
+    width: 100%;
   }
 
   .homeContainer {
@@ -125,22 +125,19 @@
 
 @media (max-width:412px) {
 
+  
   .homeContainer {
-    font-size: 0.72rem;
+    font-size: 0.9rem;
+    width: 150%;
+    flex-grow: 1;
+  
+  }
+  .homeContainer .paragraph  {
+    font-size: 1.2rem;
   }
 
 }
 
-@media (max-width:330px) {
-  .homeContainer {
-    width: 93%;
-  }
-
-  .homeContainer {
-    font-size: 0.6rem;
-  }
-
-}
 
 @media (max-width:265px) {
   .homeContainer {
