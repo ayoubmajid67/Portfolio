@@ -106,6 +106,8 @@ margin-top: 50px;
     justify-content: space-between;
     box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.417);
     width: 400px;
+    flex-basis: 400px;
+    flex-shrink: 0;
  
 
     background-color: rgb(255, 255, 255);
