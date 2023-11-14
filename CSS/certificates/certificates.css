@@ -33,23 +33,18 @@ body {
     font-weight: 600;
     border: none;
     box-shadow: none !important;
-}
+    position: fixed; 
+ width: 100%;
+ background-color:white;
 
-.navbar ul li a {
-    color: white;
 
-}
-
-ul li .currentPage {
-    border-bottom: 3px solid #98732a;
-}
-
-ul li a:hover {
-    border-bottom: 3px solid #7e642f !important;
 }
 
 
 
+.mainSection{
+    margin-top: 20px;
+}
 
 
 
