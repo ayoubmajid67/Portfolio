@@ -333,9 +333,7 @@ color: black;
 .cpp,
 .c {
 	background-image: url("../../img/c.svg");
-	background-position: 20px -12px;
-	background-size: contain;
-	background-repeat: no-repeat;
+	
 }
 
 .cpp {
@@ -351,7 +349,7 @@ color: black;
 }
 
 .JavaScript {
-	background-position: -5px -34px;
+
 	background-image: url("../../img/js.svg");
 }
 
@@ -368,7 +366,7 @@ color: black;
 }
 
 .algo {
-	background-position: 0px -21px;
+	
 	background-image: url("../../img/algo.svg");
 }
 
@@ -377,23 +375,18 @@ color: black;
 }
 
 .problemSolving {
-	background-repeat: no-repeat;
-	background-position: 0 -4px;
 	background-image: url("../../img/problemSolving.svg");
 }
 
 .OOP {
-	background-repeat: no-repeat;
-	background-position: 4px 1px;
+	
 	background-image: url("../../img/OOP.svg");
 }
 
 @media (max-width: 1731px) {
-	.section1 {
-		background-position: 8vw -5vh;
-	}
 
 	.mainSection_content {
+		
 		width: 100%;
 		margin-top: 4.4vh;
 	}
@@ -456,16 +449,9 @@ color: black;
 	}
 }
 
-@media (max-width: 909px) {
-	.section1 {
-		background-position: 5vw 3vh;
-	}
-}
 
 @media (max-width: 867px) {
-	.section1 {
-		background-position: 2vw 3vh;
-	}
+	
 
 	#submit {
 		min-width: 27% !important;
@@ -476,68 +462,29 @@ color: black;
 	}
 }
 
-@media (max-width: 847px) {
-	.section1 {
-		background-position: 0.4vw 3vh;
-	}
-}
 
-@media (max-width: 830px) {
-	.section1 {
-		background-position: -1vw 3vh;
-	}
-}
 
-@media (max-width: 821px) {
-	.section1 {
-		background-position: -2vw 3vh;
-	}
-}
 
-@media (max-width: 811px) {
-	.section1 {
-		background-position: -5vw 3vh;
-	}
-}
+
+
 
 @media (max-width: 787px) {
-	.section1 {
-		background-position: -6vw 3vh;
-	}
-
+	
 	.paragraph {
-		min-width: 50%;
-		max-width: 610;
-		font-size: 54% !important;
+		min-width: 70%;
+		font-size: 74% !important;
+		font-size: 2.4em;
+		
 	}
 }
 
-@media (max-width: 777px) {
-	.section1 {
-		background-position: -9vw 3vh;
-	}
-}
-
-@media (max-width: 759px) {
-	.section1 {
-		background-position: -9vw 3vh;
-	}
-}
 
 @media (max-width: 751px) {
-	.section1 {
-		background-position: -12vw 3vh;
-	}
 	.section2 .Aboutcontainer{
 		gap: 0px;
 	}
 }
 
-@media (max-width: 751px) {
-	.section1 {
-		background-position: -16vw 3vh;
-	}
-}
 
 @media (max-width: 713px) {
 	.section1 {
@@ -564,7 +511,7 @@ color: black;
 		/* Adjust the value as needed */
 		vertical-align: middle;
 		text-align: center;
-		font-size: 54% !important;
+	
 	}
 
 	.Aboutcontainer {
@@ -583,9 +530,6 @@ color: black;
 }
 
 @media (max-width: 523px) {
-	.section1 {
-		background-position: -35vw 3vh;
-	}
 
 	#submit a {
 		font-size: 2.7vw;
@@ -602,11 +546,11 @@ color: black;
 	}
 
 	#submit a {
-		font-size: 2.7vw;
+		font-size: 0.6em;
 	}
 
 	#submit {
-		min-width: 31% !important;
+		min-width: 47% !important;
 	}
 }
 
