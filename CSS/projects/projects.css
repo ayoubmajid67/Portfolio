@@ -2,26 +2,26 @@
     background-color: white;
 
     width: 100%;
-    position: fixed; 
+    position: fixed;
     z-index: 99;
 
 }
 
 body {
-  
+
     background-image: url('./../../testBack/project.jpeg');
     background-size: cover;
-background-repeat: no-repeat;
+    background-repeat: no-repeat;
     background-blend-mode: color;
     background-attachment: fixed;
 
     background-color: rgba(29, 48, 29, 0.507);
-    background-position: center ;
+    background-position: center;
 
 }
 
 .mainSection {
-margin-top: 50px;
+    margin-top: 50px;
     display: flex;
     flex-flow: column nowrap;
     gap: 40px;
@@ -44,7 +44,7 @@ margin-top: 50px;
     font-weight: 600;
     font-size: 1em;
     align-self: center;
-    text-shadow: 1px 5px 4px rgba(0, 0, 0, 0.407); 
+    text-shadow: 1px 5px 4px rgba(0, 0, 0, 0.407);
 }
 
 .mainSection .Title h1 {
@@ -73,15 +73,15 @@ margin-top: 50px;
     flex-flow: column nowrap;
     gap: 15px;
 
-    
+
 }
 
 .CppContainerDomain,
 .webContainer .webContainerDomain {
     font-variant: small-caps;
     padding: 10px 0;
-   color: rgba(255, 255, 255, 0.859);
-   text-align: center;
+    color: rgba(255, 255, 255, 0.859);
+    text-align: center;
 }
 
 .CppContainerProjects,
@@ -92,9 +92,9 @@ margin-top: 50px;
     width: 100%;
     padding: 20px;
     justify-content: center;
-    align-content:space-around;
-    gap: 40px; 
-   
+    align-content: space-around;
+    gap: 40px;
+
 
 }
 
@@ -108,14 +108,14 @@ margin-top: 50px;
     width: 400px;
     flex-basis: 400px;
     flex-shrink: 0;
- 
+
 
     background-color: rgb(255, 255, 255);
 
     border-radius: 0px 0px 12px 12px;
     margin-bottom: 4px;
     background-color: #e3e9deba;
- scale: 0.9;   
+    scale: 0.9;
 }
 
 .CppContainerProjects img,
@@ -146,7 +146,7 @@ article .ProjectResource {
     padding: 7px;
     text-align: center;
     border-radius: 0px 0px 12px 12px;
-    
+
 }
 
 .ProjectResource a {
@@ -197,3 +197,5 @@ article img {
     }
 
 }
+
+/* end */
