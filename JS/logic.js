@@ -1,4 +1,5 @@
 function navOver(thisLink) {
+	console.log("nav over ");
 	linkArray.forEach((element) => {
 		if (element.classList.contains("currentPage")) {
 			if (element != thisLink) {
@@ -11,6 +12,7 @@ function navOver(thisLink) {
 }
 
 function navOut() {
+	console.log("nav out ");
 	linkArray.forEach((element) => {
 		if (element.classList.contains("temp")) {
 			element.classList.remove("temp");
