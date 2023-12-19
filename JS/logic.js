@@ -37,7 +37,6 @@ function handleScreenWidthChange() {
 			element.innerHTML = innerIconLIsts[index];
 		});
 
-		console.log("Screen width is 530 pixels or less.");
 	} else {
 		//   // Your code for screens wider than 530 pixels goes here
 
