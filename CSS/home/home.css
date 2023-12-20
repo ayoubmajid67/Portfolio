@@ -26,19 +26,17 @@
   background-color: rgba(0, 0, 0, 0.4);
   min-height: 86%;
   justify-content: space-around;
-  width: 80%;
-  padding: 16px;
+  width: 60%;
+  padding: 24px;
   color: white;
   border-radius: 12px;
   margin-top: 35px;
   box-shadow: 0px 0px 20px rgb(23 24 24 / 53%);
-
+  backdrop-filter: blur(15px);
   gap: 5px;
   overflow: hidden;
   align-items: center;
-
 }
-
 
 .name {
   font-size: 3.3em;
@@ -47,30 +45,22 @@
   text-align: center;
   opacity: 0.8;
   text-wrap: nowrap;
-
-}
-
-.name span {
-  color: rgb(9, 92, 78);
-  transition: 0.4s;
 }
 
 .Cv {
-
-  padding: 12px;
+  padding: 25px;
   text-align: center;
   width: 80%;
-  background-color: rgba(255, 255, 255, 0.375);
+  background-color: #ffffff80;
   width: fit-content;
   border-radius: 7px;
   align-self: center;
 }
 
 .Cv a {
-
   text-decoration: none;
-  font-variant: small-caps;
-  font-size: 1.8em;
+  font-weight: 900;
+  font-size: 1.2em;
   align-self: center;
   font-weight: 600;
   color: rgb(9, 92, 78);
@@ -83,8 +73,6 @@
 }
 
 .paragraph {
-
-
   overflow: hidden;
   width: 100%;
   font-size: 1.4em;
@@ -96,7 +84,6 @@
   text-align: center;
   padding: 20px;
 }
-
 @media (max-width:700px) {
 
 
