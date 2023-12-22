@@ -1,3 +1,4 @@
+
 .navbar {
 	position: fixed;
 	width: 100%;
@@ -14,9 +15,7 @@
 	color: white !important;
 }
 
-.navbar .navTitle span {
-	color: #b07f1c !important;
-}
+
 
 .sticky {
 	background-color: #fff !important;
@@ -31,21 +30,13 @@
 	color: black;
 }
 
-.sticky .navTitle span {
-	color: #b07f1c !important;
-}
 
-ul li .currentPage {
-	border-bottom: 3px solid #b07f1c;
-}
 
-ul li a:hover {
-	border-bottom: 3px solid #b07f1c !important;
-}
 
 body {
 	background-image: url(../../testBack/about.jpg);
-	background-position: 0px -20px;
+background-repeat:no-repeat ;
+background-position: center;
 	background-blend-mode: color;
 	background-size: cover;
 }
@@ -76,7 +67,8 @@ body {
 	margin: 12vh 1vw;
 	margin-top: 0px;
 
-	height: 76%;
+	height: 80%;
+	
 
 	display: flex;
 	flex-direction: column;
@@ -92,12 +84,12 @@ body {
 	font-weight: 600;
 	font-family: Verdana, Geneva, Tahoma, sans-serif;
 
-	font-size: 3vh;
+	font-size: 1.7rem;
 	text-wrap: nowrap;
 }
 
 .name {
-	font-size: 7.5vh;
+	font-size: 50px;
 	letter-spacing: 1.2px;
 	text-wrap: nowrap;
 }
@@ -167,13 +159,12 @@ body {
 	padding: 20px;
 
 	background-image: url(../../testBack/aboutSection2.jpg);
-	background-size: cover;
-	background-blend-mode: color;
-	background-color: rgba(0, 0, 0, 0.668);
-	background-blend-mode: color;
 
+	background-size:cover;
+	background-blend-mode: color;
+	background-color: rgba(0, 0, 0, 0.756);
 	background-size: cover;
-	background-position: center top;
+	background-position:top;
 	background-attachment: fixed;
 
 	display: flex;
@@ -196,24 +187,17 @@ body {
 }
 
 .card {
-	animation-name: fadeIn;
-	animation-duration: 4s;
-	animation-timing-function: ease-in-out;
-	animation-delay: 1s;
-	animation-iteration-count: infinite;
-	animation-direction: alternate;
-	transform: translateY(150px);
-	transform: scale(0);
-
+	
 	display: flex;
 	flex-direction: column;
 	justify-content: space-between;
 	height: 523px;
-	width: 335px;
+	width: 350px;
 
 	border-radius: 18px;
-	background: rgba(255, 255, 255, 0.889);
-	box-shadow: 0px 0px 20px#35896768;
+	background-color: white;
+	filter: brightness(95%);
+	color :black; 
 	font-family: roboto;
 	text-align: center;
 	transition: 0.5s ease;
@@ -232,61 +216,18 @@ body {
 	transform: scale(1);
 }
 
+
 .card:hover {
 	cursor: cell;
-	box-shadow: 0px 0px 30px#35898693 !important;
+	box-shadow: 0px 0px 30px #09343393;
 	transform: scale(1.04);
+	
+
+}
+.card:hover span{
+	color: black;
 }
 
-@keyframes fadeIn {
-	0% {
-		box-shadow: 0px 0px 20px#35898693;
-	}
-
-	5% {
-		box-shadow: 0px 0px 20px#3fa09d93;
-	}
-
-	10% {
-		box-shadow: 0px 0px 20px#49b9b593;
-	}
-
-	20% {
-		box-shadow: 0px 0px 20px#57dad693;
-	}
-
-	30% {
-		box-shadow: 1px 1px 20px#57b3da93;
-	}
-
-	40% {
-		box-shadow: 1.2px 1.2px 20px#5789da93;
-	}
-
-	50% {
-		box-shadow: 1.4px 1.4px 20px#5768da93;
-	}
-
-	60% {
-		box-shadow: 1.6px 1.6px 20px#6257da93;
-	}
-
-	70% {
-		box-shadow: 1.8px 1.8px 20px#ac57da93;
-	}
-
-	80% {
-		box-shadow: 2.1px 2.1px 20px#57c6da93;
-	}
-
-	90% {
-		box-shadow: 1.4px 1.4px 20px#57da8393;
-	}
-
-	100% {
-		box-shadow: 0.8px 0.8px 20px#493e3e93;
-	}
-}
 
 .card-image {
 	height: 190px;
@@ -302,26 +243,23 @@ background-position: center !important;
 
 .card-text {
 	display: flex;
-	flex-direction: column;
-	align-items: center;
-	
-	
-	gap: 20px;
-	flex-grow: 1;
-	padding: 5px;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    gap: 20px;
+    flex-grow: 1;
+    padding: 7px;
 
 
 }
 
-.card-text .date {
-	color: rgb(255, 7, 110);
-	font-size: 20px;
-}
+
 
 .card-text p {
-color: black;
-	font-size: 16px;
+
+	font-size: 19.7px;
 	font-weight: 700;
+	line-height: 1.5;
 }
 
 .card-text h2 {
@@ -392,7 +330,7 @@ color: black;
 	}
 
 	.intro_about {
-		font-size: 1.7vw;
+		font-size: 20px;
 	}
 
 	.name {
@@ -520,9 +458,6 @@ color: black;
 }
 
 @media (max-width: 637px) {
-	.section1 {
-		background-position: -22vw 3vh;
-	}
 
 	#submit a {
 		font-size: 2.1vw;
@@ -541,9 +476,6 @@ color: black;
 }
 
 @media (max-width: 455px) {
-	.section1 {
-		background-position: -50vw 3vh;
-	}
 
 	#submit a {
 		font-size: 0.6em;
