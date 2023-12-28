@@ -95,6 +95,7 @@
 @media (max-width:640px) {
   .homeContainer {
     width: 100%;
+    transform: scale(0.86);
   }
 
   .homeContainer {
