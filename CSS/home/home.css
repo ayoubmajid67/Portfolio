@@ -3,7 +3,6 @@
 }
 
 .mainSection {
-
   background-image: url(../../testBack/home.jpg);
   background-size: cover;
   background-repeat: no-repeat;
@@ -35,6 +34,7 @@
   gap: 5px;
   overflow: hidden;
   align-items: center;
+  backdrop-filter: blur(2px);
 }
 
 .name {
@@ -83,10 +83,11 @@
   text-align: center;
   padding: 20px;
 }
+
 @media (max-width:700px) {
 
 
-  .homeContainer .paragraph  {
+  .homeContainer .paragraph {
     font-size: 1.3rem;
   }
 
@@ -106,19 +107,19 @@
 
 @media (max-width:412px) {
 
-  
+
   .homeContainer {
     font-size: 0.9rem;
     width: 150%;
     flex-grow: 1;
-  
+
   }
-  .homeContainer .paragraph  {
+
+  .homeContainer .paragraph {
     font-size: 1.2rem;
   }
 
 }
-
 
 @media (max-width:265px) {
   .homeContainer {

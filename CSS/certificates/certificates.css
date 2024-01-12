@@ -1,5 +1,3 @@
-
-
 .mainSection {
     flex-direction: column;
     gap: 20px;
@@ -14,8 +12,6 @@
     background-size: cover;
     background-position: top;
     background-attachment: fixed;
-
-
 }
 
 .navbar {
@@ -25,20 +21,14 @@
     font-weight: 600;
     border: none;
     box-shadow: none !important;
-    position: fixed; 
- width: 100%;
- background-color:white;
-
-
+    position: fixed;
+    width: 100%;
+    background-color: white;
 }
 
-
-
-.mainSection{
+.mainSection {
     margin-top: 20px;
 }
-
-
 
 .certificateContainer {
     margin-top: 30px;
@@ -49,11 +39,9 @@
     justify-content: space-around;
     align-items: center;
     gap: 5%;
-
 }
 
 .certificateContainer div {
-
     width: 100%;
     height: fit-content;
     display: flex;
@@ -66,7 +54,6 @@
 }
 
 .certificateContainer figure {
-
     display: flex;
     gap: 3%;
     flex-wrap: nowrap;
@@ -85,27 +72,21 @@
     justify-content: space-between;
     min-height: 500px;
     transition: 0.5s;
-    position:relative; 
-    transform : scale(0.9); 
-
+    position: relative;
+    transform: scale(0.9);
 }
 
 .certificateContainer figure:hover {
     transform: scale(0.9) translateY(-10px);
-
     box-shadow: 0px 0px 20px #60420257;
 }
 
 
 .certificateContainer .certificateInfo {
-
-
-
     display: flex;
     flex-flow: column nowrap;
     align-content: center;
     justify-content: space-evenly;
-
 }
 
 .certificateInfo h2 {
@@ -120,7 +101,6 @@
 }
 
 .certificateContainer a {
-
     font-size: 1.07em;
     padding: 5px;
     text-align: center;
@@ -135,20 +115,17 @@
     background-color: #09655cc7;
 }
 
-
 .certificateInfo p {
     font-size: 0.62em;
     padding: 7px;
     font-weight: 600;
     padding-right: 0;
-
 }
 
 @media (max-width:1383px) {
 
     #MantainGapFigure {
         display: none;
-
     }
 
 }
@@ -161,13 +138,10 @@
         justify-content: center;
         gap: 2%;
         padding: 0;
-
     }
 
     .certificateContainer figure {
         scale: 0.85;
         margin-bottom: 6px;
     }
-
-   
 }

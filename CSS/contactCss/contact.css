@@ -3,7 +3,10 @@
 }
 
 .container .navbar {
-    background-color: rgba(249, 244, 244, 0.692);
+    background-color: white;
+    position: fixed;
+    width: 100%;
+    z-index: 100;
 
 }
 
@@ -13,6 +16,14 @@ body {
     background-size: cover;
     background-color: rgba(4, 36, 19, 0.574);
     background-blend-mode: color;
+    /* Webkit (Safari, Chrome) */
+-webkit-background-blend-mode: color;
+
+/* Mozilla Firefox */
+-moz-background-blend-mode: color;
+
+/* Microsoft Edge and Internet Explorer */
+-ms-background-blend-mode: color;
 
 }
 
@@ -132,7 +143,7 @@ body {
 .UserMessage,
 form input {
     margin-right: 5%;
-    background-color: rgba(255, 255, 255, 0.759);
+    background-color: rgba(255, 255, 255, 0.915);
     border: none;
 
 
@@ -202,13 +213,6 @@ input:focus {
     .form input {
         margin-right: 0;
         
-    }
-
-    .navbar {
-        opacity: 0.4;
-        position: fixed;
-        width: 100%;
-        z-index: 100;
     }
 
     body {

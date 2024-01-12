@@ -23,22 +23,14 @@ function navOut() {
 // Function to handle screen width changes
 function handleScreenWidthChange() {
 	var screenWidth = window.innerWidth;
-	let innerIconLIsts = [
-    '<i class="ri-home-line"></i>', 
-    '<i class="ri-user-line"></i>',
-    '<i class="ri-contacts-book-line"></i>',
-    '<i class="ri-verified-badge-line"></i>',
-    '<i class="ri-building-2-line"></i>'];
-	// Check if the screen width is less than or equal to 530 pixels
+	let innerIconLIsts = ['<i class="ri-home-line"></i>', '<i class="ri-user-line"></i>', '<i class="ri-contacts-book-line"></i>', '<i class="ri-verified-badge-line"></i>', '<i class="ri-building-2-line"></i>'];
 	if (screenWidth <= 530) {
-		// Your code for screens less than or equal to 530 pixels goes here
-
+		
 		linkArray.forEach((element, index) => {
 			element.innerHTML = innerIconLIsts[index];
 		});
-
 	} else {
-		//   // Your code for screens wider than 530 pixels goes here
+		
 
 		let innerTitleLists = ["home", "about", "contact", "Certificates", "projects"];
 		linkArray.forEach((element, index) => {

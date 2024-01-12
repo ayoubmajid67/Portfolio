@@ -25,24 +25,25 @@
 .container .navbar h1 span {
     color: rgb(12, 175, 159);
 
-transition: 0.4s;
+    transition: 0.4s;
 }
 
 .container .navbar h1 span:hover {
-    color:rgb(9, 92, 78);;
+    color: rgb(9, 92, 78);
+    ;
 }
 
 .container .navbar ul {
     display: flex;
     flex-grow: 0.8;
-     
+
     padding: 10px;
- padding-right:-20px;
+    padding-right: -20px;
     justify-content: space-between;
     padding-right: 40px;
-    
-  
-   
+
+
+
 }
 
 ul li {
@@ -110,9 +111,9 @@ ul li .currentPage:hover {
 
         width: 100%;
         flex-grow: 1;
-    
+
         padding-right: 3.4% !important;
-    
+
     }
 }
 

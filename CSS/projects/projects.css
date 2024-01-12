@@ -1,9 +1,9 @@
-.navbar {
+.container .navbar {
     background-color: white;
-
+    position: sticky;
     width: 100%;
-    position: fixed;
-    z-index: 99;
+    z-index: 100;
+    top: 0;
 
 }
 
@@ -14,8 +14,7 @@ body {
     background-repeat: no-repeat;
     background-blend-mode: color;
     background-attachment: fixed;
-
-    background-color: rgba(14, 20, 16, 0.299);
+    backdrop-filter: brightness(0.8) blur(1.2px);
 
     background-position: center;
 
