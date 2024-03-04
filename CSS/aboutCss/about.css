@@ -8,6 +8,7 @@
 	transition: 0.4s;
 	z-index: 100;
 	transition: visibility 0;
+	padding: 8px 0 ;
 }
 
 .navbar a {
@@ -29,7 +30,7 @@
 
 
 body {
-	background-image: url(../../testBack/about.jpg);
+	background-image: url(../../back/webp/about.webp);
 	background-repeat: no-repeat;
 	background-position: center;
 	background-blend-mode: color;
@@ -71,7 +72,6 @@ body {
 }
 
 .intro_about {
-	@import url("https://fonts.googleapis.com/css2?family=PT+Serif:ital@1&family=Shadows+Into+Light&family=Tajawal:wght@200;300;500;900&display=swap");
 	color: rgba(144, 176, 185, 0.498);
 	font-weight: 600;
 	font-family: Verdana, Geneva, Tahoma, sans-serif;
@@ -147,7 +147,7 @@ body {
 .section2 {
 	width: 100%;
 	padding: 20px;
-	background-image: url(../../testBack/aboutSection2.jpg);
+	background-image: url(../../back/webp/aboutSection2.webp);
 	background-size: cover;
 	background-blend-mode: color;
 	background-color: rgba(0, 0, 0, 0.756);
@@ -243,7 +243,7 @@ body {
 }
 
 .cpp {
-	background-image: url("../../img/cpp.png");
+	background-image: url("../../img/webp/cpp.webp");
 }
 
 .html {
@@ -288,6 +288,7 @@ body {
 
 	background-image: url("../../img/OOP.svg");
 }
+
 @media (max-width: 1731px) {
 
 	.mainSection_content {
@@ -330,11 +331,21 @@ body {
 #DropDown {
 	position: fixed;
 	z-index: 2;
-	width: 3.34%;
+	width: 52px;
 
 	right: 60px;
 	bottom: 180px;
-	opacity: 0.4;
+	opacity: 0.6;
+	box-shadow: 0 0px 10px rgba(89, 90, 88, 0.604);
+	border-radius: 50%;
+}
+
+@media (max-width:992px) {
+	#DropDown {
+		right: 20px;
+		bottom: 70px;
+	}
+
 }
 
 @media (max-width: 1040px) {
@@ -451,6 +462,7 @@ body {
 	font-size: 1.5vh;
 	opacity: 0.7;
 }
+
 #submit {
 	width: 24vw;
 	border: 3px solid #2b3d53;
