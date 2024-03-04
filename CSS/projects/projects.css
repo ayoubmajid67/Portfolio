@@ -9,7 +9,7 @@
 
 body {
 
-    background-image: url('./../../testBack/projects.jpg');
+    background-image: url('./../../back/webp/projects.webp');
     background-size: cover;
     background-repeat: no-repeat;
     background-blend-mode: color;
