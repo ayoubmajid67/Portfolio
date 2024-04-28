@@ -21,5 +21,5 @@ let selectLanguageSelect = document.querySelector(".Cv select");
 
 
 selectLanguageSelect.onchange=function(){	
-	cva.href= this.value=='Fr' ? "../../pdf/cv/Fr.pdf" : "../../pdf/cv/En.pdf"; 
+	cva.href= this.value=='Fr' ? "../pdf/cv/En.pdf" : "../pdf/cv/Fr.pdf"; 
 }
