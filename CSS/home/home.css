@@ -54,6 +54,9 @@
   width: fit-content;
   border-radius: 7px;
   align-self: center;
+  position: relative;
+  
+
 }
 
 .Cv a {
@@ -65,10 +68,22 @@
   color: rgb(9, 92, 78);
   text-wrap: nowrap;
   transition: 0.4s;
+ margin-right: 10px;
+  
+}
+
+.Cv select{
+  font-size: 1rem;
+  padding: 2px 6px;
+
 }
 
 .Cv a:hover {
   color: black;
+}
+#cvLanguage{
+
+
 }
 
 .paragraph {
