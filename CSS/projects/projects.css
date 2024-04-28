@@ -154,6 +154,14 @@ article .ProjectResource {
 
 }
 
+.progressProject .ProjectResource {
+    background-color: #096e64;
+}
+
+.progressProject {
+    opacity: 0.6;
+}
+
 .ProjectResource a {
     text-decoration: none;
     color: white;
@@ -165,7 +173,7 @@ article .ProjectResource {
 
 
 .CppContainerProjects article h3 span,
-.ProjectResource a:hover {
+.ProjectResource:not(.progressProject .ProjectResource) a:hover {
     color: #088376;
 }
 
@@ -175,7 +183,7 @@ article {
     filter: brightness(96%);
 }
 
-article:hover {
+article:not(.progressProject):hover {
     transform: translateY(-10px);
 }
 
