@@ -18,4 +18,96 @@ body {
     width: 100%;
     min-height: 100vh;
 }
+/* start components */
+
+:root {
+
+    --primaryColor: #14818C;
+    --secondaryColor: #BE643B;
+}
+
+
+
+.mainTitle {
+    color:white;
+    margin: 0 auto ;
   
+    padding: 20px 20px;
+    font-size: 40px;
+    width: fit-content;
+    position: relative;
+    font-weight: bold;
+    z-index: 1;
+    transition: var(--mainTransitionDuration);
+   font-family: "Julee", cursive;
+   text-transform: uppercase;
+   font-variant: small-caps;
+   text-align: center;
+  
+   
+  }
+  @media (max-width :992px){
+    .mainTitle{
+        font-size: 35px;
+    }
+  }
+  @media (max-width :552px){
+ .mainTitle{
+    /* overflow: hidden; */
+    margin-top: 30px;
+    /* margin-bottom: 30px; */
+ }
+
+  }
+
+  
+  .mainTitle::after,
+  .mainTitle::before {
+    content: "";
+    width: 12px;
+    height: 12px;
+    background-color: var(--primaryColor);
+    position: absolute;
+    border-radius: 50%;
+    top: 50%;
+    transform: translateY(-50%);
+  
+  
+  }
+  
+  .mainTitle::before {
+    left: -30px;
+  }
+  
+  .mainTitle::after {
+    right: -30px;
+  }
+  @media (max-width :552px){
+  
+    .mainTitle::after,
+    .mainTitle::before{
+     left: 50%;
+     right: 0;
+     
+    }
+
+   .mainTitle::before{
+    top: -15px;
+   }    
+   .mainTitle::after{
+    top:  unset;
+    bottom: -15px;
+    
+   }
+  }
+  
+  .mainTitle:hover::before {
+    z-index: -1;
+  }
+  
+  .mainTitle:hover::after {
+    z-index: -1;
+  
+  }
+  
+

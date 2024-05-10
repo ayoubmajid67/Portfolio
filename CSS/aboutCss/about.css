@@ -8,16 +8,17 @@
 	transition: 0.4s;
 	z-index: 100;
 	transition: visibility 0;
-	padding: 8px 0 ;
+	padding: 8px 0;
 }
+
 
 .navbar a {
 	color: white !important;
 }
 
 .sticky {
-	background-color: #fff !important;
-	opacity: 0.9;
+	background-color: white;
+
 }
 
 .sticky a {
@@ -159,22 +160,66 @@ body {
 	justify-content: center;
 }
 
-.section2 .Aboutcontainer {
+.section2 .AboutContainer {
 	padding: 10px;
 	width: 90%;
 	gap: 20px;
 	display: flex;
-	justify-content: space-between;
-	flex-direction: row;
+	flex-direction: column;
 	animation-duration: 4s;
-	flex-wrap: wrap;
+	align-items: center;
+
+
 }
+
+.AboutContainer .domainContainer {
+	position: relative;
+	padding: 10px;
+	width: 90%;
+	gap: 20px;
+	display: flex;
+	flex-direction: column;
+
+
+
+}
+
+@media (max-width :522px) {
+	.AboutContainer .domainContainer {
+		width: 100%;
+		gap: 5px;
+		margin-bottom: 20px;
+
+	}
+
+}
+
+.domainContainer .DomainContent {
+	padding: 10px;
+	gap: 20px;
+	display: flex;
+	justify-content: space-between;
+	flex-wrap: wrap;
+	align-items: center;
+
+}
+
+@media (max-width:1000px) {
+
+	.domainContainer .DomainContent {
+		justify-content: center;
+		gap: 0px;
+
+	}
+
+}
+
 
 .card {
 	display: flex;
 	flex-direction: column;
 	justify-content: space-between;
-	height: 523px;
+	height: 550px;
 	flex-basis: 350px;
 	border-radius: 18px;
 	background-color: white;
@@ -185,8 +230,10 @@ body {
 	transition: 0.5s ease;
 	cursor: pointer;
 	margin-bottom: 0;
-	padding: 10px;
-	gap: 3px;
+	padding: 10px 20px;
+	gap: 10px;
+	min-width: 360px;
+	max-width: 100%;
 	scale: 0.74;
 }
 
@@ -211,9 +258,30 @@ body {
 	background-position: 0 -20px;
 	border-top-left-radius: 15px;
 	border-top-right-radius: 15px;
-	background-size: 60% !important;
+	background-size: 60%;
 	background-repeat: no-repeat;
-	background-position: center !important;
+	background-position: center;
+	overflow: hidden;
+}
+
+.card-image img {
+	height: 180px;
+	aspect-ratio: 1/1;
+}
+
+.mySql {
+	height: 250px;
+
+}
+
+.mySql img {
+	width: 160px;
+}
+
+.arabic img {
+
+	height: 160px;
+
 }
 
 .card-text {
@@ -228,8 +296,12 @@ body {
 
 .card-text p {
 	font-size: 19.7px;
-	font-weight: 700;
-	line-height: 1.5;
+	font-weight: 600;
+	color: #777;
+	text-shadow: 0px 0px 0px black;
+	text-align: start;
+
+	line-height: 1.6;
 }
 
 .card-text h2 {
@@ -237,56 +309,34 @@ body {
 	font-size: 32px;
 }
 
-.cpp,
-.c {
-	background-image: url("../../img/c.svg");
+
+
+
+
+#DropDown {
+	position: fixed;
+	z-index: 2;
+	width: 52px;
+
+	right: 60px;
+	bottom: 180px;
+	opacity: 0.6;
+	box-shadow: 0 0px 10px rgba(89, 90, 88, 0.604);
+	border-radius: 50%;
 }
 
-.cpp {
-	background-image: url("../../img/webp/cpp.webp");
+#DropDown.dropTop {
+
+	filter: contrast(0%);
+
+
 }
 
-.html {
-	background-image: url("../../img/html.svg");
-}
-
-.css {
-	background-image: url("../../img/css.svg");
-}
-
-.JavaScript {
-
-	background-image: url("../../img/js.svg");
-}
-
-.mySql {
-	background-image: url("../../img/mySql.svg");
-}
-
-.french {
-	background-image: url("../../img/french.svg");
-}
-
-.english {
-	background-image: url("../../img/english.svg");
-}
-
-.algo {
-
-	background-image: url("../../img/algo.svg");
-}
-
-.dataStructure {
-	background-image: url("../../img/dataStructure.svg");
-}
-
-.problemSolving {
-	background-image: url("../../img/problemSolving.svg");
-}
-
-.OOP {
-
-	background-image: url("../../img/OOP.svg");
+.paragraph {
+	width: 75%;
+	font-weight: 500;
+	font-size: 1.5vh;
+	opacity: 0.7;
 }
 
 @media (max-width: 1731px) {
@@ -321,23 +371,11 @@ body {
 		font-size: 2.2vw;
 		display: block;
 		max-width: 30% !important;
-		min-width: 24% !important;
+		min-width: 24%;
 
 		margin: 0;
 		padding: 0;
 	}
-}
-
-#DropDown {
-	position: fixed;
-	z-index: 2;
-	width: 52px;
-
-	right: 60px;
-	bottom: 180px;
-	opacity: 0.6;
-	box-shadow: 0 0px 10px rgba(89, 90, 88, 0.604);
-	border-radius: 50%;
 }
 
 @media (max-width:992px) {
@@ -349,11 +387,7 @@ body {
 }
 
 @media (max-width: 1040px) {
-	.Aboutcontainer {
-		justify-content: center !important;
 
-		width: 100% !important;
-	}
 
 	#submit {
 		width: 22vw;
@@ -369,7 +403,7 @@ body {
 
 
 	#submit {
-		min-width: 27% !important;
+		min-width: 27%;
 	}
 
 	#submit a {
@@ -389,8 +423,9 @@ body {
 
 
 @media (max-width: 751px) {
-	.section2 .Aboutcontainer {
+	.section2 .AboutContainer {
 		gap: 0px;
+		width: 100%;
 	}
 }
 
@@ -412,18 +447,19 @@ body {
 	}
 
 	.paragraph {
-		font-weight: 650 !important;
+		font-weight: 650;
+		font-size: 74%;
 
-		width: 100% !important;
-		line-height: 1.6 !important;
-		/* Adjust the value as needed */
+		width: 100%;
+		line-height: 1.6;
+
 		vertical-align: middle;
 		text-align: center;
 
 	}
 
-	.Aboutcontainer {
-		justify-content: center !important;
+	.AboutContainer {
+		justify-content: center;
 	}
 }
 
@@ -441,7 +477,7 @@ body {
 	}
 
 	#submit {
-		min-width: 31% !important;
+		min-width: 31%;
 	}
 }
 
@@ -452,16 +488,10 @@ body {
 	}
 
 	#submit {
-		min-width: 47% !important;
+		min-width: 47%;
 	}
 }
 
-.paragraph {
-	width: 75%;
-	font-weight: 500;
-	font-size: 1.5vh;
-	opacity: 0.7;
-}
 
 #submit {
 	width: 24vw;
@@ -478,3 +508,70 @@ body {
 	animation-iteration-count: infinite;
 	animation-direction: alternate;
 }
+
+
+
+/* start search  input  */
+.searchContainer {
+	text-align: center;
+	width: 100%;
+	margin-top: 10px;
+	margin-bottom: 30px;
+	padding: 20px;
+	display: flex;
+	justify-content: center;
+
+  }
+  
+  .searchContainer ::placeholder {
+	opacity: 0.8;
+	
+	font-weight: 400;
+  }
+  
+  .searchContainer .content {
+	display: flex;
+	gap: 15px;
+	width: 70%;
+	box-shadow: 0px 5px 20px #4a494950;
+	background-color: white;
+	align-items: center;
+	padding: 5px 20px;
+	min-width: 250px;
+	border-radius: 12px;
+	
+  }
+  @media (max-width:1200px){
+	.searchContainer .content{
+		width: 80%;
+	}
+  }
+  
+  @media (max-width : 992px) {
+	.searchContainer .content {
+	  width: 90%;
+	}
+  }
+  
+  @media (max-width : 768px) {
+	.searchContainer .content {
+	  width: 10 0%;
+	}
+  }
+  
+  .searchContainer input {
+	font-size: 1.2rem;
+	outline: none;
+	border: none;
+	 flex-grow: 1;
+	 max-width: 70%;
+	padding: 12px 20px;
+	color: black;
+	overflow: hidden;
+  }
+  
+  @media (max-width :768px) {
+	.searchContainer input {
+	  font-size: 1rem;
+	}
+  }

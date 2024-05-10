@@ -52,10 +52,17 @@ function scrollToPosition(Position) {
 
 let flagBtn = false;
 
+let switchClasses = (addedClass, removedClass, element) => {
+	element.classList.add(addedClass);
+	element.classList.remove(removedClass);
+};
+
 function handlScrollBtn() {
 	flagBtn = !flagBtn;
 	if (flagBtn) {
 		scrollToPosition(endOfPage);
+
+		btnScrollDown.classList.remove("dropTop");
 		setTimeout(() => {
 			btnScrollDown.setAttribute("src", "../button/dropTop.webp");
 		}, 140);
@@ -65,6 +72,8 @@ function handlScrollBtn() {
 		setTimeout(() => {
 			btnScrollDown.setAttribute("src", "../button/dropDown.webp");
 		}, 140);
+
+		btnScrollDown.classList.add("dropTop");
 	}
 }
 
@@ -86,9 +95,63 @@ window.onscroll = async function () {
 
 	if (isAtEndOfPage()) {
 		flagScroll = !flagScroll;
-		if (flagScroll) btnScrollDown.setAttribute("src", "../button/dropTop.webp");
+		if (flagScroll) {
+			btnScrollDown.setAttribute("src", "../button/dropTop.webp");
+			btnScrollDown.classList.remove("dropTop");
+		}
 	} else if (document.documentElement.scrollTop == 0) {
 		flagScroll = !flagScroll;
 		btnScrollDown.setAttribute("src", "../button/dropDown.webp");
+		btnScrollDown.classList.add("dropTop");
 	}
+};
+
+let skillsContainer = document.querySelectorAll(".domainContainer");
+let searchInput = document.querySelector(".searchContainer input");
+
+searchInput.addEventListener("input", () => {
+	filterSkills(skillsContainer);
+});
+
+function filterCards(domain) {
+	domain.querySelectorAll(".DomainContent .card").forEach((card) => {
+		if (card.getAttribute("skillName") && !card.getAttribute("skillName").toLowerCase().trim().includes(searchInput.value.toLowerCase().trim())) {
+			card.style.display = "none";
+		} else {
+			card.style.display = "flex";
+		}
+	});
+}
+
+function checkHiddenDomain(domain) {
+	let isHidden = true;
+	domain.querySelectorAll(".DomainContent .card").forEach((card) => {
+		if (card.style.display == "flex") {
+			isHidden = false;
+			return;
+		}
+	});
+
+	return isHidden;
+}
+
+function filterDomain(domain) {
+	let domainName = domain.querySelector(".DomainName");
+
+	if (checkHiddenDomain(domain)) domainName.style.display = "none";
+	else domainName.style.display = "block";
+}
+
+function filterSkills(skillsContainer) {
+	skillsContainer.forEach((domain) => {
+		filterCards(domain);
+
+		filterDomain(domain);
+	});
+}
+
+let searchContainer = document.querySelector(".searchContainer .content");
+
+searchContainer.onclick = function () {
+	searchInput.focus();
 };
