@@ -25,16 +25,102 @@ function handleScreenWidthChange() {
 	var screenWidth = window.innerWidth;
 	let innerIconLIsts = ['<i class="ri-home-line"></i>', '<i class="ri-user-line"></i>', '<i class="ri-contacts-book-line"></i>', '<i class="ri-verified-badge-line"></i>', '<i class="ri-building-2-line"></i>'];
 	if (screenWidth <= 530) {
-		
 		linkArray.forEach((element, index) => {
 			element.innerHTML = innerIconLIsts[index];
 		});
 	} else {
-		
-
 		let innerTitleLists = ["home", "about", "contact", "Certificates", "projects"];
 		linkArray.forEach((element, index) => {
 			element.innerText = innerTitleLists[index];
 		});
 	}
 }
+
+let boxesContainer = document.querySelectorAll(".domainContainer");
+let searchInput = document.querySelector(".searchContainer input");
+
+function filterCards(domain, attName) {
+	domain.querySelectorAll(".domainContent .card").forEach((card) => {
+		if (card.getAttribute(attName) && !card.getAttribute(attName).toLowerCase().trim().includes(searchInput.value.toLowerCase().trim())) {
+			card.style.display = "none";
+		} else {
+			card.style.display = "flex";
+		}
+	});
+}
+
+function checkHiddenDomain(domain) {
+	let isHidden = true;
+	domain.querySelectorAll(".domainContent .card").forEach((card) => {
+		if (card.style.display == "flex") {
+			isHidden = false;
+			return;
+		}
+	});
+
+	return isHidden;
+}
+
+function filterDomain(domain) {
+	if (checkHiddenDomain(domain)) domain.style.display = "none";
+	else domain.style.display = "block";
+}
+
+function filterContainers(attName) {
+	boxesContainer.forEach((domain) => {
+		filterCards(domain, attName);
+
+		filterDomain(domain);
+	});
+}
+let searchContainer = document.querySelector(".searchContainer .content");
+
+const btnScrollDown = document.getElementById("DropDown");
+let endOfPage = document.body.scrollHeight;
+
+function scrollToPosition(Position) {
+	window.scrollTo({
+		top: Position,
+		behavior: "smooth",
+	});
+}
+
+let flagBtn = false;
+
+let switchClasses = (addedClass, removedClass, element) => {
+	element.classList.add(addedClass);
+	element.classList.remove(removedClass);
+};
+
+function handlScrollBtn() {
+	flagBtn = !flagBtn;
+	if (flagBtn) {
+		scrollToPosition(endOfPage);
+
+		btnScrollDown.classList.remove("dropTop");
+		setTimeout(() => {
+			btnScrollDown.setAttribute("src", "../button/dropTop.webp");
+		}, 140);
+	} else {
+		scrollToPosition(0);
+
+		setTimeout(() => {
+			btnScrollDown.setAttribute("src", "../button/dropDown.webp");
+		}, 140);
+
+		btnScrollDown.classList.add("dropTop");
+	}
+}
+
+function isAtEndOfPage() {
+	var documentHeight = document.documentElement.scrollHeight;
+	var viewportHeight = window.innerHeight;
+	var scrollTop = window.pageYOffset || document.documentElement.scrollTop;
+	var distanceToBottom = documentHeight - (scrollTop + viewportHeight);
+	return distanceToBottom < 50;
+}
+function delay(ms) {
+	return new Promise((resolve) => setTimeout(resolve, ms));
+}
+
+let flagScroll = false;

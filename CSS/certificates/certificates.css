@@ -1,148 +1,194 @@
 .mainSection {
-    flex-direction: column;
-    gap: 20px;
-    align-content: center;
+  flex-direction: column;
+  gap: 20px;
+  align-content: center;
 
-    /* test 1 maybe  */
-    background-image: url('../../back/webp/certificates.webp');
+  /* test 1 maybe  */
+  background-image: url('../../back/webp/certificates.webp');
 
-    background-blend-mode: color;
-    background-color: rgba(0, 0, 0, 0.686);
+  background-blend-mode: color;
+  background-color: rgba(0, 0, 0, 0.686);
 
-    background-size: cover;
-    background-position: top;
-    background-attachment: fixed;
+  background-size: cover;
+  background-position: top;
+  background-attachment: fixed;
 }
 
 .navbar {
 
-    opacity: 1;
-    z-index: 99;
-    font-weight: 600;
-    border: none;
-    box-shadow: none !important;
-    position: fixed;
-    width: 100%;
-    background-color: white;
+  opacity: 1;
+  z-index: 99;
+  font-weight: 600;
+  border: none;
+  box-shadow: none !important;
+  position: fixed;
+  width: 100%;
+  background-color: white;
 }
 
 .mainSection {
-    margin-top: 20px;
+  margin-top: 20px;
 }
 
 .certificateContainer {
-    margin-top: 30px;
-    display: flex;
-    flex-flow: row wrap;
-    width: 100%;
-    padding: 20px;
-    justify-content: space-around;
-    align-items: center;
-    gap: 5%;
+  padding: 10px 20px;
+  width: 100%;
+  gap: 20px;
+  display: flex;
+  flex-direction: column;
+  animation-duration: 4s;
+  align-items: center;
+
 }
 
-.certificateContainer div {
-    width: 100%;
-    height: fit-content;
-    display: flex;
-    justify-content: center;
-}
+
 
 .certificateContainer img {
-    width: 97%;
+  width: 97%;
+  height: 315px;
 
 }
 
-.certificateContainer figure {
-    display: flex;
-    gap: 3%;
-    flex-wrap: nowrap;
-    background-color: transparent;
-    color: white;
-    opacity: 0.94;
-
-    flex-basis: 400px;
-
-    flex-direction: column;
-    box-shadow: 0px 0px 20px #60420249;
-    border-bottom: 1px double rgba(17, 38, 107, 0.578);
-
-    border-radius: 7px 10px;
-    margin-bottom: 50px;
-    justify-content: space-between;
-    min-height: 500px;
-    transition: 0.5s;
-    position: relative;
-    transform: scale(0.9);
+.certificateContainer .domainContainer {
+  position: relative;
+  padding: 10px;
+  width: 90%;
+  gap: 20px;
+  display: flex;
+  flex-direction: column;
 }
 
-.certificateContainer figure:hover {
-    transform: scale(0.9) translateY(-10px);
-    box-shadow: 0px 0px 20px #60420257;
+@media (max-width :522px) {
+  .certificateContainer .domainContainer {
+    width: 100%;
+    gap: 5px;
+    margin-bottom: 20px;
+
+  }
+
+}
+
+.certificateContainer .domainContent {
+  padding: 10px;
+  gap: 20px;
+  display: flex;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+  align-items: center;
+
+}
+
+@media (max-width:1000px) {
+
+  .domainContainer .domainContent {
+    justify-content: center;
+    gap: 0px;
+
+  }
+
+}
+
+
+.certificateContainer .card {
+  display: flex;
+  gap: 10px;
+  flex-wrap: nowrap;
+  background-color: transparent;
+  color: white;
+  opacity: 0.94;
+
+  flex-basis: 405px;
+
+  flex-direction: column;
+  box-shadow: 0px 0px 20px #60420249;
+  border-bottom: 1px double rgba(17, 38, 107, 0.578);
+
+  border-radius: 7px 10px;
+  margin-bottom: 50px;
+  justify-content: space-between;
+  min-height: 500px;
+  transition: 0.5s;
+  position: relative;
+  transform: scale(0.9);
+}
+
+
+
+.certificateContainer .card:hover {
+  transform: scale(0.9) translateY(-10px);
+  box-shadow: 0px 0px 20px #60420257;
 }
 
 
 .certificateContainer .certificateInfo {
-    display: flex;
-    flex-flow: column nowrap;
-    align-content: center;
-    justify-content: space-evenly;
+  display: flex;
+  flex-flow: column nowrap;
+  align-content: center;
+  justify-content: space-between;
+
 }
 
 .certificateInfo h2 {
-    color: rgb(202, 149, 105);
-    font-size: 0.84em;
-    padding: 5px;
-    text-wrap: nowrap;
-    
+  color: rgb(202, 149, 105);
+  font-size: 0.84em;
+  padding: 5px;
+  text-wrap: nowrap;
+
+
 }
 
 .certificateInfo h2 span {
-    color: #0CAF9F;
+  color: #0CAF9F;
 }
 
 .certificateContainer a {
-    font-size: 1.07em;
-    padding: 5px;
-    text-align: center;
-    margin-top: 25px;
-    background-color: black;
-    color: white;
-    text-decoration: none;
-    transition: 1s;
+  font-size: 1.07em;
+  padding: 5px;
+  text-align: center;
+  margin-top: 19px;
+  background-color: black;
+  color: white;
+  text-decoration: none;
+  transition: 1s;
 }
 
 .certificateContainer a:hover {
-    background-color: #09655cc7;
+  background-color: #09655cc7;
 }
 
 .certificateInfo p {
-    font-size: 0.62em;
-    padding: 7px;
-    font-weight: 600;
-    padding-right: 0;
+  font-size: 0.7em;
+  padding: 7px;
+  font-weight: 600;
+  padding-right: 0;
 }
 
 @media (max-width:1383px) {
 
-    #MantainGapFigure {
-        display: none;
-    }
+  #MantainGapFigure {
+    display: none;
+  }
 
 }
 
 @media (max-width:550px) {
 
-    .certificateContainer {
-        width: 98%;
-        flex-direction: column;
-        justify-content: center;
-        gap: 2%;
-        padding: 0;
-    }
+  .certificateContainer {
+    width: 98%;
+    flex-direction: column;
+    justify-content: center;
+    gap: 2%;
+    padding: 0;
+  }
 
-    .certificateContainer figure {
-        scale: 0.85;
-        margin-bottom: 6px;
-    }
+  .certificateContainer .card {
+    scale: 0.85;
+    margin-bottom: 6px;
+  }
+}
+
+
+
+.searchContainer {
+  margin-top: 50px;
 }

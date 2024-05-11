@@ -17,6 +17,9 @@
 		<link rel="icon" href="../incons/webSiteIcon.ico" />
 
 		<link rel="stylesheet" href="../CSS/certificates/certificates.css" />
+
+		<!-- font awesome -->
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 	</head>
 	<body>
 		<!-- services page  -->
@@ -33,201 +36,240 @@
 			</nav>
 
 			<div class="mainSection">
+				<!-- drop down  button  -->
+				<img src="../button/dropDown.webp" id="DropDown" class="dropTop" alt="" loading="lazy" fetchpriority="high" decoding="async" />
+
 				<div class="certificateContainer">
-					<!-- web  -->
-					<figure>
-						<div><img srcset="../img/webp/certificateHtmlCssJs.webp" type="image/webp" alt="web development html css js certificate" loading="lazy" fetchpriority="high" decoding="async" /></div>
-						<article class="certificateInfo">
-							<h2>HTML, CSS, and Javascript for Web Developers</h2>
-							<p>Coursera's "HTML, CSS, and JavaScript for Web Developers" course equips learners with essential skills in web development. This program covers HTML for content, CSS for styling, and JavaScript for interactivity, empowering students to create responsive and engaging websites. By course end, participants are well-prepared to embark on web development projects.</p>
-							<a href="../pdf/HTML_CSS_JS.pdf" class="DownloadCertificateBtn" target="_blank">Download</a>
-						</article>
-					</figure>
+					<div class="searchContainer">
+						<div class="content">
+							<i class="fa-solid fa-magnifying-glass"></i>
+							<input type="text" id="SearchInput" placeholder="Search a city..." />
+						</div>
+					</div>
 
-					<!--  sql  -->
-					<figure>
-						<div><img srcset="../img/webp/certificateSQL.webp" type="image/webp" alt="sql certificate" loading="lazy" fetchpriority="high" decoding="async" /></div>
-						<article class="certificateInfo">
-							<h2>The Structured Query Language (SQL)</h2>
-							<p>University of Colorado Boulder's Structured Query Language (SQL) course equips students with essential database management skills. This program covers SQL fundamentals, database design, and querying techniques, preparing learners to handle data efficiently in various professional contexts.</p>
-							<a href="../pdf/SQL.pdf" class="DownloadCertificateBtn" target="_blank">Download</a>
-						</article>
-					</figure>
+					<div class="domainContainer">
+						<h2 class="DomainName mainTitle">Programming Languages</h2>
 
-					<!-- arduino  -->
-					<figure>
-						<div><img srcset="../img/webp/certificateArduino.webp" type="image/webp" alt=" arduino certificate" loading="lazy" fetchpriority="high" decoding="async" /></div>
-						<article class="certificateInfo">
-							<h2>The Arduino Platform and C Programming</h2>
-							<p>University of California, Irvine's Arduino Platform and C Programming course provides a comprehensive introduction to hardware programming. Students learn to harness the power of Arduino microcontrollers and C programming to create interactive and innovative electronics projects, making them proficient in the world of embedded systems</p>
-							<a href="../pdf/arduino.pdf" class="DownloadCertificateBtn" target="_blank">Download</a>
-						</article>
-					</figure>
+						<div class="domainContent">
+							<!-- js  Coursera -->
+							<figure certificateName="Programming Languages JavaScript js " class="card">
+								<div><img srcset="../img/webp/certificateJs.webp" type="image/webp" alt="JavaScript certificate" loading="lazy" fetchpriority="high" decoding="async" /></div>
+								<article class="certificateInfo">
+									<h2>Interactivity with JavaScript</h2>
+									<p>Certified JavaScript Developer specializing in interactivity, completing the "Interactivity with JavaScript" course. Proficient in DOM manipulation, event handling, and advocating for clean code and accessibility. Excited for opportunities to bring enhanced interactivity to web projects.</p>
+									<a href="../pdf/js_Coursera.pdf" class="DownloadCertificateBtn" target="_blank">Download</a>
+								</article>
+							</figure>
 
-					<!-- js  Coursera -->
-					<figure>
-						<div><img srcset="../img/webp/certificateJs.webp" type="image/webp" alt="JavaScript certificate" loading="lazy" fetchpriority="high" decoding="async" /></div>
-						<article class="certificateInfo">
-							<h2>Interactivity with JavaScript</h2>
-							<p>Certified JavaScript Developer specializing in interactivity, completing the "Interactivity with JavaScript" course. Proficient in DOM manipulation, event handling, and advocating for clean code and accessibility. Excited for opportunities to bring enhanced interactivity to web projects.</p>
-							<a href="../pdf/js_Coursera.pdf" class="DownloadCertificateBtn" target="_blank">Download</a>
-						</article>
-					</figure>
+							<!-- python -->
+							<figure certificateName="Programming Languages Python" class="card">
+								<div><img srcset="../img/webp/certificatePython.webp" type="image/webp" alt="python certificate" loading="lazy" fetchpriority="high" decoding="async" /></div>
+								<article class="certificateInfo">
+									<h2>Programming for Everybody(Python)</h2>
+									<p>University of Michigan grad: Python journey complete! 🎓 From basics to confidence, armed with tutorials, books, and community support. Overcame challenges, debugging errors, mastering concepts. Grateful and excited for endless possibilities Python brings! 🐍🌟</p>
+									<a href="../pdf/certificatePython.pdf" class="DownloadCertificateBtn" target="_blank">Download</a>
+								</article>
+							</figure>
+							<!-- arduino  -->
+							<figure certificateName="Programming Languages Arduino" class="card">
+								<div><img srcset="../img/webp/certificateArduino.webp" type="image/webp" alt=" arduino certificate" loading="lazy" fetchpriority="high" decoding="async" /></div>
+								<article class="certificateInfo">
+									<h2>The Arduino Platform and C Programming</h2>
+									<p>University of California, Irvine's Arduino Platform and C Programming course provides a comprehensive introduction to hardware programming. Students learn to harness the power of Arduino microcontrollers and C programming to create interactive and innovative electronics projects</p>
+									<a href="../pdf/arduino.pdf" class="DownloadCertificateBtn" target="_blank">Download</a>
+								</article>
+							</figure>
+						</div>
+					</div>
 
-					<!-- responsive Design  -->
-					<figure>
-						<div><img srcset="../img/webp/certificateResponsiveDesign.webp" type="image/webp" alt="responsive design certificate" loading="lazy" fetchpriority="high" decoding="async" /></div>
-						<article class="certificateInfo">
-							<h2>Advanced Styling with Responsive Design</h2>
-							<p>Career Certificate as part of the Web Design for Everybody Specialization. 🖥️💡 📜 Explored key concepts like: Mobile-first paradigm and wireframes Creating cross-platform compatible sites Implementing fluid design and media queries Utilizing design frameworks like Bootstrap</p>
-							<a href="../pdf/certificateAdvanceStyling.pdf" class="DownloadCertificateBtn" target="_blank">Download</a>
-						</article>
-					</figure>
+					<div class="domainContainer">
+						<h2 class="DomainName mainTitle">web Front-end</h2>
+						<div class="domainContent">
+							<!-- web  -->
+							<figure certificateName="web Front-end Html,css,JavaScript" class="card">
+								<div><img srcset="../img/webp/certificateHtmlCssJs.webp" type="image/webp" alt="web development html css js certificate" loading="lazy" fetchpriority="high" decoding="async" /></div>
+								<article class="certificateInfo">
+									<h2>HTML, CSS, and Javascript for Web Developers</h2>
+									<p>Coursera's "HTML, CSS, and JavaScript for Web Developers" course equips learners with essential skills in web development. This program covers HTML for content, CSS for styling, and JavaScript for interactivity, empowering students to create responsive and engaging websites.</p>
+									<a href="../pdf/HTML_CSS_JS.pdf" class="DownloadCertificateBtn" target="_blank">Download</a>
+								</article>
+							</figure>
+							<!-- responsive Design  -->
+							<figure certificateName="web Front-end Responsive Design" class="card">
+								<div><img srcset="../img/webp/certificateResponsiveDesign.webp" type="image/webp" alt="responsive design certificate" loading="lazy" fetchpriority="high" decoding="async" /></div>
+								<article class="certificateInfo">
+									<h2>Advanced Styling with Responsive Design</h2>
+									<p>Career Certificate as part of the Web Design for Everybody Specialization. 🖥️💡 📜 Explored key concepts like: Mobile-first paradigm and wireframes Creating cross-platform compatible sites Implementing fluid design and media queries Utilizing design frameworks like Bootstrap</p>
+									<a href="../pdf/certificateAdvanceStyling.pdf" class="DownloadCertificateBtn" target="_blank">Download</a>
+								</article>
+							</figure>
 
-					<!-- html  -->
-					<figure>
-						<div><img src="../img/webp/certificateHtml.webp" type="image/webp" alt="Introduction to Html 5  certificate" loading="lazy" fetchpriority="high" decoding="async" /></div>
-						<article class="certificateInfo">
-							<h2>Introduction to HTML5</h2>
-							<p>Certified in "Introduction to HTML5," progressing through the Web Design for Everybody Specialization. Ready to apply skills in mastering web development.</p>
-							<a href="../pdf/CertificateHTML.pdf" class="DownloadCertificateBtn" target="_blank">Download</a>
-						</article>
-					</figure>
+							<!-- html  -->
+							<figure certificateName="web Front-end Html" class="card">
+								<div><img src="../img/webp/certificateHtml.webp" type="image/webp" alt="Introduction to Html 5  certificate" loading="lazy" fetchpriority="high" decoding="async" /></div>
+								<article class="certificateInfo">
+									<h2>Introduction to HTML5</h2>
+									<p>Certified in "Introduction to HTML5," progressing through the Web Design for Everybody Specialization. Ready to apply skills in mastering web development, Equipped with foundational knowledge and eager to leverage acquired skills to excel in web development endeavors.</p>
+									<a href="../pdf/CertificateHTML.pdf" class="DownloadCertificateBtn" target="_blank">Download</a>
+								</article>
+							</figure>
 
-					<!-- css3   -->
-					<figure>
-						<div><img srcset="../img/webp/certificateCss.webp" type="image/webp" alt="css certificate" loading="lazy" fetchpriority="high" decoding="async" /></div>
-						<article class="certificateInfo">
-							<h2>introduction to Css3</h2>
-							<p>Proud recipient of the "Introduction to CSS3" certificate as part of the Web Design for Everybody Specialization. Demonstrated proficiency in leveraging Cascading Style Sheets to enhance website aesthetics and responsiveness. Excited to contribute dynamic design skills to web development projects.</p>
-							<a href="../pdf/certificateCss.pdf" class="DownloadCertificateBtn" target="_blank">Download</a>
-						</article>
-					</figure>
+							<!-- css3   -->
+							<figure certificateName="web Front-end Css" class="card">
+								<div><img srcset="../img/webp/certificateCss.webp" type="image/webp" alt="css certificate" loading="lazy" fetchpriority="high" decoding="async" /></div>
+								<article class="certificateInfo">
+									<h2>introduction to Css3</h2>
+									<p>Proud recipient of the "Introduction to CSS3" certificate as part of the Web Design for Everybody Specialization. Demonstrated proficiency in leveraging Cascading Style Sheets to enhance website aesthetics and responsiveness. Excited to contribute dynamic design skills to web development projects.</p>
+									<a href="../pdf/certificateCss.pdf" class="DownloadCertificateBtn" target="_blank">Download</a>
+								</article>
+							</figure>
+						</div>
+					</div>
 
-					<!-- oop cpp   -->
-					<figure>
-						<div><img srcset="../img/webp/certificateCppOpp.webp" type="image/webp" alt=" cpp oop certificate" loading="lazy" fetchpriority="high" decoding="async" /></div>
-						<article class="certificateInfo">
-							<h2>Object-Oriented Programming (C++)</h2>
-							<p>Proudly achieved a certificate in Object-Oriented Programming (C++) from École Polytechnique Fédérale de Lausanne. Now equipped with advanced programming concepts, I'm poised to apply this knowledge to real-world projects, leveraging the expertise gained from this reputable institution.</p>
-							<a href="../pdf/certificateCppOop.pdf" class="DownloadCertificateBtn" target="_blank">Download</a>
-						</article>
-					</figure>
-					<!-- La recherche documentaire -->
-					<figure>
-						<div><img srcset="../img/webp/rechercheDocumentaire.webp" type="image/webp" alt="La recherche documentaire" loading="lazy" fetchpriority="high" decoding="async" /></div>
-						<article class="certificateInfo">
-							<h2>Recherche documentaire </h2>
-							<p>
-								This course teaches vital document research skills: source identification, constructing reviews, and optimizing database queries. Graduates excel in creating bibliographies and citing sources to prevent plagiarism.</p>
-							<a href="../pdf/rechercheDocumentaire.pdf" class="DownloadCertificateBtn" target="_blank">Download</a>
-						</article>
-					</figure>
+					<div class="domainContainer">
+						<h2 class="DomainName mainTitle">DataBases</h2>
+						<div class="domainContent">
+							<!--  sql  -->
+							<figure certificateName="DataBases SQL" class="card">
+								<div><img srcset="../img/webp/certificateSQL.webp" type="image/webp" alt="sql certificate" loading="lazy" fetchpriority="high" decoding="async" /></div>
+								<article class="certificateInfo">
+									<h2>The Structured Query Language (SQL)</h2>
+									<p>University of Colorado Boulder's Structured Query Language (SQL) course equips students with essential database management skills. This program covers SQL fundamentals, database design, and querying techniques, preparing learners to handle data efficiently in various professional contexts.</p>
+									<a href="../pdf/SQL.pdf" class="DownloadCertificateBtn" target="_blank">Download</a>
+								</article>
+							</figure>
+						</div>
+					</div>
 
-					<!-- Re -->
-					<figure>
-						<div><img srcset="../img/webp/certificatePython.webp" type="image/webp" alt="python certificate" loading="lazy" fetchpriority="high" decoding="async" /></div>
-						<article class="certificateInfo">
-							<h2>Programming for Everybody(Python)</h2>
-							<p>University of Michigan grad: Python journey complete! 🎓 From basics to confidence, armed with tutorials, books, and community support. Overcame challenges, debugging errors, mastering concepts. Grateful and excited for endless possibilities Python brings! 🐍🌟</p>
-							<a href="../pdf/certificatePython.pdf" class="DownloadCertificateBtn" target="_blank">Download</a>
-						</article>
-					</figure>
+					<div class="domainContainer">
+						<h2 class="DomainName mainTitle">CS Fundamentals</h2>
+						<div class="domainContent">
+							<!-- oop cpp   -->
+							<figure certificateName="CS Fundamentals oop object oriented programming" class="card">
+								<div><img srcset="../img/webp/certificateCppOpp.webp" type="image/webp" alt=" cpp oop certificate" loading="lazy" fetchpriority="high" decoding="async" /></div>
+								<article class="certificateInfo">
+									<h2>Object-Oriented Programming (C++)</h2>
+									<p>Proudly achieved a certificate in Object-Oriented Programming (C++) from École Polytechnique Fédérale de Lausanne. Now equipped with advanced programming concepts, I'm poised to apply this knowledge to real-world projects, leveraging the expertise gained from this reputable institution.</p>
+									<a href="../pdf/certificateCppOop.pdf" class="DownloadCertificateBtn" target="_blank">Download</a>
+								</article>
+							</figure>
+						</div>
+					</div>
 
-					<!-- basic 2  -->
-					<figure>
-						<div><img srcset="../img/webp/2-basic.webp" type="image/webp" alt=" basic roadmap certificate 2 " loading="lazy" fetchpriority="high" decoding="async" /></div>
-						<article class="certificateInfo">
-							<h2>HTML, CSS, and Javascript for Web Developers</h2>
-							<p>Coursera's "HTML, CSS, and JavaScript for Web Developers" course equips learners with essential skills in web development. This program covers HTML for content, CSS for styling, and JavaScript for interactivity, empowering students to create responsive and engaging websites. By course end, participants are well-prepared to embark on web development projects.</p>
-							<a href="../pdf/2-basic.pdf" class="DownloadCertificateBtn" target="_blank">Download</a>
-						</article>
-					</figure>
-					<!-- basic 3  -->
-					<figure>
-						<div><img srcset="../img/webp/3-basic.webp" type="image/webp" alt="basic roadmap certificate 3" loading="lazy" fetchpriority="high" decoding="async" /></div>
-						<article class="certificateInfo">
-							<h2>03 - Programming Using C++ - Level 1</h2>
-							<p>
-								Mastery of C++ fundamentals, including variables, data types, and control structures.
-								<br />Emphasis on writing clean and efficient code. <br />Building a strong foundation for further programming knowledge.
-							</p>
-							<a href="../pdf/3-basic.pdf" class="DownloadCertificateBtn" target="_blank">Download</a>
-						</article>
-					</figure>
+					<div class="domainContainer">
+						<h2 class="DomainName mainTitle mainTitle">Soft Skills</h2>
+						<div class="domainContent">
+							<!-- La recherche documentaire -->
+							<figure certificateName="Soft Skills La recherche documentaire" class="card">
+								<div><img srcset="../img/webp/rechercheDocumentaire.webp" type="image/webp" alt="La recherche documentaire" loading="lazy" fetchpriority="high" decoding="async" /></div>
+								<article class="certificateInfo">
+									<h2>Recherche documentaire</h2>
+									<p>This course teaches vital document research skills: source identification, constructing reviews, and optimizing database queries. Graduates excel in creating bibliographies and citing sources to prevent plagiarism and refining database query techniques and refining database query techniques.</p>
+									<a href="../pdf/rechercheDocumentaire.pdf" class="DownloadCertificateBtn" target="_blank">Download</a>
+								</article>
+							</figure>
+						</div>
+					</div>
 
-					<!-- basic 4  -->
-					<figure>
-						<div><img srcset="../img/webp/4-basic.webp" type="image/webp" alt="basic roadmap certificate 4" loading="lazy" fetchpriority="high" decoding="async" /></div>
-						<article class="certificateInfo">
-							<h2>04 - Algorithms & Problem-Solving Level 1 Solutions</h2>
-							<p>
-								Solving over 50 complex problems using C++.
-								<br />Developing algorithmic thinking and problem-solving skills. <br />Adhering to clean code principles for efficient solutions.
-							</p>
-							<a href="../pdf/4-basic.pdf" class="DownloadCertificateBtn" target="_blank">Download</a>
-						</article>
-					</figure>
-					<!-- basic 5  -->
-					<figure>
-						<div><img srcset="../img/webp/5-basic.webp" type="image/webp" alt="basic roadmap certificate 5 " loading="lazy" fetchpriority="high" decoding="async" /></div>
-						<article class="certificateInfo">
-							<h2>05 - Algorithms & Problem-Solving Level 2</h2>
-							<p>
-								Mastering over 50 additional complex problems and two projects.
-								<br />
-								Advancing algorithmic design and problem-solving expertise. <br />Creating a comprehensive code repository to track progress
-							</p>
-							<a href="../pdf/5-basic.pdf" class="DownloadCertificateBtn" target="_blank">Download</a>
-						</article>
-					</figure>
+					<div class="domainContainer">
+						<h2 class="DomainName mainTitle">Basic Roadmap</h2>
+						<div class="domainContent">
+							<figure class="ProgressFigure card" certificateName="Basic roadmap" class="card">
+								<div><img src="../img/webp/roadmap.webp" type="image/webp" alt="basic roadmap progress box " loading="lazy" fetchpriority="high" decoding="async" /></div>
+								<article class="certificateInfo">
+									<h2>Mohammed Abu-Hadhoud Roadmap <span>in Progress</span></h2>
+									<p>Under the expert guidance of Mohammed Abu-Hadhoud, with over 27 years of programming experience, I've embarked on a transformative programming journey encompassing 24 courses. This roadmap covers a diverse range of topics, C++ Basics, Object-Oriented Programming (OOP), C#, .NET Framework, and more. 👨‍💻🌐</p>
+									<a href="https://programmingadvices.com/courses" class="DownloadCertificateBtn Roadmap" target="_blank">roadmap</a>
+								</article>
+							</figure>
 
-					<!-- basic 6  -->
-					<figure>
-						<div><img srcset="../img/webp/6-basic.webp" type="image/webp" alt="basic roadmap certificate 6 " loading="lazy" fetchpriority="high" decoding="async" /></div>
-						<article class="certificateInfo">
-							<h2>06-Introduction to Programming Using C++ Level 2</h2>
-							<p>advanced C++ topics, from debugging to file handling and more. 💻 Compiled all source code in a GitHub repository: Link. 🌟 Excited to apply these skills in real-world projects. 📈 Continuous growth as a developer</p>
-							<a href="../pdf/6-basic.pdf" class="DownloadCertificateBtn" target="_blank">Download</a>
-						</article>
-					</figure>
+							<!-- basic 2  -->
+							<figure certificateName="Basic roadmap course2" class="card">
+								<div><img srcset="../img/webp/2-basic.webp" type="image/webp" alt=" basic roadmap certificate 2 " loading="lazy" fetchpriority="high" decoding="async" /></div>
+								<article class="certificateInfo">
+									<h2>02 - Algorithms & Problem-Solving Level 1</h2>
+									<p>Embarking on a programming journey, partnered with Mohammed Abu-Hadhoud for a comprehensive roadmap spanning 24 courses, including C++, OOP, and C#. Achieved Level 2, mastering 50 problem-solving techniques with flowcharts.🎓 Stay tuned for more updates on this thrilling learning adventure!</p>
+									<a href="../pdf/2-basic.pdf" class="DownloadCertificateBtn" target="_blank">Download</a>
+								</article>
+							</figure>
+							<!-- basic 3  -->
+							<figure certificateName="Basic roadmap course3" class="card">
+								<div><img srcset="../img/webp/3-basic.webp" type="image/webp" alt="basic roadmap certificate 3" loading="lazy" fetchpriority="high" decoding="async" /></div>
+								<article class="certificateInfo">
+									<h2>03 - Programming Using C++ - Level 1</h2>
+									<p>
+										Mastery of C++ fundamentals, including variables, data types, and control structures.
+										<br />Emphasis on writing clean and efficient code. <br />Building a strong foundation for further programming knowledge.
+									</p>
+									<a href="../pdf/3-basic.pdf" class="DownloadCertificateBtn" target="_blank">Download</a>
+								</article>
+							</figure>
 
-					<!-- basic 7 -->
-					<figure>
-						<div><img srcset="../img/webp/7-basic.webp" type="image/webp" alt="basic roadmap certificate 7 " loading="lazy" fetchpriority="high" decoding="async" /></div>
-						<article class="certificateInfo">
-							<h2>07-Algorithms & Problem-Solving Level 2</h2>
-							<p>Elevating my programming skills, I've achieved "Algorithms & Problem-Solving Level 2" mentored by Mohammed Abu-Hadhoud, a seasoned programmer with 27 years of experience. Recently, I proudly completed "Algorithms & Problem Solving Level 3," solving 51 problems and crafting a robust C++ banking system. Excited for future challenges!</p>
-							<a href="../pdf/7-basic.pdf" class="DownloadCertificateBtn" target="_blank">Download</a>
-						</article>
-					</figure>
-					<!-- basic 8  -->
-					<figure>
-						<div><img srcset="../img/webp/8-basic.webp" type="image/webp" alt="basic roadmap certificate 8 " loading="lazy" fetchpriority="high" decoding="async" /></div>
-						<article class="certificateInfo">
-							<h2>"08-Algorithms & Problem Solving Level 4</h2>
-							<p>Thrilled to share my achievement in "Algorithms & Problem Solving Level 4"! Conquered over 65 problems and crafted two projects, showcasing proficiency in user management and an advanced banking system. Dive into the code journey on GitHub</p>
-							<a href="../pdf/8-basic.pdf" class="DownloadCertificateBtn" target="_blank">Download</a>
-						</article>
-					</figure>
-					<!-- basic 10 -->
-					<figure>
-						<div><img src="../img/webp/10-basic.webp" type="image/webp" alt="basic roadmap certificate 10 " loading="lazy" fetchpriority="high" decoding="async" /></div>
-						<article class="certificateInfo">
-							<h2>"OOP as it Should Be (Concepts)</h2>
-							<p>Leveled up my coding game with "OOP as it Should Be (Concepts)" - Course 10. Mastered the core principles of OOP and applied them using string, date, and period libraries.</p>
-							<a href="../pdf/10-basic.pdf" class="DownloadCertificateBtn" target="_blank">Download</a>
-						</article>
-					</figure>
+							<!-- basic 4  -->
+							<figure certificateName="Basic roadmap course4" class="card">
+								<div><img srcset="../img/webp/4-basic.webp" type="image/webp" alt="basic roadmap certificate 4" loading="lazy" fetchpriority="high" decoding="async" /></div>
+								<article class="certificateInfo">
+									<h2>04 - Algorithms & Problem-Solving Level 1 Solutions</h2>
+									<p>
+										Solving over 50 complex problems using C++.
+										<br />Developing algorithmic thinking and problem-solving skills. <br />Adhering to clean code principles for efficient solutions.
+									</p>
+									<a href="../pdf/4-basic.pdf" class="DownloadCertificateBtn" target="_blank">Download</a>
+								</article>
+							</figure>
+							<!-- basic 5  -->
+							<figure certificateName="Basic roadmap course5" class="card">
+								<div><img srcset="../img/webp/5-basic.webp" type="image/webp" alt="basic roadmap certificate 5 " loading="lazy" fetchpriority="high" decoding="async" /></div>
+								<article class="certificateInfo">
+									<h2>05 - Algorithms & Problem-Solving Level 2</h2>
+									<p>
+										Mastering over 50 additional complex problems and two projects.
+										<br />
+										Advancing algorithmic design and problem-solving expertise. <br />Creating a comprehensive code repository to track progress
+									</p>
+									<a href="../pdf/5-basic.pdf" class="DownloadCertificateBtn" target="_blank">Download</a>
+								</article>
+							</figure>
 
-					<figure class="ProgressFigure">
-						<div><img src="../img/webp/roadmap.webp" type="image/webp" alt="basic roadmap progress box " loading="lazy" fetchpriority="high" decoding="async" /></div>
-						<article class="certificateInfo">
-							<h2>Mohammed Abu-Hadhoud Roadmap <span>in Progress</span></h2>
-							<p>Under the expert guidance of Mohammed Abu-Hadhoud, with over 27 years of programming experience, I've embarked on a transformative programming journey encompassing 24 courses. This roadmap covers a diverse range of topics, including C++ Basics, Object-Oriented Programming (OOP), C#, .NET Framework, and more. It promises to equip me with a comprehensive skill set for becoming a proficient developer. 🚀👨‍💻🌐 #ProgrammingJourney #SkillDevelopment #DeveloperRoadmap</p>
-							<a href="https://programmingadvices.com/courses" class="DownloadCertificateBtn Roadmap" target="_blank">roadmap</a>
-						</article>
-					</figure>
+							<!-- basic 6  -->
+							<figure certificateName="Basic roadmap course6" class="card">
+								<div><img srcset="../img/webp/6-basic.webp" type="image/webp" alt="basic roadmap certificate 6 " loading="lazy" fetchpriority="high" decoding="async" /></div>
+								<article class="certificateInfo">
+									<h2>06 - Introduction to Programming Using C++ Level 2</h2>
+									<p>advanced C++ topics, from debugging to file handling and more. 💻 Compiled all source code in a GitHub repository: Link. 🌟 Excited to apply these skills in real-world projects. 📈 Continuous growth as a developer</p>
+									<a href="../pdf/6-basic.pdf" class="DownloadCertificateBtn" target="_blank">Download</a>
+								</article>
+							</figure>
+
+							<!-- basic 7 -->
+							<figure certificateName="Basic roadmap course7" class="card">
+								<div><img srcset="../img/webp/7-basic.webp" type="image/webp" alt="basic roadmap certificate 7 " loading="lazy" fetchpriority="high" decoding="async" /></div>
+								<article class="certificateInfo">
+									<h2>07 - Algorithms & Problem-Solving Level 2</h2>
+									<p>Elevating my programming skills, I've achieved "Algorithms & Problem-Solving Level 2" mentored by Mohammed Abu-Hadhoud, a seasoned programmer with 27 years of experience. Recently, I proudly completed "Algorithms & Problem Solving Level 3," solving 51 problems and crafting a robust C++ banking system. Excited for future challenges!</p>
+									<a href="../pdf/7-basic.pdf" class="DownloadCertificateBtn" target="_blank">Download</a>
+								</article>
+							</figure>
+							<!-- basic 8  -->
+							<figure certificateName="Basic roadmap course8" class="card">
+								<div><img srcset="../img/webp/8-basic.webp" type="image/webp" alt="basic roadmap certificate 8 " loading="lazy" fetchpriority="high" decoding="async" /></div>
+								<article class="certificateInfo">
+									<h2>"08 - Algorithms & Problem Solving Level 4</h2>
+									<p>Thrilled to share my achievement in "Algorithms & Problem Solving Level 4"! Conquered over 65 problems and crafted two projects, showcasing proficiency in user management and an advanced banking system. Dive into the code journey on GitHub</p>
+									<a href="../pdf/8-basic.pdf" class="DownloadCertificateBtn" target="_blank">Download</a>
+								</article>
+							</figure>
+							<!-- basic 10 -->
+							<figure certificateName="Basic roadmap course10" class="card">
+								<div><img src="../img/webp/10-basic.webp" type="image/webp" alt="basic roadmap certificate 10 " loading="lazy" fetchpriority="high" decoding="async" /></div>
+								<article class="certificateInfo">
+									<h2>"10 - OOP as it Should Be (Concepts)</h2>
+									<p>Leveled up my coding game with "OOP as it Should Be (Concepts)" - Course 10. Mastered the core principles of OOP and applied them using string, date, and period libraries.</p>
+									<a href="../pdf/10-basic.pdf" class="DownloadCertificateBtn" target="_blank">Download</a>
+								</article>
+							</figure>
+						</div>
+					</div>
 
 					<!-- <figure style="visibility: hidden" id="MantainGapFigure"></figure> -->
 				</div>
@@ -237,6 +279,8 @@
 		<script src="../JS/source.js"></script>
 		<script src="../JS/logic.js"></script>
 		<script src="../JS/main.js"></script>
+
+		<script src="../JS/certificates/certificates.js"></script>
 
 		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/remixicon/4.2.0/remixicon.min.css" integrity="sha512-MqL4+Io386IOPMKKyplKII0pVW5e+kb+PI/I3N87G3fHIfrgNNsRpzIXEi+0MQC0sR9xZNqZqCYVcC61fL5+Vg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 	</body>

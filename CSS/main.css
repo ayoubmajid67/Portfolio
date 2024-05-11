@@ -1,113 +1,209 @@
 * {
-    box-sizing: border-box;
-    user-select: none;
-    margin: 0;
-    padding: 0;
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  box-sizing: border-box;
+  user-select: none;
+  margin: 0;
+  padding: 0;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
 html {
-    scroll-behavior: smooth;
+  scroll-behavior: smooth;
 
 }
 
 body {
-    font-size: 18px;
-    font-weight: 500;
-    display: flex;
-    width: 100%;
-    min-height: 100vh;
+  font-size: 18px;
+  font-weight: 500;
+  display: flex;
+  width: 100%;
+  min-height: 100vh;
 }
+
 /* start components */
 
 :root {
 
-    --primaryColor: #14818C;
-    --secondaryColor: #BE643B;
+  --primaryColor: #14818C;
+  --secondaryColor: #BE643B;
 }
 
 
 
 .mainTitle {
-    color:white;
-    margin: 0 auto ;
-  
-    padding: 20px 20px;
-    font-size: 40px;
-    width: fit-content;
-    position: relative;
-    font-weight: bold;
-    z-index: 1;
-    transition: var(--mainTransitionDuration);
-   font-family: "Julee", cursive;
-   text-transform: uppercase;
-   font-variant: small-caps;
-   text-align: center;
-  
-   
+  color: white;
+  margin: 0 auto;
+
+  padding: 20px 20px;
+  font-size: 40px;
+  width: fit-content;
+  position: relative;
+  font-weight: bold;
+  z-index: 1;
+  transition: var(--mainTransitionDuration);
+  font-family: "Julee", cursive;
+  text-transform: uppercase;
+  font-variant: small-caps;
+  text-align: center;
+
+
+}
+
+@media (max-width :992px) {
+  .mainTitle {
+    font-size: 35px;
   }
-  @media (max-width :992px){
-    .mainTitle{
-        font-size: 35px;
-    }
-  }
-  @media (max-width :552px){
- .mainTitle{
+}
+
+@media (max-width :552px) {
+  .mainTitle {
     /* overflow: hidden; */
     margin-top: 30px;
     /* margin-bottom: 30px; */
- }
-
   }
 
-  
+}
+
+
+.mainTitle::after,
+.mainTitle::before {
+  content: "";
+  width: 12px;
+  height: 12px;
+  background-color: var(--primaryColor);
+  position: absolute;
+  border-radius: 50%;
+  top: 50%;
+  transform: translateY(-50%);
+
+
+}
+
+.mainTitle::before {
+  left: -30px;
+}
+
+.mainTitle::after {
+  right: -30px;
+}
+
+@media (max-width :552px) {
+
   .mainTitle::after,
   .mainTitle::before {
-    content: "";
-    width: 12px;
-    height: 12px;
-    background-color: var(--primaryColor);
-    position: absolute;
-    border-radius: 50%;
-    top: 50%;
-    transform: translateY(-50%);
-  
-  
+    left: 50%;
+    right: 0;
+
   }
-  
+
   .mainTitle::before {
-    left: -30px;
-  }
-  
-  .mainTitle::after {
-    right: -30px;
-  }
-  @media (max-width :552px){
-  
-    .mainTitle::after,
-    .mainTitle::before{
-     left: 50%;
-     right: 0;
-     
-    }
-
-   .mainTitle::before{
     top: -15px;
-   }    
-   .mainTitle::after{
-    top:  unset;
-    bottom: -15px;
-    
-   }
   }
-  
-  .mainTitle:hover::before {
-    z-index: -1;
-  }
-  
-  .mainTitle:hover::after {
-    z-index: -1;
-  
-  }
-  
 
+  .mainTitle::after {
+    top: unset;
+    bottom: -15px;
+
+  }
+}
+
+.mainTitle:hover::before {
+  z-index: -1;
+}
+
+.mainTitle:hover::after {
+  z-index: -1;
+
+}
+
+/* start search  input  */
+.searchContainer {
+  text-align: center;
+  width: 100%;
+  margin-top: 50px;
+  margin-bottom: 30px;
+  padding: 20px;
+  display: flex;
+  justify-content: center;
+
+}
+
+
+.searchContainer ::placeholder {
+  opacity: 0.8;
+
+  font-weight: 400;
+}
+
+.searchContainer .content {
+  display: flex;
+  gap: 15px;
+  width: 70%;
+  box-shadow: 0px 5px 20px #4a494950;
+  background-color: white;
+  align-items: center;
+  padding: 5px 20px;
+  min-width: 250px;
+  border-radius: 12px;
+
+}
+
+@media (max-width:1200px) {
+  .searchContainer .content {
+    width: 80%;
+  }
+}
+
+@media (max-width : 992px) {
+  .searchContainer .content {
+    width: 90%;
+  }
+}
+
+@media (max-width : 768px) {
+  .searchContainer .content {
+    width: 10 0%;
+  }
+}
+
+.searchContainer input {
+  font-size: 1.2rem;
+  outline: none;
+  border: none;
+  flex-grow: 1;
+  max-width: 70%;
+  padding: 12px 20px;
+  color: black;
+  overflow: hidden;
+}
+
+@media (max-width :768px) {
+  .searchContainer input {
+    font-size: 1rem;
+  }
+}
+
+#DropDown {
+  position: fixed;
+  z-index: 2;
+  bottom: 70px;
+  right: 30px;
+  width: 52px;
+  opacity: 0.6;
+  box-shadow: 0 0px 10px rgba(89, 90, 88, 0.604);
+  border-radius: 50%;
+}
+
+#DropDown.dropTop {
+
+  filter: contrast(0%);
+
+
+}
+
+@media (max-width:992px) {
+  #DropDown {
+    right: 20px;
+    bottom: 70px;
+  }
+
+}
