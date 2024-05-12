@@ -125,6 +125,13 @@ body {
   display: flex;
   justify-content: center;
 
+
+}
+@media (max-width :768px){
+  .searchContainer{
+    
+    padding: 0;
+  }
 }
 
 

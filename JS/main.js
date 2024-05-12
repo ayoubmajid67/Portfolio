@@ -2,10 +2,15 @@
 window.addEventListener("resize", handleScreenWidthChange);
 
 handleScreenWidthChange();
-
+if(searchContainer){
 searchContainer.onclick = function () {
 	searchInput.focus();
 };
+
+}
+
+
+if(btnScrollDown){
 
 btnScrollDown.onclick = handlScrollBtn;
 
@@ -24,3 +29,6 @@ window.onscroll = async function () {
 		btnScrollDown.classList.add("dropTop");
 	}
 };
+
+
+}

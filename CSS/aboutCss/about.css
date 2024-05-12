@@ -147,6 +147,7 @@ body {
 
 .section2 {
 	width: 100%;
+
 	padding: 20px;
 	background-image: url(../../back/webp/aboutSection2.webp);
 	background-size: cover;
@@ -166,7 +167,6 @@ body {
 	gap: 20px;
 	display: flex;
 	flex-direction: column;
-	animation-duration: 4s;
 	align-items: center;
 
 
@@ -174,11 +174,11 @@ body {
 
 .AboutContainer .domainContainer {
 	position: relative;
-	padding: 10px;
 	width: 90%;
 	gap: 20px;
 	display: flex;
 	flex-direction: column;
+
 
 
 
@@ -232,9 +232,9 @@ body {
 	margin-bottom: 0;
 	padding: 10px 20px;
 	gap: 10px;
-	min-width: 360px;
 	max-width: 100%;
 	scale: 0.74;
+	
 }
 
 .animate {
