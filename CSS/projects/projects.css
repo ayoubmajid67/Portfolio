@@ -175,7 +175,7 @@ body {
 
 .CppContainerProjects .card h3 span,
 .ProjectResource:not(.progressProject .ProjectResource):hover {
- background-color: #088376;
+ color: #088376;
 }
 
 .card {
