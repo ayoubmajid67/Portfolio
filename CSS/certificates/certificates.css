@@ -114,9 +114,17 @@
 
 
 
-.certificateContainer .card:hover {
+.certificateContainer .card:hover:not(.progressCertificate) {
   transform: scale(0.9) translateY(-10px);
   box-shadow: 0px 0px 20px #60420257;
+}
+
+.card.progressCertificate a{
+    background-color: #096e64;
+}
+
+.card.progressCertificate {
+    opacity: 0.6;
 }
 
 
