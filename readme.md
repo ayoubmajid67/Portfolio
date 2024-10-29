@@ -1,7 +1,8 @@
 
 # My Portfolio Project
 
-[View Portfolio](https://lnkd.in/eZjtXTZ3) ✔️ 
+[View Portfolio](https://ayoubmajid67.github.io/Portfolio/HTML/home.html) ✔️ 
+
 ![Home page](./logo.png)
 
 🚀 **Exciting News**: I’m thrilled to introduce my new portfolio project, a testament to simplicity and functionality! It is organized into five key sections:
