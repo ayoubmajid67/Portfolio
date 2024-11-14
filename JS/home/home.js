@@ -8,7 +8,7 @@ Welcome to my portfolio! I'm a fourth-year computer engineering student at EMSI,
 
 let medLargeContent = `
 Hello and welcome to my portfolio! I'm currently a fourth-year computer engineering student at EMSI, with a background in Experimental Sciences. My journey at EMSI has deepened my understanding of mathematics, physics, and chemistry, igniting my passion for computer science and engineering. As a front-end developer, I specialize in crafting visually appealing and user-friendly interfaces using HTML, CSS, and JavaScript. I stay updated with industry trends to ensure seamless user experiences. Let's collaborate and create something amazing together!
-`
+`;
 
 if (window.innerWidth <= 768) {
 	pMainContent.innerText = mobileContent;
@@ -18,8 +18,6 @@ if (window.innerWidth <= 768) {
 let cva = document.querySelector(".Cv a");
 let selectLanguageSelect = document.querySelector(".Cv select");
 
-
-
-selectLanguageSelect.onchange=function(){	
-	cva.href= this.value=='Fr' ? "../pdf/cv/Fr.pdf" : "../pdf/cv/En.pdf"; 
-}
+selectLanguageSelect.onchange = function () {
+	cva.href = this.value == "Fr" ? "../pdf/cv/Fr.pdf" : "../pdf/cv/En.pdf";
+};
