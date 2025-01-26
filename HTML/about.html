@@ -1,345 +1,436 @@
 <!DOCTYPE html>
 <html lang="en">
-	<head>
-		<meta charset="UTF-8" />
-		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
-		<meta
-			name="description"
-			content="My new portfolio project is designed with simplicity and functionality in mind, featuring five distinct sections. The Home section offers a concise introduction to me, providing a glimpse into my background. 'About' delves deeper into my story, showcasing my skills and achievements. 'Contact' makes it easy to reach out and connect through various social media channels. In 'Certificates', you'll find a comprehensive list of my achievements, and in 'Projects', a showcase of my
-		work. Together, these sections create a dynamic and informative representation of my professional journey."
-		/>
-		<meta name="keywords" content="CEO, Portfolio, Business, Projects" />
-		<title>about</title>
 
-		<link rel="stylesheet" href="../CSS/main.css" />
-		<link rel="stylesheet" href="../CSS/nav.css" />
+<head>
+	<meta charset="UTF-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+	<meta name="description" content="My new portfolio project is designed with simplicity and functionality in mind, featuring five distinct sections. The Home section offers a concise introduction to me, providing a glimpse into my background. 'About' delves deeper into my story, showcasing my skills and achievements. 'Contact' makes it easy to reach out and connect through various social media channels. In 'Certificates', you'll find a comprehensive list of my achievements, and in 'Projects', a showcase of my
+		work. Together, these sections create a dynamic and informative representation of my professional journey." />
+	<meta name="keywords" content="CEO, Portfolio, Business, Projects" />
+	<title>about</title>
 
-		<link rel="icon" href="../icons/webSiteIcon.ico" />
+	<link rel="stylesheet" href="../CSS/main.css" />
+	<link rel="stylesheet" href="../CSS/nav.css" />
 
-		<link rel="stylesheet" href="..//CSS/aboutCss/about.css" />
+	<link rel="icon" href="../icons/webSiteIcon.ico" />
 
-				<!-- font awesome -->
-				<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-	</head>
-	<body>
-		<!-- about page  -->
+	<link rel="stylesheet" href="..//CSS/aboutCss/about.css" />
 
-		<div class="container">
-			<nav class="navbar" id="navbar">
-				<h1 class="navTitle"><span>M</span>ajid</h1>
-				<ul>
-					<li><a href="home.html" onmouseover=" navOver(this);" onmouseout="navOut();" aria-label="Home Page">home</a></li>
-					<li><a href="#" class="currentPage" onmouseover=" navOver(this);" onmouseout="navOut();" aria-label="About Page">about</a></li>
-					<li><a href="contact.html" onmouseover=" navOver(this);" onmouseout="navOut();" aria-label="Contact Page">contact</a></li>
-					<li><a href="Certificates.html" onmouseover=" navOver(this);" onmouseout="navOut();" aria-label="certificate Page">Certificates</a></li>
-					<li><a href="project.html" onmouseover=" navOver(this);" onmouseout="navOut();" aria-label="projects Page">projects</a></li>
-				</ul>
-			</nav>
+	<!-- font awesome -->
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+		integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA=="
+		crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
 
-			<div class="pageContent">
-				<section class="section1">
-					<!-- drop down  button  -->
-					<img src="../button/dropDown.webp" id="DropDown" class="dropTop" alt="" loading="lazy" fetchpriority="high" decoding="async" />
+<body>
+	<!-- about page  -->
 
-					<div class="mainSection_content">
-						<p class="intro_about">hi my name is :</p>
-						<h1 class="name">Ayoub <span>m</span>ajid</h1>
-						<h2 class="first_info">I'm a Software engineer</h2>
-						<p class="paragraph">
-							Hello and welcome to my portfolio! I'm currently a fourth-year computer engineering student at EMSI, with a background in Experimental Sciences. My journey at EMSI has deepened my understanding of mathematics, physics, and chemistry, igniting my passion for computer science and engineering. As a front-end developer, I specialize in crafting visually appealing and user-friendly interfaces using HTML, CSS, and JavaScript. I stay updated with industry trends to ensure seamless user experiences. Let's collaborate and create something amazing together!
-						</p>
-						<div id="submit"><a href="#mySkills">check out my skills</a></div>
-					</div>
-				</section>
-			</div>
+	<div class="container">
+		<nav class="navbar" id="navbar">
+			<h1 class="navTitle"><span>M</span>ajid</h1>
+			<ul>
+				<li><a href="home.html" onmouseover=" navOver(this);" onmouseout="navOut();"
+						aria-label="Home Page">home</a></li>
+				<li><a href="#" class="currentPage" onmouseover=" navOver(this);" onmouseout="navOut();"
+						aria-label="About Page">about</a></li>
+				<li><a href="contact.html" onmouseover=" navOver(this);" onmouseout="navOut();"
+						aria-label="Contact Page">contact</a></li>
+				<li><a href="Certificates.html" onmouseover=" navOver(this);" onmouseout="navOut();"
+						aria-label="certificate Page">Certificates</a></li>
+				<li><a href="project.html" onmouseover=" navOver(this);" onmouseout="navOut();"
+						aria-label="projects Page">projects</a></li>
+			</ul>
+		</nav>
 
-			<section class="section2 animate-on-scroll" id="mySkills">
-				
-				<div class="AboutContainer">
-					<div class="searchContainer">
-						<div class="content">
-							<i class="fa-solid fa-magnifying-glass"></i>
-							<input type="text" id="SearchInput" placeholder="Search" />
-						</div>
-					</div>
+		<div class="pageContent">
+			<section class="section1">
+				<!-- drop down  button  -->
+				<img src="../button/dropDown.webp" id="DropDown" class="dropTop" alt="" loading="lazy"
+					fetchpriority="high" decoding="async" />
 
-					<div class="domainContainer">
-						<h2 class="DomainName  mainTitle">Programming languages</h2>
-						<div class="domainContent">
-							<div class="card animate-on-scroll" skillName=" Programming languages c">
-								<div class="card-image c">
-									<img src="../img/c.svg" alt="c programming language">
-								</div>
-								<div class="card-text">
-									<h2>c</h2>
-									<p>Skilled C programmer specializing in low-level system development, excelling in memory management, code optimization, and crafting robust, high-performance applications.</p>
-								</div>
-							</div>
-							<div class="card animate-on-scroll" skillName=" Programming languages cpp c++">
-								<div class="card-image cpp">
-									<img src="../img/webp/cpp.webp" alt="cpp programming language">
-								</div>
-								<div class="card-text">
-									<h2>c++</h2>
-									<p>Experienced in C++ development with a focus on object-oriented programming, proficient in utilizing C++ for software and system-level programming, and capable of designing in C++</p>
-								</div>
-							</div>
-							
-							<div class="card animate-on-scroll" skillName="Programming languages JavaScript">
-								<div class="card-image JavaScript">
-									<img src="../img/js.svg" alt="JavaScript programming language">
-								</div>
-								<div class="card-text">
-									<h2>JavaScript</h2>
-									<p>Strong JavaScript proficiency, including ES6+. Skilled in front-end dev for interactivity. Experienced in Node.js back-end, building web apps.</p>
-								</div>
-							</div>
-
-			
-							<div class="card animate-on-scroll" skillName="Programming languages Php">
-								<div class="card-image Php">
-									<img src="../icons/phpIcon.svg" alt="Php programming language">
-								</div>
-								<div class="card-text">
-									<h2>Php</h2>
-									<p>I'm proficient in PHP for developing websites and dynamic web applications. Although I haven't built APIs yet, I'm eager to learn</p>
-								</div>
-							</div>
-							
-							<div class="card animate-on-scroll"  skillName="Programming languages Python">
-								<div class="card-image Php">
-									<img src="../icons/pythonIcon.svg" alt="Python programming language">
-								</div>
-								<div class="card-text">
-									<h2>Python</h2>
-									<p>I have basic Python skills and can build APIs, including Flask applications, for back-end development.</p>
-								</div>
-							</div>
-
-
-						</div>
-					</div>
-
-					<div class=" domainContainer">
-						<h2 class="DomainName  mainTitle"> CS Fundamentals</h2>
-
-						<div class="domainContent">
-							<div class="card animate-on-scroll" skillName="CS Fundamentals algorithms">
-								<div class="card-image algo">
-									<img src="../img/algo.svg" alt="algorithm CS Fundamentals">
-								</div>
-								<div class="card-text">
-									<h2>algorithms</h2>
-									<p>Exhibits adept algorithmic problem-solving, emphasizing efficiency. Experienced in diverse algorithm design, analysis, and implementation. Proficient in data structures</p>
-								</div>
-							</div>
-
-							<div class="card animate-on-scroll" skillName="CS Fundamentals Data Structure" >
-								<div class="card-image dataStructure" >
-									<img src="../img/dataStructure.svg" alt="data structure CS Fundamentals">
-								</div>
-								<div class="card-text">
-									<h2>Data Structure</h2>
-									<p>Deep grasp of key data structures (arrays, linked lists, trees, graphs). Proficient in selecting and implementing optimal structures, skilled in optimizing for memory and time efficiency</p>
-								</div>
-							</div>
-
-							<div class="card animate-on-scroll" skillName="CS Fundamentals problem solving">
-								<div class="card-image problemSolving"  >
-									<img src="../img/problemSolving.svg" alt="problem solving CS Fundamentals">
-								</div>
-								<div class="card-text">
-									<h2>problem solving</h2>
-									<p>Excellent problem-solving skills, systematic and analytical. Experienced in breaking down complex problems. Proficient in using algorithms and data structures for effective solutions.</p>
-								</div>
-							</div>
-
-							<div class="card animate-on-scroll" skillName="CS Fundamentals OOP object oriented programming">
-								<div class="card-image OOP">
-									<img src="../img/OOP.svg" alt="OOP CS Fundamentals">
-								</div>
-								<div class="card-text">
-									<h2>OOP</h2>
-									<p>Strong grasp of OOP principles (encapsulation, inheritance, polymorphism). Skilled in designing and implementing modular, maintainable code with OOP concepts.</p>
-								</div>
-							</div>
-						</div>
-					</div>
-
-					<div class=" domainContainer">
-						<h2 class="DomainName  mainTitle">web Front-end</h2>
-
-						<div class="domainContent">
-							<div class="card animate-on-scroll" skillName="web Front-end html">
-								<div class="card-image html">
-									<img src="../img/html.svg" alt="html web Front-end">
-								</div>
-								<div class="card-text">
-									<h2>html</h2>
-									<p>Expert in HTML, including HTML5, for structuring web content. Proficient in creating accessible, semantic HTML markup. Skilled in using HTML for responsive, interactivity</p>
-								</div>
-							</div>
-
-							<div class="card animate-on-scroll" skillName="web Front-end css">
-								<div class="card-image css">
-									<img src="../img/css.svg" alt="CSS web Front-end">
-								</div>
-								<div class="card-text">
-									<h2>css</h2>
-									<p>Proficient in CSS for styling and layout design of web pages. ,Experienced in responsive web design. ,Capable of creating visually appealing and user-friendly web interfaces.</p>
-								</div>
-							</div>
-
-							<div class="card animate-on-scroll" skillName="web Front-end JavaScript">
-								<div class="card-image JavaScript">
-									
-										<img src="../img/js.svg" alt="JavaScript web Front-end">
-									
-								</div>
-								<div class="card-text">
-									<h2>JavaScript</h2>
-									<p>Strong proficiency in JavaScript, including ES6+ features. Skilled in front-end development, utilizing JavaScript for interactivity, adept at building web applications.</p>
-								</div>
-							</div>
-
-							<!-- added  -->
-							<div class="card animate-on-scroll" skillName="web Front-end React">
-								<div class="card-image react">
-									<img src="../icons/reactIcon.svg" alt="React web Front-end">
-								</div>
-								<div class="card-text">
-									<h2>React</h2>
-									<p>I am currently enhancing my proficiency in React and eagerly anticipating the opportunity to initiate my first project with this technology.</p>
-								</div>
-							</div>
-						</div>
-					</div>
-					<div class=" domainContainer">
-						<h2 class="DomainName  mainTitle">web back-end</h2>
-						
-						<div class="domainContent">
-							<div class="card animate-on-scroll"  skillName="web back-end Php">
-								<div class="card-image Php">
-									<img src="../icons/phpIcon.svg" alt="Php  back-end programming language">
-								</div>
-								<div class="card-text">
-									<h2>Php</h2>
-									<p>I'm proficient in PHP for developing websites and dynamic web applications. Although I haven't built APIs yet, I'm eager to learn</p>
-								</div>
-							</div>
-							
-							<div class="card animate-on-scroll"  skillName="web back-end Python">
-								<div class="card-image Php">
-									<img src="../icons/pythonIcon.svg" alt="Python programming language">
-								</div>
-								<div class="card-text">
-									<h2>Python</h2>
-									<p>I have basic Python skills and can build APIs, including Flask applications, for back-end development.</p>
-								</div>
-							</div>
-                      
-
-						</div>
-					</div>
-
-					<div class=" domainContainer">
-						<h2 class="DomainName  mainTitle">DataBases</h2>
-
-						<div class="domainContent">
-
-							<div class="card animate-on-scroll"  skillName="DataBases mySql">
-								<div class="card-image mySql">
-									<img src="../img/mySql.svg" alt=" MySQL Database">
-								</div>
-								<div class="card-text">
-									<h2>MySQL</h2>
-									<p>Proficient in MySQL database design, SQL query optimization, and database management. ,Skilled in data modeling, indexing, and database normalization.</p>
-								</div>
-							</div>
-
-			
-							<div class="card animate-on-scroll"  skillName=" DataBases Oracle PLSQL">
-								<div class="card-image oracle">
-									<img src="../icons/oracleIcon.svg" alt="DataBases Oracle database">
-								</div>
-								<div class="card-text">
-									<h2>Oracle</h2>
-									<p>Proficient in Oracle database design, SQL query optimization, and database management. ,Skilled in data modeling, indexing, and database normalization,PLSQl programming </p>
-								</div>
-							</div>
-
-							<div class="card animate-on-scroll"  skillName="DataBases SQL server">
-								<div class="card-image sqlServer">
-									<img src="../icons/sqlServerIcon.svg" alt="SQL Server Database">
-								</div>
-								<div class="card-text">
-									<h2>Sql server</h2>
-									<p>Proficient in Oracle database design, SQL query optimization, and database management. ,Skilled in data modeling, indexing, and database normalization,tSQL programming </p>
-								</div>
-							</div>
-
-							<div class="card animate-on-scroll"  skillName="DataBases MongoDb">
-								<div class="card-image MongoDb">
-									<img src="../icons/mongoDbIcon.svg" alt="MongoDB Database">
-								</div>
-								<div class="card-text">
-									<h2>MongoDB</h2>
-									<p>I am actively expanding my expertise in MongoDB, seeking to apply my knowledge in database management and contribute to innovative projects</p>
-								</div>
-							</div>
-						</div>
-					</div>
-
-					<div class="general domainContainer">
-						<h2 class="DomainName mainTitle">Langues</h2>
-
-						<div class="domainContent">
-							<div class="card animate-on-scroll"  skillName="Langues French">
-								<div class="card-image french">
-									<img src="../img/french.svg" alt="French Langues">
-								</div>
-								<div class="card-text">
-									<h2>french</h2>
-									<p>Intermediate proficiency in French, with the ability to communicate in everyday situations. ,Capable of using French for basic interactions and understanding conversations.</p>
-								</div>
-							</div>
-
-							<div class="card animate-on-scroll"  skillName="Langues English">
-								<div class="card-image english">
-									<img src="../img/english.svg" alt="English Langues">
-								</div>
-								<div class="card-text">
-									<h2>english</h2>
-									<p>Proficient in English, adept at professional communication and engaging in technical discussions. Capable collaborator in team environments.</p>
-								</div>
-							</div>
-							<!-- added  -->
-							<div class="card animate-on-scroll"  skillName="Langues Arabic">
-								<div class="card-image arabic">
-									<img src="../icons/arabicIcon.svg" alt="Arabic Langues">
-								</div>
-								<div class="card-text">
-									<h2>Arabic</h2>
-									<p>Native Arabic speaker with advanced proficiency, skilled in effective communication and fluent in technical discussions.</p>
-								</div>
-							</div>
-						</div>
-					</div>
+				<div class="mainSection_content">
+					<p class="intro_about">hi my name is :</p>
+					<h1 class="name">Ayoub <span>m</span>ajid</h1>
+					<h2 class="first_info">I'm a Software engineer</h2>
+					<p class="paragraph">
+						Hello and welcome to my portfolio! I'm currently a fourth-year computer engineering student at
+						EMSI, with a background in Experimental Sciences. My journey at EMSI has deepened my
+						understanding of mathematics, physics, and chemistry, igniting my passion for computer science
+						and engineering. As a front-end developer, I specialize in crafting visually appealing and
+						user-friendly interfaces using HTML, CSS, and JavaScript. I stay updated with industry trends to
+						ensure seamless user experiences. Let's collaborate and create something amazing together!
+					</p>
+					<div id="submit"><a href="#mySkills">check out my skills</a></div>
 				</div>
 			</section>
 		</div>
 
-		<script src="../JS/source.js"></script>
-		<script src="../JS/logic.js"></script>
-		<script src="../JS/main.js"></script>
-		<script>
-			window.addEventListener("scroll", function () {
-				let navBar = document.querySelector(".navbar");
+		<section class="section2 animate-on-scroll" id="mySkills">
 
-				navBar.classList.toggle("sticky", window.scrollY > 1);
-			});
-		</script>
-		<script src="../JS/about/about.js"></script>
-		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/remixicon/4.2.0/remixicon.min.css" integrity="sha512-MqL4+Io386IOPMKKyplKII0pVW5e+kb+PI/I3N87G3fHIfrgNNsRpzIXEi+0MQC0sR9xZNqZqCYVcC61fL5+Vg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-	</body>
+			<div class="AboutContainer">
+				<div class="searchContainer">
+					<div class="content">
+						<i class="fa-solid fa-magnifying-glass"></i>
+						<input type="text" id="SearchInput" placeholder="Search" />
+					</div>
+				</div>
+
+				<div class="domainContainer">
+					<h2 class="DomainName  mainTitle">Programming languages</h2>
+					<div class="domainContent">
+						<div class="card animate-on-scroll" skillName=" Programming languages c">
+							<div class="card-image c">
+								<img src="../img/c.svg" alt="c programming language">
+							</div>
+							<div class="card-text">
+								<h2>c</h2>
+								<p>Skilled C programmer specializing in low-level system development, excelling in
+									memory management, code optimization, and crafting robust, high-performance
+									applications.</p>
+							</div>
+						</div>
+						<div class="card animate-on-scroll" skillName=" Programming languages cpp c++">
+							<div class="card-image cpp">
+								<img src="../img/webp/cpp.webp" alt="cpp programming language">
+							</div>
+							<div class="card-text">
+								<h2>c++</h2>
+								<p>Experienced in C++ development with a focus on object-oriented programming,
+									proficient in utilizing C++ for software and system-level programming, and capable
+									of designing in C++</p>
+							</div>
+						</div>
+
+						<div class="card animate-on-scroll" skillName="Programming languages JavaScript">
+							<div class="card-image JavaScript">
+								<img src="../img/js.svg" alt="JavaScript programming language">
+							</div>
+							<div class="card-text">
+								<h2>JavaScript</h2>
+								<p>Strong JavaScript proficiency, including ES6+. Skilled in front-end dev for
+									interactivity. Experienced in Node.js back-end, building web apps.</p>
+							</div>
+						</div>
+						<div class="card animate-on-scroll" skillName="Programming languages Java">
+							<div class="card-image Java">
+								<img src="../icons/java.webp" alt="Java programming language">
+							</div>
+							<div class="card-text">
+								<h2>Java</h2>
+								<p>Proficient in Java for desktop and backend development. Experienced in building
+									robust applications. Skilled in object-oriented programming, multi-threading, and
+									developing scalable solutions.</p>
+							</div>
+						</div>
+
+						<div class="card animate-on-scroll" skillName="Programming languages C#">
+							<div class="card-image C#">
+								<img src="../icons/csharp.webp" alt="C# programming language">
+							</div>
+							<div class="card-text">
+								<h2>C#</h2>
+								<p>Proficient in C# for building Windows applications, backend services. Experienced in
+									object-oriented programming</p>
+							</div>
+						</div>
+						<div class="card animate-on-scroll" skillName="Programming languages Php">
+							<div class="card-image Php">
+								<img src="../icons/phpIcon.svg" alt="Php programming language">
+							</div>
+							<div class="card-text">
+								<h2>Php</h2>
+								<p>I'm proficient in PHP for developing websites and dynamic web applications. Although
+									I haven't built APIs yet, I'm eager to learn</p>
+							</div>
+						</div>
+
+						<div class="card animate-on-scroll" skillName="Programming languages Python">
+							<div class="card-image Php">
+								<img src="../icons/pythonIcon.svg" alt="Python programming language">
+							</div>
+							<div class="card-text">
+								<h2>Python</h2>
+								<p>I have basic Python skills and can build APIs, including Flask applications, for
+									back-end development.</p>
+							</div>
+						</div>
+
+
+					</div>
+				</div>
+
+				<div class=" domainContainer">
+					<h2 class="DomainName  mainTitle"> CS Fundamentals</h2>
+
+					<div class="domainContent">
+						<div class="card animate-on-scroll" skillName="CS Fundamentals algorithms">
+							<div class="card-image algo">
+								<img src="../img/algo.svg" alt="algorithm CS Fundamentals">
+							</div>
+							<div class="card-text">
+								<h2>algorithms</h2>
+								<p>Exhibits adept algorithmic problem-solving, emphasizing efficiency. Experienced in
+									diverse algorithm design, analysis, and implementation. Proficient in data
+									structures</p>
+							</div>
+						</div>
+
+						<div class="card animate-on-scroll" skillName="CS Fundamentals Data Structure">
+							<div class="card-image dataStructure">
+								<img src="../img/dataStructure.svg" alt="data structure CS Fundamentals">
+							</div>
+							<div class="card-text">
+								<h2>Data Structure</h2>
+								<p>Deep grasp of key data structures (arrays, linked lists, trees, graphs). Proficient
+									in selecting and implementing optimal structures, skilled in optimizing for memory
+									and time efficiency</p>
+							</div>
+						</div>
+
+						<div class="card animate-on-scroll" skillName="CS Fundamentals problem solving">
+							<div class="card-image problemSolving">
+								<img src="../img/problemSolving.svg" alt="problem solving CS Fundamentals">
+							</div>
+							<div class="card-text">
+								<h2>problem solving</h2>
+								<p>Excellent problem-solving skills, systematic and analytical. Experienced in breaking
+									down complex problems. Proficient in using algorithms and data structures for
+									effective solutions.</p>
+							</div>
+						</div>
+
+						<div class="card animate-on-scroll" skillName="CS Fundamentals OOP object oriented programming">
+							<div class="card-image OOP">
+								<img src="../img/OOP.svg" alt="OOP CS Fundamentals">
+							</div>
+							<div class="card-text">
+								<h2>OOP</h2>
+								<p>Strong grasp of OOP principles (encapsulation, inheritance, polymorphism). Skilled in
+									designing and implementing modular, maintainable code with OOP concepts.</p>
+							</div>
+						</div>
+					</div>
+				</div>
+
+				<div class=" domainContainer">
+					<h2 class="DomainName  mainTitle">web Front-end</h2>
+
+					<div class="domainContent">
+						<div class="card animate-on-scroll" skillName="web Front-end html">
+							<div class="card-image html">
+								<img src="../img/html.svg" alt="html web Front-end">
+							</div>
+							<div class="card-text">
+								<h2>html</h2>
+								<p>Expert in HTML, including HTML5, for structuring web content. Proficient in creating
+									accessible, semantic HTML markup. Skilled in using HTML for responsive,
+									interactivity</p>
+							</div>
+						</div>
+
+						<div class="card animate-on-scroll" skillName="web Front-end css">
+							<div class="card-image css">
+								<img src="../img/css.svg" alt="CSS web Front-end">
+							</div>
+							<div class="card-text">
+								<h2>css</h2>
+								<p>Proficient in CSS for styling and layout design of web pages. ,Experienced in
+									responsive web design. ,Capable of creating visually appealing and user-friendly web
+									interfaces.</p>
+							</div>
+						</div>
+
+						<div class="card animate-on-scroll" skillName="web Front-end JavaScript">
+							<div class="card-image JavaScript">
+
+								<img src="../img/js.svg" alt="JavaScript web Front-end">
+
+							</div>
+							<div class="card-text">
+								<h2>JavaScript</h2>
+								<p>Strong proficiency in JavaScript, including ES6+ features. Skilled in front-end
+									development, utilizing JavaScript for interactivity, adept at building web
+									applications.</p>
+							</div>
+						</div>
+
+
+						<div class="card animate-on-scroll" skillName="web Front-end React">
+							<div class="card-image react">
+								<img src="../icons/reactIcon.svg" alt="React web Front-end">
+							</div>
+							<div class="card-text">
+								<h2>React</h2>
+								<p>I am currently enhancing my proficiency in React and eagerly anticipating the
+									opportunity to initiate my first project with this technology.</p>
+							</div>
+						</div>
+						<!-- added -->
+						<div class="card animate-on-scroll" skillName="web Front-end Next.js">
+							<div class="card-image nextjs">
+								<img src="../icons/nextJs.webp" alt="Next.js web Front-end">
+							</div>
+							<div class="card-text">
+								<h2>Next.js</h2>
+								<p>I am exploring Next.js for building robust front-end applications, leveraging its
+									features for enhanced performance and developer experience.</p>
+							</div>
+						</div>
+
+					</div>
+				</div>
+				<div class=" domainContainer">
+					<h2 class="DomainName  mainTitle">web back-end</h2>
+
+					<div class="domainContent">
+						<div class="card animate-on-scroll" skillName="web back-end Php">
+							<div class="card-image Php">
+								<img src="../icons/phpIcon.svg" alt="Php  back-end programming language">
+							</div>
+							<div class="card-text">
+								<h2>Php</h2>
+								<p>I'm proficient in PHP for developing websites and dynamic web applications. Although
+									I haven't built APIs yet, I'm eager to learn</p>
+							</div>
+						</div>
+
+						<div class="card animate-on-scroll" skillName="web back-end Python">
+							<div class="card-image Php">
+								<img src="../icons/pythonIcon.svg" alt="Python programming language">
+							</div>
+							<div class="card-text">
+								<h2>Python</h2>
+								<p>I have basic Python skills and can build APIs, including Flask applications, for
+									back-end development.</p>
+							</div>
+						</div>
+						<div class="card animate-on-scroll" skillName="Backend Development with C#">
+							<div class="card-image C#">
+								<img src="../icons/csharp.webp" alt="C# for backend development">
+							</div>
+							<div class="card-text">
+								<h2>Backend with C#</h2>
+								<p>Experienced in building robust backend systems using C# and .NET. Skilled in
+									developing RESTful APIs, integrating with databases using Entity Framework, and
+									implementing authentication and authorization.</p>
+							</div>
+						</div>
+
+
+					</div>
+				</div>
+
+				<div class=" domainContainer">
+					<h2 class="DomainName  mainTitle">DataBases</h2>
+
+					<div class="domainContent">
+
+						<div class="card animate-on-scroll" skillName="DataBases mySql">
+							<div class="card-image mySql">
+								<img src="../img/mySql.svg" alt=" MySQL Database">
+							</div>
+							<div class="card-text">
+								<h2>MySQL</h2>
+								<p>Proficient in MySQL database design, SQL query optimization, and database management.
+									,Skilled in data modeling, indexing, and database normalization.</p>
+							</div>
+						</div>
+
+
+						<div class="card animate-on-scroll" skillName=" DataBases Oracle PLSQL">
+							<div class="card-image oracle">
+								<img src="../icons/oracleIcon.svg" alt="DataBases Oracle database">
+							</div>
+							<div class="card-text">
+								<h2>Oracle</h2>
+								<p>Proficient in Oracle database design, SQL query optimization, and database
+									management. ,Skilled in data modeling, indexing, and database normalization,PLSQl
+									programming </p>
+							</div>
+						</div>
+
+						<div class="card animate-on-scroll" skillName="DataBases SQL server">
+							<div class="card-image sqlServer">
+								<img src="../icons/sqlServerIcon.svg" alt="SQL Server Database">
+							</div>
+							<div class="card-text">
+								<h2>Sql server</h2>
+								<p>Proficient in Oracle database design, SQL query optimization, and database
+									management. ,Skilled in data modeling, indexing, and database normalization,tSQL
+									programming </p>
+							</div>
+						</div>
+
+						<div class="card animate-on-scroll" skillName="DataBases MongoDb">
+							<div class="card-image MongoDb">
+								<img src="../icons/mongoDbIcon.svg" alt="MongoDB Database">
+							</div>
+							<div class="card-text">
+								<h2>MongoDB</h2>
+								<p>I am actively expanding my expertise in MongoDB, seeking to apply my knowledge in
+									database management and contribute to innovative projects</p>
+							</div>
+						</div>
+					</div>
+				</div>
+
+				<div class="general domainContainer">
+					<h2 class="DomainName mainTitle">Langues</h2>
+
+					<div class="domainContent">
+						<div class="card animate-on-scroll" skillName="Langues French">
+							<div class="card-image french">
+								<img src="../img/french.svg" alt="French Langues">
+							</div>
+							<div class="card-text">
+								<h2>french</h2>
+								<p>Intermediate proficiency in French, with the ability to communicate in everyday
+									situations. ,Capable of using French for basic interactions and understanding
+									conversations.</p>
+							</div>
+						</div>
+
+						<div class="card animate-on-scroll" skillName="Langues English">
+							<div class="card-image english">
+								<img src="../img/english.svg" alt="English Langues">
+							</div>
+							<div class="card-text">
+								<h2>english</h2>
+								<p>Proficient in English, adept at professional communication and engaging in technical
+									discussions. Capable collaborator in team environments.</p>
+							</div>
+						</div>
+						<!-- added  -->
+						<div class="card animate-on-scroll" skillName="Langues Arabic">
+							<div class="card-image arabic">
+								<img src="../icons/arabicIcon.svg" alt="Arabic Langues">
+							</div>
+							<div class="card-text">
+								<h2>Arabic</h2>
+								<p>Native Arabic speaker with advanced proficiency, skilled in effective communication
+									and fluent in technical discussions.</p>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+	</div>
+
+	<script src="../JS/source.js"></script>
+	<script src="../JS/logic.js"></script>
+	<script src="../JS/main.js"></script>
+	<script>
+		window.addEventListener("scroll", function () {
+			let navBar = document.querySelector(".navbar");
+
+			navBar.classList.toggle("sticky", window.scrollY > 1);
+		});
+	</script>
+	<script src="../JS/about/about.js"></script>
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/remixicon/4.2.0/remixicon.min.css"
+		integrity="sha512-MqL4+Io386IOPMKKyplKII0pVW5e+kb+PI/I3N87G3fHIfrgNNsRpzIXEi+0MQC0sR9xZNqZqCYVcC61fL5+Vg=="
+		crossorigin="anonymous" referrerpolicy="no-referrer" />
+</body>
+
 </html>
