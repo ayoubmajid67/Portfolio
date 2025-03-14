@@ -7,7 +7,7 @@
 
 }
 
-body {
+.container {
 
     background-image: url('./../../back/webp/projects.webp');
     background-size: cover;
@@ -15,8 +15,9 @@ body {
     background-blend-mode: color;
     background-attachment: fixed;
     backdrop-filter: brightness(0.8) blur(1.2px);
-
     background-position: center;
+   
+    display: block;
 
 }
 
@@ -27,6 +28,7 @@ body {
     gap: 40px;
     padding: 10px;
 }
+
 
 .mainSection .Title {
     display: flex;
@@ -170,7 +172,7 @@ body {
     font-size: 1.2em;
     text-transform: capitalize;
     text-wrap: nowrap;
-    
+
 }
 
 
@@ -203,5 +205,6 @@ body {
     }
 
 }
+
 
 /* end */

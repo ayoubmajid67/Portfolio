@@ -12,14 +12,13 @@
 	<link rel="stylesheet" href="../CSS/main.css" />
 	<link rel="stylesheet" href="../CSS/nav.css" />
 
-	<link rel="icon" href="../icons/webSiteIcon.ico" />
+	<link rel="icon" href="../img/logo.png" />
 
-	<link rel="stylesheet" href="..//CSS/aboutCss/about.css" />
+	<link rel="stylesheet" href="../CSS/aboutCss/about.css" />
 
 	<!-- font awesome -->
-	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
-		integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA=="
-		crossorigin="anonymous" referrerpolicy="no-referrer" />
+			<!-- font awesome -->
+			<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 </head>
 
 <body>
@@ -27,12 +26,13 @@
 
 	<div class="container">
 		<nav class="navbar" id="navbar">
-			<h1 class="navTitle"><span>M</span>ajid</h1>
+			<h1 class="navTitle"><span>M</span>ajjid</h1>
 			<ul>
 				<li><a href="home.html" onmouseover=" navOver(this);" onmouseout="navOut();"
 						aria-label="Home Page">home</a></li>
 				<li><a href="#" class="currentPage" onmouseover=" navOver(this);" onmouseout="navOut();"
 						aria-label="About Page">about</a></li>
+						<li><a href="services.html" onmouseover=" navOver(this);" onmouseout="navOut();" aria-label="Services Page">Services</a></li>
 				<li><a href="contact.html" onmouseover=" navOver(this);" onmouseout="navOut();"
 						aria-label="Contact Page">contact</a></li>
 				<li><a href="Certificates.html" onmouseover=" navOver(this);" onmouseout="navOut();"
@@ -50,7 +50,7 @@
 
 				<div class="mainSection_content">
 					<p class="intro_about">hi my name is :</p>
-					<h1 class="name">Ayoub <span>m</span>ajid</h1>
+					<h1 class="name">Ayoub <span>m</span>ajjid</h1>
 					<h2 class="first_info">I'm a Software engineer</h2>
 					<p class="paragraph">
 						Hello and welcome to my portfolio! I'm currently a fourth-year computer engineering student at EMSI, with a background in Experimental Sciences. My journey at EMSI has deepened my understanding of mathematics, physics, and chemistry, igniting my passion for computer science and engineering. As a full-stack developer, I specialize in building dynamic and scalable applications using React, Next.js, Python, and more. I stay updated with industry trends to ensure seamless user experiences and efficient back-end solutions. Let's collaborate and create something amazing together!
@@ -410,18 +410,68 @@
 				</div>
 			</div>
 		</section>
+
+		
+		<footer class='FooterOutletComponentClass blurFooterOutletComponentClass'>
+			<div class="leftSide">
+			  <img src="../img/logo.png" alt="travel stay reservation platform logo" />
+		
+			  <div class="socialContainer">
+			   <a href="https://www.facebook.com/ayoub.majid.5243" target="_blank"><i class="fa-brands fa-facebook"></i></a> 
+			   <a href="https://www.linkedin.com/in/youbista" target="_blank"><i class="fa-brands fa-linkedin"></i></a> 
+			   <a href="https://www.youtube.com/@AyoubMajjid" target="_blank"><i class="fa-brands fa-youtube"></i></a> 
+			   <a href="https://www.instagram.com/ayoub_majjid/" target="_blank"> <i class="fa-brands fa-instagram"></i></a> 
+			  </div>
+		
+			</div>
+		
+			<div class="rightSide">
+			  <ul>
+				<li>
+				  <i class="fa-solid fa-angles-right" class="icon"></i>
+				  <a href="home.html">Home</a>
+				</li>
+				<li>
+				  <i class="fa-solid fa-angles-right" class="icon"></i>
+				  <a href="#">About Us</a>
+				</li>
+				<li>
+				  <i class="fa-solid fa-angles-right" class="icon"></i>
+				  <a href="services.html">Our Services</a>
+				</li>
+			 
+			  </ul>
+		
+			  <ul>
+			   
+				<li>
+				  <i class="fa-solid fa-angles-right" class="icon"></i>
+				  <a href="contact.html">Contact Us</a>
+				</li>
+				<li>
+				  <i class="fa-solid fa-angles-right" class="icon"></i>
+				  <a href="Certificates.html">Our Certificates</a>
+				</li>
+			   
+			  </ul>
+		
+			  <ul>
+			  
+				<li>
+				  <i class="fa-solid fa-angles-right" class="icon"></i>
+				  <a href="project.html">Our Projects</a>
+				</li>
+			  </ul>
+			</div>
+		  </footer>
+		
+		
 	</div>
 
 	<script src="../JS/source.js"></script>
 	<script src="../JS/logic.js"></script>
 	<script src="../JS/main.js"></script>
-	<script>
-		window.addEventListener("scroll", function () {
-			let navBar = document.querySelector(".navbar");
-
-			navBar.classList.toggle("sticky", window.scrollY > 1);
-		});
-	</script>
+	
 	<script src="../JS/about/about.js"></script>
 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/remixicon/4.2.0/remixicon.min.css"
 		integrity="sha512-MqL4+Io386IOPMKKyplKII0pVW5e+kb+PI/I3N87G3fHIfrgNNsRpzIXEi+0MQC0sR9xZNqZqCYVcC61fL5+Vg=="

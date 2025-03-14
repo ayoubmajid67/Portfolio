@@ -12,6 +12,7 @@
   background-size: cover;
   background-position: top;
   background-attachment: fixed;
+  padding-bottom: 0;
 }
 
 .navbar {
@@ -27,7 +28,7 @@
 }
 
 .mainSection {
-  margin-top: 20px;
+  margin-top: 50px;
 }
 
 .certificateContainer {
@@ -200,3 +201,4 @@
 .searchContainer {
   margin-top: 50px;
 }
+

@@ -16,16 +16,20 @@
 
 		<!-- contact Styling css  File  -->
 		<link rel="stylesheet" href="../CSS/contactCss/contact.css" />
-		<link rel="icon" href="../icons/webSiteIcon.ico" />
+		<link rel="icon" href="../img/logo.png" />
+
+					<!-- font awesome -->
+					<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 	</head>
 	<body>
 		<!-- contact page  -->
 		<div class="container">
 			<nav class="navbar">
-				<h1 class="navTitle"><span>M</span>ajid</h1>
+				<h1 class="navTitle"><span>M</span>ajjid</h1>
 				<ul>
 					<li><a href="home.html" onmouseover=" navOver(this);" onmouseout="navOut();" aria-label="Home Page">home</a></li>
 					<li><a href="about.html" onmouseover=" navOver(this);" onmouseout="navOut();" aria-label="About Page">about</a></li>
+					<li><a href="services.html" onmouseover=" navOver(this);" onmouseout="navOut();" aria-label="Services Page">Services</a></li>
 					<li><a href="#" class="currentPage" onmouseover=" navOver(this);" onmouseout="navOut();" aria-label="Contact Page">contact</a></li>
 					<li><a href="Certificates.html" onmouseover=" navOver(this);" onmouseout="navOut();" aria-label="certificate Page">Certificates</a></li>
 					<li><a href="project.html" onmouseover=" navOver(this);" onmouseout="navOut();" aria-label="projects Page">projects</a></li>
@@ -38,10 +42,10 @@
 					<p>I am available for freelance work,Connect with me via phone or email or any Social media you Want</p>
 					<!-- <div class="profileContainer"><img src="../img/profile.jpeg" alt="profile img " class="profile" /></div> -->
 					<div class="SocialMedia">
-						<a href="https://www.instagram.com/ayoub_majjid/" target="_blank" aria-label="my instagram"><img src="../icons/insta.svg" alt="" style="width: 50px" loading="lazy" fetchpriority="high" decoding="async" /></a>
-						<a href="https://www.linkedin.com/in/ayoub-majid-9285a0240/" target="_blank" aria-label="my linkedin"><img src="../icons/link.svg" alt="" style="width: 50px" class="linkedIn" loading="lazy" fetchpriority="high" decoding="async" /></a>
-						<a href="https://www.facebook.com/ayoub.majid.5243" target="_blank" aria-label="my facebook"><img src="../icons/face.svg" alt="" style="width: 50px" loading="lazy" fetchpriority="high" decoding="async" /></a>
-						<a href="https://github.com/ayoubmajid67" target="_blank" aria-label="my Github"><img src="../icons/icons8-github.svg" alt="" style="width:55px;" loading="lazy" fetchpriority="high" decoding="async" /></a>
+						<a href="https://www.instagram.com/ayoub_majjid/" target="_blank" aria-label="my instagram"><i class="fa-brands fa-instagram"></i></a>
+						<a href="https://www.linkedin.com/in/ayoub-majid-9285a0240/" target="_blank" aria-label="my linkedin"><i class="fa-brands fa-linkedin"></i></a>
+						<a href="https://www.facebook.com/ayoub.majid.5243" target="_blank" aria-label="my facebook"><i class="fa-brands fa-facebook"></i></a>
+						<a href="https://github.com/ayoubmajid67" target="_blank" aria-label="my Github"><i class="fa-brands fa-github"></i></a>
 						
 					</div>
 				</div>
@@ -53,10 +57,66 @@
 						<input type="text" name="" id="" class="Subject" placeholder="Write a Subject " max="300" />
 
 						<textarea name="" id="" cols="30" rows="10" placeholder="Your Message" class="UserMessage" required></textarea>
-						<input type="submit" value="Submit" />
+						<input type="submit" value="Submit" id="sendMsgBtn" />
 					</form>
 				</div>
 			</div>
+
+			
+			<footer class='FooterOutletComponentClass blurFooterOutletComponentClass'>
+				<div class="leftSide">
+				  <img src="../img/logo.png" alt="travel stay reservation platform logo" />
+			
+				  <div class="socialContainer">
+				   <a href="https://www.facebook.com/ayoub.majid.5243" target="_blank"><i class="fa-brands fa-facebook"></i></a> 
+				   <a href="https://www.linkedin.com/in/youbista" target="_blank"><i class="fa-brands fa-linkedin"></i></a> 
+				   <a href="https://www.youtube.com/@AyoubMajjid" target="_blank"><i class="fa-brands fa-youtube"></i></a> 
+				   <a href="https://www.instagram.com/ayoub_majjid/" target="_blank"> <i class="fa-brands fa-instagram"></i></a> 
+				  </div>
+			
+				</div>
+			
+				<div class="rightSide">
+				  <ul>
+					<li>
+					  <i class="fa-solid fa-angles-right" class="icon"></i>
+					  <a href="home.html">Home</a>
+					</li>
+					<li>
+					  <i class="fa-solid fa-angles-right" class="icon"></i>
+					  <a href="about.html">About Us</a>
+					</li>
+					<li>
+					  <i class="fa-solid fa-angles-right" class="icon"></i>
+					  <a href="services.html">Our Services</a>
+					</li>
+				 
+				  </ul>
+			
+				  <ul>
+				   
+					<li>
+					  <i class="fa-solid fa-angles-right" class="icon"></i>
+					  <a href="contact.html">Contact Us</a>
+					</li>
+					<li>
+					  <i class="fa-solid fa-angles-right" class="icon"></i>
+					  <a href="Certificates.html">Our Certificates</a>
+					</li>
+				   
+				  </ul>
+			
+				  <ul>
+				  
+					<li>
+					  <i class="fa-solid fa-angles-right" class="icon"></i>
+					  <a href="#">Our Projects</a>
+					</li>
+				  </ul>
+				</div>
+			  </footer>
+			
+			
 		</div>
 
 		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/remixicon/4.2.0/remixicon.min.css" integrity="sha512-MqL4+Io386IOPMKKyplKII0pVW5e+kb+PI/I3N87G3fHIfrgNNsRpzIXEi+0MQC0sR9xZNqZqCYVcC61fL5+Vg==" crossorigin="anonymous" referrerpolicy="no-referrer" />

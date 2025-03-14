@@ -12,7 +12,11 @@ searchContainer.onclick = function () {
 
 if(btnScrollDown){
 
-btnScrollDown.onclick = handlScrollBtn;
+btnScrollDown.onclick = ()=>{
+	handlScrollBtn();
+};
+
+
 
 window.onscroll = async function () {
 	await delay(300);

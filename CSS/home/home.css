@@ -1,6 +1,11 @@
+body{
+  display: block;
+
+}
 .navbar {
   background-color: white;
 }
+
 
 .mainSection {
   background-image: url(../../back/webp/home.webp);
@@ -11,7 +16,14 @@
   background-blend-mode: color;
   flex-direction: row;
   background-color: #00000067;
+  height: calc(100dvh - 73px);
 
+}
+
+.FooterOutletComponentClass{
+  
+  margin-top: 50px;
+  background-color: #e3e2e21a;
 }
 
 * {

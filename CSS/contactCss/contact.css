@@ -10,7 +10,7 @@
 
 }
 
-body {
+.container {
     background-image: url('../../back/webp/contact.webp');
     background-repeat: no-repeat;
     background-size: cover;
@@ -25,7 +25,9 @@ body {
 /* Microsoft Edge and Internet Explorer */
 -ms-background-blend-mode: color;
 
+
 }
+
 
 .mainSection {
     transform: scale(0.95);
@@ -65,7 +67,7 @@ body {
 }
 
 .textContent h1 span {
-    color: #0CAF9F;
+    color:var(--secondaryColor);
 
 }
 
@@ -99,21 +101,21 @@ body {
 
 .textContent .SocialMedia a {
     transition: 0.3s ease-out;
+    color: white;
 }
 
 .textContent .SocialMedia a:hover {
 
     transform: translateY(-5px) rotate(-3deg);
+    color: var(--secondaryColor);
 }
 
-.textContent .SocialMedia a img {
-    opacity: 0.58;
+.textContent .SocialMedia a i {
+
+   font-size: 34px;
 }
 
-.textContent .SocialMedia a .linkedIn {
-    opacity: 1;
 
-}
 
 .mainSection .SendEmailContainer {
     width: 50%;
@@ -159,6 +161,8 @@ form input {
     border-radius: 2px 4px;
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
     font-weight: 700;
+
+  
 }
 
 
@@ -246,7 +250,13 @@ input:focus {
     .mainSection .SendEmailContainer {
         width: 100%;
         align-items: center;
+
+       
     }
 
 
+}
+
+.blurFooterOutletComponentClass{
+    background-color: rgba(0, 0, 0, 0.24);
 }

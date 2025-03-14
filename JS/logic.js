@@ -20,16 +20,22 @@ function navOut() {
 	});
 }
 
-// Function to handle screen width changes
+// Function to handle screen width changes	
 function handleScreenWidthChange() {
 	var screenWidth = window.innerWidth;
-	let innerIconLIsts = ['<i class="ri-home-line"></i>', '<i class="ri-user-line"></i>', '<i class="ri-contacts-book-line"></i>', '<i class="ri-verified-badge-line"></i>', '<i class="ri-building-2-line"></i>'];
-	if (screenWidth <= 530) {
+	let innerIconLIsts = ['<i class="fa-solid fa-house-chimney"></i>',
+		 '<i class="fa-solid fa-circle-user"></i>', 
+		 '<i class="fa-solid fa-toolbox"></i>',
+		 '<i class="fa-solid fa-address-book"></i>',
+		  
+		  '<i class="fa-solid fa-user-graduate"></i>',
+		  '<i class="fa-solid fa-laptop-code"></i>'];
+	if (screenWidth <= 768) {
 		linkArray.forEach((element, index) => {
 			element.innerHTML = innerIconLIsts[index];
 		});
 	} else {
-		let innerTitleLists = ["home", "about", "contact", "Certificates", "projects"];
+		let innerTitleLists = ["home", "about","Services", "contact", "Certificates", "projects"];
 		linkArray.forEach((element, index) => {
 			element.innerText = innerTitleLists[index];
 		});
@@ -79,6 +85,7 @@ const btnScrollDown = document.getElementById("DropDown");
 let endOfPage = document.body.scrollHeight;
 
 function scrollToPosition(Position) {
+	console.log('scroll',Position)
 	window.scrollTo({
 		top: Position,
 		behavior: "smooth",
@@ -93,8 +100,11 @@ let switchClasses = (addedClass, removedClass, element) => {
 };
 
 function handlScrollBtn() {
+
 	flagBtn = !flagBtn;
 	if (flagBtn) {
+		console.log("the flag",flagBtn)
+		console.log("end",endOfPage)
 		scrollToPosition(endOfPage);
 
 		btnScrollDown.classList.remove("dropTop");
