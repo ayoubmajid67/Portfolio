@@ -1,5 +1,5 @@
 html, body {
-    overflow: auto !important; /* Ensure scrolling is enabled */
+    overflow: auto !important; 
 }
 
 .navbar {
@@ -42,7 +42,7 @@ body {
 	background-position: center;
 	background-blend-mode: color;
 	background-size: cover;
-	height: 100vh;
+	height: 100vh;	
 	background-color: rgba(0, 0, 0, 0.24);
 }
 
