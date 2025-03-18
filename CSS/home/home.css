@@ -49,7 +49,7 @@ body{
   gap: 5px;
   overflow: hidden;
   align-items: center;
-  backdrop-filter: blur(20px);
+  backdrop-filter: blur(18px);
 }
 
 .name {
