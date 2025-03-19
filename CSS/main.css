@@ -192,29 +192,3 @@ html,body{
     font-size: 1rem;
   }
 }
-
-#DropDown {
-  position: fixed;
-  z-index: 2;
-  bottom: 70px;
-  right: 30px;
-  width: 52px;
-  opacity: 0.6;
-  box-shadow: 0 0px 10px rgba(89, 90, 88, 0.604);
-  border-radius: 50%;
-}
-
-#DropDown.dropTop {
-
-  filter: contrast(0%);
-
-
-}
-
-@media (max-width:992px) {
-  #DropDown {
-    right: 20px;
-    bottom: 70px;
-  }
-
-}

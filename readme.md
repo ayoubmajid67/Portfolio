@@ -1,7 +1,7 @@
 
 # My Portfolio Project
 
-[View Portfolio](https://ayoubmajid67.github.io/Portfolio/HTML/home.html) ✔️ 
+[View Portfolio](https://ayoubmajid67.github.io/Portfolio/HTML/index.html) ✔️ 
 
 ![Home page](./logo.png)
 

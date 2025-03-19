@@ -82,7 +82,27 @@ function filterContainers(attName) {
 let searchContainer = document.querySelector(".searchContainer .content");
 
 const btnScrollDown = document.getElementById("DropDown");
-let endOfPage = document.body.scrollHeight;
+
+
+let endOfPage =  Math.max(
+    document.body.scrollHeight,
+    document.documentElement.scrollHeight
+) ;
+
+
+function scrollInOverflowToPosition(containerSelector, position) {
+    const container = document.querySelector(containerSelector);
+
+    if (container) {
+        console.log('Scrolling inside:', container, 'to position:', position);
+        container.scrollTo({
+            top: position,
+            behavior: "smooth",
+        });
+    } else {
+        console.error('Container not found:', containerSelector);
+    }
+}
 
 function scrollToPosition(Position) {
 	console.log('scroll',Position)
@@ -98,21 +118,37 @@ let switchClasses = (addedClass, removedClass, element) => {
 	element.classList.add(addedClass);
 	element.classList.remove(removedClass);
 };
-
+const currentPageName = window.location.pathname.split("/").pop();
 function handlScrollBtn() {
+
+
+
+
 
 	flagBtn = !flagBtn;
 	if (flagBtn) {
-		console.log("the flag",flagBtn)
-		console.log("end",endOfPage)
-		scrollToPosition(endOfPage);
+
+
+
+		if(currentPageName=="about.html"){
+			scrollInOverflowToPosition("body",endOfPage)
+		}
+		else{
+			scrollToPosition(endOfPage);
+		}
+
 
 		btnScrollDown.classList.remove("dropTop");
 		setTimeout(() => {
 			btnScrollDown.setAttribute("src", "../button/dropTop.webp");
 		}, 140);
 	} else {
-		scrollToPosition(0);
+		if(currentPageName=="about.html"){
+			scrollInOverflowToPosition("body",0)
+		}
+		else{
+			scrollToPosition(0);
+		}
 
 		setTimeout(() => {
 			btnScrollDown.setAttribute("src", "../button/dropDown.webp");

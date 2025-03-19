@@ -1,0 +1,23 @@
+
+#DropDown {
+    position: fixed;
+    z-index: 2;
+    right: 20px;
+    bottom: 20px;
+    width: 50px;
+    opacity: 0.6;
+    box-shadow: 0 0px 10px rgba(89, 90, 88, 0.604);
+    border-radius: 50%;
+  }
+  
+  #DropDown.dropTop {
+    filter: contrast(0%);
+  }
+  
+  @media (max-width:992px) {
+    #DropDown {
+        width: 35px;
+        right: 10px;
+        bottom: 16px;
+    }
+  }
