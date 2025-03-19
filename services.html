@@ -242,31 +242,31 @@
           </div>
         </div>
         <div class="col-lg-10 offset-lg-1">
-          <form id="contact" action="" method="post">
+          <form id="contact"  >
             <div class="row">
               <div class="col-lg-6">
                 <fieldset>
-                  <input type="name" name="name" id="name" placeholder="Your Name..." autocomplete="on" required>
+                  <input type="name" name="name" id="name" class="UserName" placeholder="Your Name..." autocomplete="on" required>
                 </fieldset>
               </div>
               <div class="col-lg-6">
                 <fieldset>
-                  <input type="phone" name="phone" id="phone" placeholder="Your Phone..." autocomplete="on" required>
+                  <input type="phone" name="phone" class="UserPhone" id="phone" placeholder="Your Phone..." autocomplete="on" required>
                 </fieldset>
               </div>
               <div class="col-lg-6">
                 <fieldset>
-                  <input type="text" name="email" id="email" pattern="[^ @]*@[^ @]*" placeholder="Your E-mail..." required="">
+                  <input type="text" name="email" id="email" class="UserEmail" pattern="[^ @]*@[^ @]*" placeholder="Your E-mail..." required="">
                 </fieldset>
               </div>
               <div class="col-lg-6">
                 <fieldset>
-                  <input type="subject" name="subject" id="subject" placeholder="Subject..." autocomplete="on">
+                  <input type="subject" name="subject" id="subject" class="Subject" placeholder="Subject..." autocomplete="on">
                 </fieldset>
               </div>
               <div class="col-lg-12">
                 <fieldset>
-                  <textarea name="message" id="message" placeholder="Your Message"></textarea>
+                  <textarea name="message" id="message" class="UserMessage" placeholder="Your Message"></textarea>
                 </fieldset>
               </div>
               <div class="col-lg-12">
@@ -339,8 +339,14 @@
 
 
   <!-- js imports  -->
+
   <script src="JS/source.js"></script>
   <script src="JS/logic.js"></script>
   <script src="JS/main.js"></script>
+
+  		<!-- send email cdn  -->
+      <script src="https://smtpjs.com/v3/smtp.js"></script>
+     <!-- user form  -->
+	<script src="JS/contact/UserForm.js"></script>
 </body>
 </html>
