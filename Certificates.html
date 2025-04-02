@@ -1,464 +1,683 @@
 <!DOCTYPE html>
 <html lang="en">
-	<head>
-		<meta charset="UTF-8" />
-		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
-		<meta
-			name="description"
-			content="My new portfolio project is designed with simplicity and functionality in mind, featuring five distinct sections. The Home section offers a concise introduction to me, providing a glimpse into my background. 'About' delves deeper into my story, showcasing my skills and achievements. 'Contact' makes it easy to reach out and connect through various social media channels. In 'Certificates', you'll find a comprehensive list of my achievements, and in 'Projects', a showcase of my
-		work. Together, these sections create a dynamic and informative representation of my professional journey."
-		/>
-		<meta name="keywords" content="CEO, Portfolio, Business, Projects" />
-		<title>certificates</title>
 
-		<link rel="stylesheet" href="CSS/main.css" />
-		<link rel="stylesheet" href="CSS/nav.css" />
-		<link rel="stylesheet" href="CSS/dropDown.css" />
+<head>
+	<meta charset="UTF-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+	<meta name="description" content="My new portfolio project is designed with simplicity and functionality in mind, featuring five distinct sections. The Home section offers a concise introduction to me, providing a glimpse into my background. 'About' delves deeper into my story, showcasing my skills and achievements. 'Contact' makes it easy to reach out and connect through various social media channels. In 'Certificates', you'll find a comprehensive list of my achievements, and in 'Projects', a showcase of my
+		work. Together, these sections create a dynamic and informative representation of my professional journey." />
+	<meta name="keywords" content="CEO, Portfolio, Business, Projects" />
+	<title>certificates</title>
 
-		<link rel="icon" href="img/logo.png" />
+	<link rel="stylesheet" href="CSS/main.css" />
+	<link rel="stylesheet" href="CSS/nav.css" />
+	<link rel="stylesheet" href="CSS/dropDown.css" />
 
-		<link rel="stylesheet" href="CSS/certificates/certificates.css" />
+	<link rel="icon" href="img/logo.png" />
 
-		<!-- font awesome -->
-			<!-- font awesome -->
-			<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-	</head>
-	<body>
-		<!-- services page  -->
-		<div class="container">
-			<nav class="navbar">
-				<h1 class="navTitle"><span>M</span>ajjid</h1>
-				<ul>
-					<li><a href="/" onmouseover=" navOver(this);" onmouseout="navOut();" aria-label="Home Page">home</a></li>
-					<li><a href="about.html" onmouseover=" navOver(this);" onmouseout="navOut();" aria-label="About Page">about</a></li>
-					<li><a href="services.html" onmouseover=" navOver(this);" onmouseout="navOut();" aria-label="Services Page">Services</a></li>
-					<li><a href="contact.html" onmouseover=" navOver(this);" onmouseout="navOut();" aria-label="Contact Page">contact</a></li>
-					<li><a href="#" class="currentPage" onmouseover=" navOver(this);" onmouseout="navOut();" aria-label="certificate Page">Certificates</a></li>
-					<li><a href="project.html" onmouseover=" navOver(this);" onmouseout="navOut();" aria-label="projects Page">projects</a></li>
-				</ul>
-			</nav>
+	<link rel="stylesheet" href="CSS/certificates/certificates.css" />
 
-			<div class="mainSection">
-				<!-- drop down  button  -->
-				<img src="button/dropDown.webp" id="DropDown" class="dropTop" alt="" loading="lazy" fetchpriority="high" decoding="async" />
+	<!-- font awesome -->
+	<!-- font awesome -->
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+		integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+		crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
 
-				<div class="certificateContainer">
-					<div class="searchContainer">
-						<div class="content">
-							<i class="fa-solid fa-magnifying-glass"></i>
-							<input type="text" id="SearchInput" placeholder="Search" />
-						</div>
+<body>
+	<!-- services page  -->
+	<div class="container">
+		<nav class="navbar">
+			<h1 class="navTitle"><span>M</span>ajjid</h1>
+			<ul>
+				<li><a href="/" onmouseover=" navOver(this);" onmouseout="navOut();" aria-label="Home Page">home</a>
+				</li>
+				<li><a href="about.html" onmouseover=" navOver(this);" onmouseout="navOut();"
+						aria-label="About Page">about</a></li>
+				<li><a href="services.html" onmouseover=" navOver(this);" onmouseout="navOut();"
+						aria-label="Services Page">Services</a></li>
+				<li><a href="contact.html" onmouseover=" navOver(this);" onmouseout="navOut();"
+						aria-label="Contact Page">contact</a></li>
+				<li><a href="#" class="currentPage" onmouseover=" navOver(this);" onmouseout="navOut();"
+						aria-label="certificate Page">Certificates</a></li>
+				<li><a href="project.html" onmouseover=" navOver(this);" onmouseout="navOut();"
+						aria-label="projects Page">projects</a></li>
+			</ul>
+		</nav>
+
+		<div class="mainSection">
+			<!-- drop down  button  -->
+			<img src="button/dropDown.webp" id="DropDown" class="dropTop" alt="" loading="lazy" fetchpriority="high"
+				decoding="async" />
+
+			<div class="certificateContainer">
+				<div class="searchContainer">
+					<div class="content">
+						<i class="fa-solid fa-magnifying-glass"></i>
+						<input type="text" id="SearchInput" placeholder="Search" />
 					</div>
-
-					<div class="domainContainer">
-						<h2 class="DomainName mainTitle">Programming Languages</h2>
-
-						<div class="domainContent">
-							<!-- js  Coursera -->
-							<figure certificateName="Programming Languages JavaScript js Interactivity with JavaScript" class="card">
-								<div><img srcset="img/webp/certificateJs.webp" type="image/webp" alt="JavaScript certificate" loading="lazy" fetchpriority="high" decoding="async" /></div>
-								<article class="certificateInfo">
-									<h2>Interactivity with JavaScript</h2>
-									<p>Certified JavaScript Developer specializing in interactivity, completing the "Interactivity with JavaScript" course. Proficient in DOM manipulation, event handling, and advocating for clean code and accessibility. Excited for opportunities to bring enhanced interactivity to web projects.</p>
-									<a href="pdf/js_Coursera.pdf" class="DownloadCertificateBtn" target="_blank">Download</a>
-								</article>
-							</figure>
-
-							<!-- python -->
-							<figure certificateName="Programming Languages Python Programming for Everybody(Python)" class="card">
-								<div><img srcset="img/webp/certificatePython.webp" type="image/webp" alt="python certificate" loading="lazy" fetchpriority="high" decoding="async" /></div>
-								<article class="certificateInfo">
-									<h2>Programming for Everybody(Python)</h2>
-									<p>University of Michigan grad: Python journey complete! 🎓 From basics to confidence, armed with tutorials, books, and community support. Overcame challenges, debugging errors, mastering concepts. Grateful and excited for endless possibilities Python brings! 🐍🌟</p>
-									<a href="pdf/certificatePython.pdf" class="DownloadCertificateBtn" target="_blank">Download</a>
-								</article>
-							</figure>
-							<!-- arduino  -->
-							<figure certificateName="Programming Languages The Arduino Platform and C Programming Arduino" class="card">
-								<div><img srcset="img/webp/certificateArduino.webp" type="image/webp" alt=" arduino certificate" loading="lazy" fetchpriority="high" decoding="async" /></div>
-								<article class="certificateInfo">
-									<h2>The Arduino Platform and C Programming</h2>
-									<p>University of California, Irvine's Arduino Platform and C Programming course provides a comprehensive introduction to hardware programming. Students learn to harness the power of Arduino microcontrollers and C programming to create interactive and innovative electronics projects</p>
-									<a href="pdf/arduino.pdf" class="DownloadCertificateBtn" target="_blank">Download</a>
-								</article>
-							</figure>
-						</div>
-					</div>
-
-					<div class="domainContainer">
-						<h2 class="DomainName mainTitle">web Front-end</h2>
-						<div class="domainContent">
-							<!-- web  -->
-							<figure certificateName="web Front-end Html,css,JavaScript HTML, CSS, and Javascript for Web Developers" class="card">
-								<div><img srcset="img/webp/certificateHtmlCssJs.webp" type="image/webp" alt="web development html css js certificate" loading="lazy" fetchpriority="high" decoding="async" /></div>
-								<article class="certificateInfo">
-									<h2>HTML, CSS, and Javascript for Web Developers</h2>
-									<p>Coursera's "HTML, CSS, and JavaScript for Web Developers" course equips learners with essential skills in web development. This program covers HTML for content, CSS for styling, and JavaScript for interactivity, empowering students to create responsive and engaging websites.</p>
-									<a href="pdf/HTML_CSS_JS.pdf" class="DownloadCertificateBtn" target="_blank">Download</a>
-								</article>
-							</figure>
-							<!-- responsive Design  -->
-							<figure certificateName="web Front-end Responsive Design Advanced Styling with Responsive Design" class="card">
-								<div><img srcset="img/webp/certificateResponsiveDesign.webp" type="image/webp" alt="responsive design certificate" loading="lazy" fetchpriority="high" decoding="async" /></div>
-								<article class="certificateInfo">
-									<h2>Advanced Styling with Responsive Design</h2>
-									<p>Career Certificate as part of the Web Design for Everybody Specialization. 🖥️💡 📜 Explored key concepts like: Mobile-first paradigm and wireframes Creating cross-platform compatible sites Implementing fluid design and media queries Utilizing design frameworks like Bootstrap</p>
-									<a href="pdf/certificateAdvanceStyling.pdf" class="DownloadCertificateBtn" target="_blank">Download</a>
-								</article>
-							</figure>
-
-							<!-- html  -->
-							<figure certificateName="web Front-end Html Introduction to HTML5" class="card">
-								<div><img src="img/webp/certificateHtml.webp" type="image/webp" alt="Introduction to Html 5  certificate" loading="lazy" fetchpriority="high" decoding="async" /></div>
-								<article class="certificateInfo">
-									<h2>Introduction to HTML5</h2>
-									<p>Certified in "Introduction to HTML5," progressing through the Web Design for Everybody Specialization. Ready to apply skills in mastering web development, Equipped with foundational knowledge and eager to leverage acquired skills to excel in web development endeavors.</p>
-									<a href="pdf/CertificateHTML.pdf" class="DownloadCertificateBtn" target="_blank">Download</a>
-								</article>
-							</figure>
-
-							<!-- css3   -->
-							<figure certificateName="web Front-end Css introduction to Css3" class="card">
-								<div><img srcset="img/webp/certificateCss.webp" type="image/webp" alt="css certificate" loading="lazy" fetchpriority="high" decoding="async" /></div>
-								<article class="certificateInfo">
-									<h2>introduction to Css3</h2>
-									<p>Proud recipient of the "Introduction to CSS3" certificate as part of the Web Design for Everybody Specialization. Demonstrated proficiency in leveraging Cascading Style Sheets to enhance website aesthetics and responsiveness. Excited to contribute dynamic design skills to web development projects.</p>
-									<a href="pdf/certificateCss.pdf" class="DownloadCertificateBtn" target="_blank">Download</a>
-								</article>
-							</figure>
-
-							<!-- React basic  -->
-							<figure certificateName="web Front-end React basics" class="card">
-								<div><img srcset="img/webp/certificateReactBasics.webp" type="image/webp" alt="Reacct basics certificate" loading="lazy" fetchpriority="high" decoding="async" /></div>
-								<article class="certificateInfo">
-									<h2>React Basics</h2>
-									<p>Diving into the fundamentals of React has been a precious experience, equipping me with essential skills for building interactive, responsive, and efficient web applications. This course covered a range of core concepts, including components, state management, props, and more.</p>
-									<a href="pdf/certificateReactBasics.pdf" class="DownloadCertificateBtn" target="_blank">Download</a>
-								</article>
-							</figure>
-
-							<!-- Introduction to Java and Object-Oriented Programming  -->
-							<figure certificateName="web Front-end Introduction to Java and Object-Oriented Programming" class="card">
-								<div><img srcset="img/webp/certificateJavaOOP.webp" type="image/webp" alt="Introduction to Java and Object-Oriented Programming certificate" loading="lazy" fetchpriority="high" decoding="async" /></div>
-								<article class="certificateInfo">
-									<h2>Introduction to Java and Object-Oriented Programming</h2>
-									<p>This course was a fantastic deep dive into Java, covering core programming concepts and object-oriented principles that form the backbone of software development. I explored topics like classes, inheritance, polymorphism, and encapsulation, and how to leverage these to build robust, reusable code</p>
-									<a href="pdf/certificateJavaOOP.pdf" class="DownloadCertificateBtn" target="_blank">Download</a>
-								</article>
-							</figure>
-
-							<!--React js - Hooks - Redux -State - Router Arabic  -->
-							<figure certificateName="web Front-end Introduction to Java and Object-Oriented Programming" class="card">
-								<div><img srcset="img/webp/certificateReactYarobAlMostafa.webp" type="image/webp" alt="Introduction to Java and Object-Oriented Programming certificate" loading="lazy" fetchpriority="high" decoding="async" /></div>
-								<article class="certificateInfo">
-									<h2>React - Hooks - Redux -State - Router Arabic</h2>
-									<p>Earned a certification in React.js - Hooks - Redux - State - Router رياكت بالعربي from Udemy, led by Yarob Al Mostafa. Developed expertise in React.js fundamentals, state management with Redux, and UI design using Material-UI. Successfully built and deployed two projects: a To-Do List app and a Weather app, showcasing practical skills in modern front-end development.</p>
-									<a href="../pdf/certificateReactYarobAlMostafa.png" class="DownloadCertificateBtn" target="_blank">Download</a>
-								</article>
-							</figure>
-						</div>
-					</div>
-
-					<div class="domainContainer">
-						<h2 class="DomainName mainTitle">DataBases</h2>
-						<div class="domainContent">
-							<!--  sql  -->
-							<figure certificateName="the Structured Query Language DataBases SQL" class="card">
-								<div><img srcset="img/webp/certificateSQL.webp" type="image/webp" alt="sql certificate" loading="lazy" fetchpriority="high" decoding="async" /></div>
-								<article class="certificateInfo">
-									<h2>The Structured Query Language (SQL)</h2>
-									<p>University of Colorado Boulder's Structured Query Language (SQL) course equips students with essential database management skills. This program covers SQL fundamentals, database design, and querying techniques, preparing learners to handle data efficiently in various professional contexts.</p>
-									<a href="pdf/SQL.pdf" class="DownloadCertificateBtn" target="_blank">Download</a>
-								</article>
-							</figure>
-						</div>
-					</div>
-
-					<div class="domainContainer">
-						<h2 class="DomainName mainTitle">Devops</h2>
-						<div class="domainContent">
-							<!-- introduction to git and github google  -->
-							<figure certificateName="Devops oop introduction to git and github google" class="card">
-								<div><img srcset="img/webp/certificateGitGithubGoogle.webp" type="image/webp" alt="introduction to git and github google certificate" loading="lazy" fetchpriority="high" decoding="async" /></div>
-								<article class="certificateInfo">
-									<h2>introduction to git and github</h2>
-									<p>Successfully earned the "Introduction to Git and GitHub" certificate from Google. This course provided a solid foundation in version control, covering essential Git commands, branching strategies, and collaboration workflows using GitHub. Equipped with these skills, I can efficiently manage code repositories, contribute to open-source projects, and streamline development processes.</p>
-									<a href="pdf/certificateGitGithubGoogle.pdf" class="DownloadCertificateBtn" target="_blank">Download</a>
-								</article>
-							</figure>
-
-							
-						</div>
-					</div>
-
-					<div class="domainContainer">
-						<h2 class="DomainName mainTitle">CS Fundamentals</h2>
-						<div class="domainContent">
-							<!-- oop cpp   -->
-							<figure certificateName="CS Fundamentals oop object oriented programming Object-Oriented Programming (C++)" class="card">
-								<div><img srcset="img/webp/certificateCppOpp.webp" type="image/webp" alt=" cpp oop certificate" loading="lazy" fetchpriority="high" decoding="async" /></div>
-								<article class="certificateInfo">
-									<h2>Object-Oriented Programming (C++)</h2>
-									<p>Proudly achieved a certificate in Object-Oriented Programming (C++) from École Polytechnique Fédérale de Lausanne. Now equipped with advanced programming concepts, I'm poised to apply this knowledge to real-world projects, leveraging the expertise gained from this reputable institution.</p>
-									<a href="pdf/certificateCppOop.pdf" class="DownloadCertificateBtn" target="_blank">Download</a>
-								</article>
-							</figure>
-
-							<!-- Software Engineering: Software Design and Project Management   -->
-							<figure certificateName="CS Fundamentals Software Engineering: Software Design and Project Management" class="card">
-								<div><img srcset="img/webp/certificateSoftwareDesignAndProjectManagement.webp" type="image/webp" alt="Software Engineering: Software Design and Project Management certificate" loading="lazy" fetchpriority="high" decoding="async" /></div>
-								<article class="certificateInfo">
-									<h2>Software Design and Project Management</h2>
-									<p>Earned a verified certificate in *Software Engineering: Software Design and Project Management* from Coursera, achieving a distinguished score of 90%. Acquired comprehensive expertise in software design methodologies and project management frameworks, equipping me to lead and contribute to complex, high-impact software development initiatives.</p>
-									<a href="../pdf/certificateSoftwareDesignAndProjectManagement.pdf" class="DownloadCertificateBtn" target="_blank">Download</a>
-								</article>
-							</figure>
-						</div>
-					</div>
-
-					<div class="domainContainer">
-						<h2 class="DomainName mainTitle mainTitle">Soft Skills</h2>
-						<div class="domainContent">
-							<!-- La recherche documentaire -->
-							<figure certificateName="Soft Skills La recherche documentaire" class="card">
-								<div><img srcset="img/webp/rechercheDocumentaire.webp" type="image/webp" alt="La recherche documentaire" loading="lazy" fetchpriority="high" decoding="async" /></div>
-								<article class="certificateInfo">
-									<h2>Recherche documentaire</h2>
-									<p>This course teaches vital document research skills: source identification, constructing reviews, and optimizing database queries. Graduates excel in creating bibliographies and citing sources to prevent plagiarism and refining database query techniques and refining database query techniques.</p>
-									<a href="pdf/rechercheDocumentaire.pdf" class="DownloadCertificateBtn" target="_blank">Download</a>
-								</article>
-							</figure>
-
-							<!-- Villes africaines: Environnement et enjeux de développement durable -->
-							<figure certificateName="Soft Skills Villes africaines: Environnement et enjeux de développement durable" class="card">
-								<div><img srcset="img/webp/certificateVillesAfricaines.webp" type="image/webp" alt="Villes africaines: Environnement et enjeux de développement durable certificate" loading="lazy" fetchpriority="high" decoding="async" /></div>
-								<article class="certificateInfo">
-									<h2>Villes africaines: Environnement et enjeux de développement durable </h2>
-									<p>Completed the course Villes africaines: Environnement et enjeux de développement durable, gaining a deep understanding of sustainable development challenges in African cities. Acquired insights into urban planning, environmental strategies, and sustainable growth models to address complex urbanization issues.</p>
-									<a href="pdf/certificateVillesAfricaines.pdf" class="DownloadCertificateBtn" target="_blank">Download</a>
-								</article>
-							</figure>
-
-							<!-- Impact Measurement & Management for the SDGs -->
-							<figure certificateName="Soft Skills Impact Measurement & Management for the SDGs" class="card">
-								<div><img srcset="img/webp/certificateImpactMeasurement&Management.webp" type="image/webp" alt="Impact Measurement & Management for the SDGs certificate" loading="lazy" fetchpriority="high" decoding="async" /></div>
-								<article class="certificateInfo">
-									<h2>Impact Measurement & Management for the SDGs</h2>
-									<p>Earned a certification in Impact Measurement & Management for the SDGs from Coursera. Gained expertise in assessing and managing social, environmental, and economic impacts aligned with the Sustainable Development Goals, equipping me to drive measurable change in impactful projects.</p>
-									<a href="pdf/certificateImpactMeasurement&Management.pdf" class="DownloadCertificateBtn" target="_blank">Download</a>
-								</article>
-							</figure>
-						</div>
-					</div>
-
-					<div class="domainContainer">
-						<h2 class="DomainName mainTitle">Basic Roadmap</h2>
-						<div class="domainContent">
-							<figure class="ProgressFigure card" certificateName="Basic roadmap" class="card">
-								<div><img src="img/webp/roadmap.webp" type="image/webp" alt="basic roadmap progress box " loading="lazy" fetchpriority="high" decoding="async" /></div>
-								<article class="certificateInfo">
-									<h2>Mohammed Abu-Hadhoud Roadmap <span>in Progress</span></h2>
-									<p>Under the expert guidance of Mohammed Abu-Hadhoud, with over 27 years of programming experience, I've embarked on a transformative programming journey encompassing 24 courses. This roadmap covers a diverse range of topics, C++ Basics, Object-Oriented Programming (OOP), C#, .NET Framework, and more. 👨‍💻🌐</p>
-									<a href="https://programmingadvices.com/courses" class="DownloadCertificateBtn Roadmap" target="_blank">roadmap</a>
-								</article>
-							</figure>
-
-							<!-- basic 2  -->
-							<figure certificateName="Basic roadmap course2 02 - Algorithms & Problem-Solving Level 1" class="card">
-								<div><img srcset="img/webp/2-basic.webp" type="image/webp" alt=" basic roadmap certificate 2 " loading="lazy" fetchpriority="high" decoding="async" /></div>
-								<article class="certificateInfo">
-									<h2>02 - Algorithms & Problem-Solving Level 1</h2>
-									<p>Embarking on a programming journey, partnered with Mohammed Abu-Hadhoud for a comprehensive roadmap spanning 24 courses, including C++, OOP, and C#. Achieved Level 2, mastering 50 problem-solving techniques with flowcharts.🎓 Stay tuned for more updates on this thrilling learning adventure!</p>
-									<a href="pdf/2-basic.pdf" class="DownloadCertificateBtn" target="_blank">Download</a>
-								</article>
-							</figure>
-							<!-- basic 3  -->
-							<figure certificateName="Basic roadmap course3 03 - Programming Using C++ - Level 1" class="card">
-								<div><img srcset="img/webp/3-basic.webp" type="image/webp" alt="basic roadmap certificate 3" loading="lazy" fetchpriority="high" decoding="async" /></div>
-								<article class="certificateInfo">
-									<h2>03 - Programming Using C++ - Level 1</h2>
-									<p>
-										Mastery of C++ fundamentals, including variables, data types, and control structures.
-										<br />Emphasis on writing clean and efficient code. <br />Building a strong foundation for further programming knowledge.
-									</p>
-									<a href="pdf/3-basic.pdf" class="DownloadCertificateBtn" target="_blank">Download</a>
-								</article>
-							</figure>
-
-							<!-- basic 4  -->
-							<figure certificateName="Basic roadmap course4 04 - Algorithms & Problem-Solving Level 1 Solutions" class="card">
-								<div><img srcset="img/webp/4-basic.webp" type="image/webp" alt="basic roadmap certificate 4" loading="lazy" fetchpriority="high" decoding="async" /></div>
-								<article class="certificateInfo">
-									<h2>04 - Algorithms & Problem-Solving Level 1 Solutions</h2>
-									<p>
-										Solving over 50 complex problems using C++.
-										<br />Developing algorithmic thinking and problem-solving skills. <br />Adhering to clean code principles for efficient solutions.
-									</p>
-									<a href="pdf/4-basic.pdf" class="DownloadCertificateBtn" target="_blank">Download</a>
-								</article>
-							</figure>
-							<!-- basic 5  -->
-							<figure certificateName="Basic roadmap course5 05 - Algorithms & Problem-Solving Level 2" class="card">
-								<div><img srcset="img/webp/5-basic.webp" type="image/webp" alt="basic roadmap certificate 5 " loading="lazy" fetchpriority="high" decoding="async" /></div>
-								<article class="certificateInfo">
-									<h2>05 - Algorithms & Problem-Solving Level 2</h2>
-									<p>
-										Mastering over 50 additional complex problems and two projects.
-										<br />
-										Advancing algorithmic design and problem-solving expertise. <br />Creating a comprehensive code repository to track progress
-									</p>
-									<a href="pdf/5-basic.pdf" class="DownloadCertificateBtn" target="_blank">Download</a>
-								</article>
-							</figure>
-
-							<!-- basic 6  -->
-							<figure certificateName="Basic roadmap course6 06 - Introduction to Programming Using C++ Level 2" class="card">
-								<div><img srcset="img/webp/6-basic.webp" type="image/webp" alt="basic roadmap certificate 6 " loading="lazy" fetchpriority="high" decoding="async" /></div>
-								<article class="certificateInfo">
-									<h2>06 - Introduction to Programming Using C++ Level 2</h2>
-									<p>advanced C++ topics, from debugging to file handling and more. 💻 Compiled all source code in a GitHub repository: Link. 🌟 Excited to apply these skills in real-world projects. 📈 Continuous growth as a developer</p>
-									<a href="pdf/6-basic.pdf" class="DownloadCertificateBtn" target="_blank">Download</a>
-								</article>
-							</figure>
-
-							<!-- basic 7 -->
-							<figure certificateName="Basic roadmap course7 07 - Algorithms & Problem-Solving Level 2" class="card">
-								<div><img srcset="img/webp/7-basic.webp" type="image/webp" alt="basic roadmap certificate 7 " loading="lazy" fetchpriority="high" decoding="async" /></div>
-								<article class="certificateInfo">
-									<h2>07 - Algorithms & Problem-Solving Level 2</h2>
-									<p>Elevating my programming skills, I've achieved "Algorithms & Problem-Solving Level 2" mentored by Mohammed Abu-Hadhoud, a seasoned programmer with 27 years of experience. Recently, I proudly completed "Algorithms & Problem Solving Level 3," solving 51 problems and crafting a robust C++ banking system. Excited for future challenges!</p>
-									<a href="pdf/7-basic.pdf" class="DownloadCertificateBtn" target="_blank">Download</a>
-								</article>
-							</figure>
-							<!-- basic 8  -->
-							<figure certificateName="Basic roadmap course8 08 - Algorithms & Problem Solving Level 4" class="card">
-								<div><img srcset="img/webp/8-basic.webp" type="image/webp" alt="basic roadmap certificate 8 " loading="lazy" fetchpriority="high" decoding="async" /></div>
-								<article class="certificateInfo">
-									<h2>"08 - Algorithms & Problem Solving Level 4</h2>
-									<p>Thrilled to share my achievement in "Algorithms & Problem Solving Level 4"! Conquered over 65 problems and crafted two projects, showcasing proficiency in user management and an advanced banking system. Dive into the code journey on GitHub</p>
-									<a href="pdf/8-basic.pdf" class="DownloadCertificateBtn" target="_blank">Download</a>
-								</article>
-							</figure>
-							<!-- basic 10 -->
-							<figure certificateName="Basic roadmap course10 10 - OOP as it Should Be (Concepts" class="card">
-								<div><img src="img/webp/10-basic.webp" type="image/webp" alt="basic roadmap certificate 10 " loading="lazy" fetchpriority="high" decoding="async" /></div>
-								<article class="certificateInfo">
-									<h2>"10 - OOP as it Should Be (Concepts)</h2>
-									<p>Leveled up my coding game with "OOP as it Should Be (Concepts)" - Course 10. Mastered the core principles of OOP and applied them using string, date, and period libraries.</p>
-									<a href="pdf/10-basic.pdf" class="DownloadCertificateBtn" target="_blank">Download</a>
-								</article>
-							</figure>
-							<!-- basic 11 -->
-							<figure certificateName="Basic roadmap course11 11 - OOP as it Should Be (Applications)" class="card">
-								<div><img src="img/webp/11-basic.webp" type="image/webp" alt="basic roadmap certificate 11 " loading="lazy" fetchpriority="high" decoding="async" /></div>
-								<article class="certificateInfo">
-									<h2>"11 - OOP as it Should Be (Applications)</h2>
-									<p>Mastered the practical applications of OOP principles, including utility libraries, input validation, and a comprehensive bank system project built with C++. Ready for more advanced challenges!</p>
-									<a href="pdf/11-basic.pdf" class="DownloadCertificateBtn" target="_blank">Download</a>
-								</article>
-							</figure>
-
-							<!-- basic 12 -->
-							<figure certificateName="Basic roadmap course12 12 - Data Structures - Level1" class="card">
-								<div><img src="img/webp/12-basic.webp" type="image/webp" alt="basic roadmap certificate 12 " loading="lazy" fetchpriority="high" decoding="async" /></div>
-								<article class="certificateInfo">
-									<h2>"12 - Data Structures - Level1</h2>
-									<p>Mastered key data structures (arrays, stacks, queues, linked lists) and time complexity (Big O). Solid understanding of ADTs and Map operations.</p>
-									<a href="pdf/12-basic.pdf" class="DownloadCertificateBtn" target="_blank">Download</a>
-								</article>
-							</figure>
-
-							<!-- basic 13 -->
-							<figure certificateName="Basic roadmap course13 13 - Algorithms & Problem Solving Level 5" class="card progressCertificate">
-								<div><img src="img/webp/roadmap.webp" type="image/webp" alt="basic roadmap certificate 12 " loading="lazy" fetchpriority="high" decoding="async" /></div>
-								<article class="certificateInfo">
-									<h2>"13 - Algorithms & Problem Solving Level 5</h2>
-									<p>Algorithms & Problem Solving Level 5: Implemented 8 projects applying data structures learned in Course 12.</p>
-									<a href="#" class="DownloadCertificateBtn" target="_blank"> in Progress</a>
-								</article>
-							</figure>
-						</div>
-					</div>
-
-					<!-- <figure style="visibility: hidden" id="MantainGapFigure"></figure> -->
 				</div>
 
+				<div class="domainContainer">
+					<h2 class="DomainName mainTitle">Programming Languages</h2>
 
-				
+					<div class="domainContent">
+						<!-- js  Coursera -->
+						<figure certificateName="Programming Languages JavaScript js Interactivity with JavaScript"
+							class="card">
+							<div><img srcset="img/webp/certificateJs.webp" type="image/webp"
+									alt="JavaScript certificate" loading="lazy" fetchpriority="high" decoding="async" />
+							</div>
+							<article class="certificateInfo">
+								<h2>Interactivity with JavaScript</h2>
+								<p>Certified JavaScript Developer specializing in interactivity, completing the
+									"Interactivity with JavaScript" course. Proficient in DOM manipulation, event
+									handling, and advocating for clean code and accessibility. Excited for opportunities
+									to bring enhanced interactivity to web projects.</p>
+								<a href="pdf/js_Coursera.pdf" class="DownloadCertificateBtn"
+									target="_blank">Download</a>
+							</article>
+						</figure>
+
+						<!-- python -->
+						<figure certificateName="Programming Languages Python Programming for Everybody(Python)"
+							class="card">
+							<div><img srcset="img/webp/certificatePython.webp" type="image/webp"
+									alt="python certificate" loading="lazy" fetchpriority="high" decoding="async" />
+							</div>
+							<article class="certificateInfo">
+								<h2>Programming for Everybody(Python)</h2>
+								<p>University of Michigan grad: Python journey complete! 🎓 From basics to confidence,
+									armed with tutorials, books, and community support. Overcame challenges, debugging
+									errors, mastering concepts. Grateful and excited for endless possibilities Python
+									brings! 🐍🌟</p>
+								<a href="pdf/certificatePython.pdf" class="DownloadCertificateBtn"
+									target="_blank">Download</a>
+							</article>
+						</figure>
+						<!-- arduino  -->
+						<figure certificateName="Programming Languages The Arduino Platform and C Programming Arduino"
+							class="card">
+							<div><img srcset="img/webp/certificateArduino.webp" type="image/webp"
+									alt=" arduino certificate" loading="lazy" fetchpriority="high" decoding="async" />
+							</div>
+							<article class="certificateInfo">
+								<h2>The Arduino Platform and C Programming</h2>
+								<p>University of California, Irvine's Arduino Platform and C Programming course provides
+									a comprehensive introduction to hardware programming. Students learn to harness the
+									power of Arduino microcontrollers and C programming to create interactive and
+									innovative electronics projects</p>
+								<a href="pdf/arduino.pdf" class="DownloadCertificateBtn" target="_blank">Download</a>
+							</article>
+						</figure>
+					</div>
+				</div>
+
+				<div class="domainContainer">
+					<h2 class="DomainName mainTitle">web Front-end</h2>
+					<div class="domainContent">
+						<!-- web  -->
+						<figure
+							certificateName="web Front-end Html,css,JavaScript HTML, CSS, and Javascript for Web Developers"
+							class="card">
+							<div><img srcset="img/webp/certificateHtmlCssJs.webp" type="image/webp"
+									alt="web development html css js certificate" loading="lazy" fetchpriority="high"
+									decoding="async" /></div>
+							<article class="certificateInfo">
+								<h2>HTML, CSS, and Javascript for Web Developers</h2>
+								<p>Coursera's "HTML, CSS, and JavaScript for Web Developers" course equips learners with
+									essential skills in web development. This program covers HTML for content, CSS for
+									styling, and JavaScript for interactivity, empowering students to create responsive
+									and engaging websites.</p>
+								<a href="pdf/HTML_CSS_JS.pdf" class="DownloadCertificateBtn"
+									target="_blank">Download</a>
+							</article>
+						</figure>
+						<!-- responsive Design  -->
+						<figure
+							certificateName="web Front-end Responsive Design Advanced Styling with Responsive Design"
+							class="card">
+							<div><img srcset="img/webp/certificateResponsiveDesign.webp" type="image/webp"
+									alt="responsive design certificate" loading="lazy" fetchpriority="high"
+									decoding="async" /></div>
+							<article class="certificateInfo">
+								<h2>Advanced Styling with Responsive Design</h2>
+								<p>Career Certificate as part of the Web Design for Everybody Specialization. 🖥️💡 📜
+									Explored key concepts like: Mobile-first paradigm and wireframes Creating
+									cross-platform compatible sites Implementing fluid design and media queries
+									Utilizing design frameworks like Bootstrap</p>
+								<a href="pdf/certificateAdvanceStyling.pdf" class="DownloadCertificateBtn"
+									target="_blank">Download</a>
+							</article>
+						</figure>
+
+						<!-- html  -->
+						<figure certificateName="web Front-end Html Introduction to HTML5" class="card">
+							<div><img src="img/webp/certificateHtml.webp" type="image/webp"
+									alt="Introduction to Html 5  certificate" loading="lazy" fetchpriority="high"
+									decoding="async" /></div>
+							<article class="certificateInfo">
+								<h2>Introduction to HTML5</h2>
+								<p>Certified in "Introduction to HTML5," progressing through the Web Design for
+									Everybody Specialization. Ready to apply skills in mastering web development,
+									Equipped with foundational knowledge and eager to leverage acquired skills to excel
+									in web development endeavors.</p>
+								<a href="pdf/CertificateHTML.pdf" class="DownloadCertificateBtn"
+									target="_blank">Download</a>
+							</article>
+						</figure>
+
+						<!-- css3   -->
+						<figure certificateName="web Front-end Css introduction to Css3" class="card">
+							<div><img srcset="img/webp/certificateCss.webp" type="image/webp" alt="css certificate"
+									loading="lazy" fetchpriority="high" decoding="async" /></div>
+							<article class="certificateInfo">
+								<h2>introduction to Css3</h2>
+								<p>Proud recipient of the "Introduction to CSS3" certificate as part of the Web Design
+									for Everybody Specialization. Demonstrated proficiency in leveraging Cascading Style
+									Sheets to enhance website aesthetics and responsiveness. Excited to contribute
+									dynamic design skills to web development projects.</p>
+								<a href="pdf/certificateCss.pdf" class="DownloadCertificateBtn"
+									target="_blank">Download</a>
+							</article>
+						</figure>
+
+						<!-- React basic  -->
+						<figure certificateName="web Front-end React basics" class="card">
+							<div><img srcset="img/webp/certificateReactBasics.webp" type="image/webp"
+									alt="Reacct basics certificate" loading="lazy" fetchpriority="high"
+									decoding="async" /></div>
+							<article class="certificateInfo">
+								<h2>React Basics</h2>
+								<p>Diving into the fundamentals of React has been a precious experience, equipping me
+									with essential skills for building interactive, responsive, and efficient web
+									applications. This course covered a range of core concepts, including components,
+									state management, props, and more.</p>
+								<a href="pdf/certificateReactBasics.pdf" class="DownloadCertificateBtn"
+									target="_blank">Download</a>
+							</article>
+						</figure>
+
+						<!-- Introduction to Java and Object-Oriented Programming  -->
+						<figure certificateName="web Front-end Introduction to Java and Object-Oriented Programming"
+							class="card">
+							<div><img srcset="img/webp/certificateJavaOOP.webp" type="image/webp"
+									alt="Introduction to Java and Object-Oriented Programming certificate"
+									loading="lazy" fetchpriority="high" decoding="async" /></div>
+							<article class="certificateInfo">
+								<h2>Introduction to Java and Object-Oriented Programming</h2>
+								<p>This course was a fantastic deep dive into Java, covering core programming concepts
+									and object-oriented principles that form the backbone of software development. I
+									explored topics like classes, inheritance, polymorphism, and encapsulation, and how
+									to leverage these to build robust, reusable code</p>
+								<a href="pdf/certificateJavaOOP.pdf" class="DownloadCertificateBtn"
+									target="_blank">Download</a>
+							</article>
+						</figure>
+
+						<!--React js - Hooks - Redux -State - Router Arabic  -->
+						<figure certificateName="web Front-end Introduction to Java and Object-Oriented Programming"
+							class="card">
+							<div><img srcset="img/webp/certificateReactYarobAlMostafa.webp" type="image/webp"
+									alt="Introduction to Java and Object-Oriented Programming certificate"
+									loading="lazy" fetchpriority="high" decoding="async" /></div>
+							<article class="certificateInfo">
+								<h2>React - Hooks - Redux -State - Router Arabic</h2>
+								<p>Earned a certification in React.js - Hooks - Redux - State - Router رياكت بالعربي
+									from Udemy, led by Yarob Al Mostafa. Developed expertise in React.js fundamentals,
+									state management with Redux, and UI design using Material-UI. Successfully built and
+									deployed two projects: a To-Do List app and a Weather app, showcasing practical
+									skills in modern front-end development.</p>
+								<a href="../pdf/certificateReactYarobAlMostafa.png" class="DownloadCertificateBtn"
+									target="_blank">Download</a>
+							</article>
+						</figure>
+					</div>
+				</div>
+
+				<div class="domainContainer">
+					<h2 class="DomainName mainTitle">DataBases</h2>
+					<div class="domainContent">
+						<!--  sql  -->
+						<figure certificateName="the Structured Query Language DataBases SQL" class="card">
+							<div><img srcset="img/webp/certificateSQL.webp" type="image/webp" alt="sql certificate"
+									loading="lazy" fetchpriority="high" decoding="async" /></div>
+							<article class="certificateInfo">
+								<h2>The Structured Query Language (SQL)</h2>
+								<p>University of Colorado Boulder's Structured Query Language (SQL) course equips
+									students with essential database management skills. This program covers SQL
+									fundamentals, database design, and querying techniques, preparing learners to handle
+									data efficiently in various professional contexts.</p>
+								<a href="pdf/SQL.pdf" class="DownloadCertificateBtn" target="_blank">Download</a>
+							</article>
+						</figure>
+					</div>
+				</div>
+
+				<div class="domainContainer">
+					<h2 class="DomainName mainTitle">Devops</h2>
+					<div class="domainContent">
+						<!-- introduction to git and github google  -->
+						<figure certificateName="Devops  introduction to git and github google" class="card">
+							<div><img srcset="img/webp/certificateGitGithubGoogle.webp" type="image/webp"
+									alt="introduction to git and github google certificate" loading="lazy"
+									fetchpriority="high" decoding="async" /></div>
+							<article class="certificateInfo">
+								<h2>introduction to git and github</h2>
+								<p>Successfully earned the "Introduction to Git and GitHub" certificate from Google.
+									This course provided a solid foundation in version control, covering essential Git
+									commands, branching strategies, and collaboration workflows using GitHub. Equipped
+									with these skills, I can efficiently manage code repositories, contribute to
+									open-source projects, and streamline development processes.</p>
+								<a href="pdf/certificateGitGithubGoogle.pdf" class="DownloadCertificateBtn"
+									target="_blank">Download</a>
+							</article>
+						</figure>
+
+						<!-- React Native Meta -->
+						<figure certificateName="Devops React Native Meta" class="card" style="display: none;">
+							<div><img srcset="img/webp/certificateReactNativeMeta.webp" type="image/webp"
+									alt="React Native Meta certificate" loading="lazy" fetchpriority="high"
+									decoding="async" /></div>
+							<article class="certificateInfo">
+								<h2>React Native</h2>
+								<p>Successfully earned the "React Native" certificate from Meta. This course provided
+									hands-on experience in building cross-platform mobile applications using React
+									Native, covering components, state management, navigation, and API integration. With
+									these skills, I can develop efficient, scalable, and high-performance mobile
+									applications for both iOS and Android platforms.</p>
+								<a href="pdf/certificateReactNativeMeta.pdf" class="DownloadCertificateBtn"
+									target="_blank">Download</a>
+							</article>
+						</figure>
+
+						<!-- Virtual Network in Azure -->
+						<figure certificateName="Devops Virtual Network in Azure" class="card" style="display: none;">
+							<div><img srcset="img/webp/certificateVirtualNetworksAzure.webp" type="image/webp"
+									alt="Virtual Network in Azure certificate" loading="lazy" fetchpriority="high"
+									decoding="async" /></div>
+							<article class="certificateInfo">
+								<h2>Virtual Network in Azure</h2>
+								<p>Successfully earned the "Virtual Network in Azure" certificate. This course provided
+									an in-depth understanding of Azure networking concepts, including virtual networks,
+									subnets, IP addressing, and security configurations. Equipped with this knowledge, I
+									can design and manage secure cloud-based network infrastructures in Microsoft Azure.
+								</p>
+								<a href="pdf/certificateVirtualNetworksAzure.pdf" class="DownloadCertificateBtn"
+									target="_blank">Download</a>
+							</article>
+						</figure>
+
+					</div>
+				</div>
+
+				<div class="domainContainer">
+					<h2 class="DomainName mainTitle">CS Fundamentals</h2>
+					<div class="domainContent">
+						<!-- oop cpp   -->
+						<figure
+							certificateName="CS Fundamentals oop object oriented programming Object-Oriented Programming (C++)"
+							class="card">
+							<div><img srcset="img/webp/certificateCppOpp.webp" type="image/webp"
+									alt=" cpp oop certificate" loading="lazy" fetchpriority="high" decoding="async" />
+							</div>
+							<article class="certificateInfo">
+								<h2>Object-Oriented Programming (C++)</h2>
+								<p>Proudly achieved a certificate in Object-Oriented Programming (C++) from École
+									Polytechnique Fédérale de Lausanne. Now equipped with advanced programming concepts,
+									I'm poised to apply this knowledge to real-world projects, leveraging the expertise
+									gained from this reputable institution.</p>
+								<a href="pdf/certificateCppOop.pdf" class="DownloadCertificateBtn"
+									target="_blank">Download</a>
+							</article>
+						</figure>
+
+						<!-- Software Engineering: Software Design and Project Management   -->
+						<figure
+							certificateName="CS Fundamentals Software Engineering: Software Design and Project Management"
+							class="card">
+							<div><img srcset="img/webp/certificateSoftwareDesignAndProjectManagement.webp"
+									type="image/webp"
+									alt="Software Engineering: Software Design and Project Management certificate"
+									loading="lazy" fetchpriority="high" decoding="async" /></div>
+							<article class="certificateInfo">
+								<h2>Software Design and Project Management</h2>
+								<p>Earned a verified certificate in *Software Engineering: Software Design and Project
+									Management* from Coursera, achieving a distinguished score of 90%. Acquired
+									comprehensive expertise in software design methodologies and project management
+									frameworks, equipping me to lead and contribute to complex, high-impact software
+									development initiatives.</p>
+								<a href="../pdf/certificateSoftwareDesignAndProjectManagement.pdf"
+									class="DownloadCertificateBtn" target="_blank">Download</a>
+							</article>
+						</figure>
+					</div>
+				</div>
+
+				<div class="domainContainer">
+					<h2 class="DomainName mainTitle mainTitle">Soft Skills</h2>
+					<div class="domainContent">
+						<!-- La recherche documentaire -->
+						<figure certificateName="Soft Skills La recherche documentaire" class="card">
+							<div><img srcset="img/webp/rechercheDocumentaire.webp" type="image/webp"
+									alt="La recherche documentaire" loading="lazy" fetchpriority="high"
+									decoding="async" /></div>
+							<article class="certificateInfo">
+								<h2>Recherche documentaire</h2>
+								<p>This course teaches vital document research skills: source identification,
+									constructing reviews, and optimizing database queries. Graduates excel in creating
+									bibliographies and citing sources to prevent plagiarism and refining database query
+									techniques and refining database query techniques.</p>
+								<a href="pdf/rechercheDocumentaire.pdf" class="DownloadCertificateBtn"
+									target="_blank">Download</a>
+							</article>
+						</figure>
+
+						<!-- Villes africaines: Environnement et enjeux de développement durable -->
+						<figure
+							certificateName="Soft Skills Villes africaines: Environnement et enjeux de développement durable"
+							class="card">
+							<div><img srcset="img/webp/certificateVillesAfricaines.webp" type="image/webp"
+									alt="Villes africaines: Environnement et enjeux de développement durable certificate"
+									loading="lazy" fetchpriority="high" decoding="async" /></div>
+							<article class="certificateInfo">
+								<h2>Villes africaines: Environnement et enjeux de développement durable </h2>
+								<p>Completed the course Villes africaines: Environnement et enjeux de développement
+									durable, gaining a deep understanding of sustainable development challenges in
+									African cities. Acquired insights into urban planning, environmental strategies, and
+									sustainable growth models to address complex urbanization issues.</p>
+								<a href="pdf/certificateVillesAfricaines.pdf" class="DownloadCertificateBtn"
+									target="_blank">Download</a>
+							</article>
+						</figure>
+
+						<!-- Impact Measurement & Management for the SDGs -->
+						<figure certificateName="Soft Skills Impact Measurement & Management for the SDGs" class="card">
+							<div><img srcset="img/webp/certificateImpactMeasurement&Management.webp" type="image/webp"
+									alt="Impact Measurement & Management for the SDGs certificate" loading="lazy"
+									fetchpriority="high" decoding="async" /></div>
+							<article class="certificateInfo">
+								<h2>Impact Measurement & Management for the SDGs</h2>
+								<p>Earned a certification in Impact Measurement & Management for the SDGs from Coursera.
+									Gained expertise in assessing and managing social, environmental, and economic
+									impacts aligned with the Sustainable Development Goals, equipping me to drive
+									measurable change in impactful projects.</p>
+								<a href="pdf/certificateImpactMeasurement&Management.pdf" class="DownloadCertificateBtn"
+									target="_blank">Download</a>
+							</article>
+						</figure>
+					</div>
+				</div>
+
+				<div class="domainContainer">
+					<h2 class="DomainName mainTitle">Basic Roadmap</h2>
+					<div class="domainContent">
+						<figure class="ProgressFigure card" certificateName="Basic roadmap" class="card">
+							<div><img src="img/webp/roadmap.webp" type="image/webp" alt="basic roadmap progress box "
+									loading="lazy" fetchpriority="high" decoding="async" /></div>
+							<article class="certificateInfo">
+								<h2>Mohammed Abu-Hadhoud Roadmap <span>in Progress</span></h2>
+								<p>Under the expert guidance of Mohammed Abu-Hadhoud, with over 27 years of programming
+									experience, I've embarked on a transformative programming journey encompassing 24
+									courses. This roadmap covers a diverse range of topics, C++ Basics, Object-Oriented
+									Programming (OOP), C#, .NET Framework, and more. 👨‍💻🌐</p>
+								<a href="https://programmingadvices.com/courses" class="DownloadCertificateBtn Roadmap"
+									target="_blank">roadmap</a>
+							</article>
+						</figure>
+
+						<!-- basic 2  -->
+						<figure certificateName="Basic roadmap course2 02 - Algorithms & Problem-Solving Level 1"
+							class="card">
+							<div><img srcset="img/webp/2-basic.webp" type="image/webp"
+									alt=" basic roadmap certificate 2 " loading="lazy" fetchpriority="high"
+									decoding="async" /></div>
+							<article class="certificateInfo">
+								<h2>02 - Algorithms & Problem-Solving Level 1</h2>
+								<p>Embarking on a programming journey, partnered with Mohammed Abu-Hadhoud for a
+									comprehensive roadmap spanning 24 courses, including C++, OOP, and C#. Achieved
+									Level 2, mastering 50 problem-solving techniques with flowcharts.🎓 Stay tuned for
+									more updates on this thrilling learning adventure!</p>
+								<a href="pdf/2-basic.pdf" class="DownloadCertificateBtn" target="_blank">Download</a>
+							</article>
+						</figure>
+						<!-- basic 3  -->
+						<figure certificateName="Basic roadmap course3 03 - Programming Using C++ - Level 1"
+							class="card">
+							<div><img srcset="img/webp/3-basic.webp" type="image/webp" alt="basic roadmap certificate 3"
+									loading="lazy" fetchpriority="high" decoding="async" /></div>
+							<article class="certificateInfo">
+								<h2>03 - Programming Using C++ - Level 1</h2>
+								<p>
+									Mastery of C++ fundamentals, including variables, data types, and control
+									structures.
+									<br />Emphasis on writing clean and efficient code. <br />Building a strong
+									foundation for further programming knowledge.
+								</p>
+								<a href="pdf/3-basic.pdf" class="DownloadCertificateBtn" target="_blank">Download</a>
+							</article>
+						</figure>
+
+						<!-- basic 4  -->
+						<figure
+							certificateName="Basic roadmap course4 04 - Algorithms & Problem-Solving Level 1 Solutions"
+							class="card">
+							<div><img srcset="img/webp/4-basic.webp" type="image/webp" alt="basic roadmap certificate 4"
+									loading="lazy" fetchpriority="high" decoding="async" /></div>
+							<article class="certificateInfo">
+								<h2>04 - Algorithms & Problem-Solving Level 1 Solutions</h2>
+								<p>
+									Solving over 50 complex problems using C++.
+									<br />Developing algorithmic thinking and problem-solving skills. <br />Adhering to
+									clean code principles for efficient solutions.
+								</p>
+								<a href="pdf/4-basic.pdf" class="DownloadCertificateBtn" target="_blank">Download</a>
+							</article>
+						</figure>
+						<!-- basic 5  -->
+						<figure certificateName="Basic roadmap course5 05 - Algorithms & Problem-Solving Level 2"
+							class="card">
+							<div><img srcset="img/webp/5-basic.webp" type="image/webp"
+									alt="basic roadmap certificate 5 " loading="lazy" fetchpriority="high"
+									decoding="async" /></div>
+							<article class="certificateInfo">
+								<h2>05 - Algorithms & Problem-Solving Level 2</h2>
+								<p>
+									Mastering over 50 additional complex problems and two projects.
+									<br />
+									Advancing algorithmic design and problem-solving expertise. <br />Creating a
+									comprehensive code repository to track progress
+								</p>
+								<a href="pdf/5-basic.pdf" class="DownloadCertificateBtn" target="_blank">Download</a>
+							</article>
+						</figure>
+
+						<!-- basic 6  -->
+						<figure
+							certificateName="Basic roadmap course6 06 - Introduction to Programming Using C++ Level 2"
+							class="card">
+							<div><img srcset="img/webp/6-basic.webp" type="image/webp"
+									alt="basic roadmap certificate 6 " loading="lazy" fetchpriority="high"
+									decoding="async" /></div>
+							<article class="certificateInfo">
+								<h2>06 - Introduction to Programming Using C++ Level 2</h2>
+								<p>advanced C++ topics, from debugging to file handling and more. 💻 Compiled all source
+									code in a GitHub repository: Link. 🌟 Excited to apply these skills in real-world
+									projects. 📈 Continuous growth as a developer</p>
+								<a href="pdf/6-basic.pdf" class="DownloadCertificateBtn" target="_blank">Download</a>
+							</article>
+						</figure>
+
+						<!-- basic 7 -->
+						<figure certificateName="Basic roadmap course7 07 - Algorithms & Problem-Solving Level 2"
+							class="card">
+							<div><img srcset="img/webp/7-basic.webp" type="image/webp"
+									alt="basic roadmap certificate 7 " loading="lazy" fetchpriority="high"
+									decoding="async" /></div>
+							<article class="certificateInfo">
+								<h2>07 - Algorithms & Problem-Solving Level 2</h2>
+								<p>Elevating my programming skills, I've achieved "Algorithms & Problem-Solving Level 2"
+									mentored by Mohammed Abu-Hadhoud, a seasoned programmer with 27 years of experience.
+									Recently, I proudly completed "Algorithms & Problem Solving Level 3," solving 51
+									problems and crafting a robust C++ banking system. Excited for future challenges!
+								</p>
+								<a href="pdf/7-basic.pdf" class="DownloadCertificateBtn" target="_blank">Download</a>
+							</article>
+						</figure>
+						<!-- basic 8  -->
+						<figure certificateName="Basic roadmap course8 08 - Algorithms & Problem Solving Level 4"
+							class="card">
+							<div><img srcset="img/webp/8-basic.webp" type="image/webp"
+									alt="basic roadmap certificate 8 " loading="lazy" fetchpriority="high"
+									decoding="async" /></div>
+							<article class="certificateInfo">
+								<h2>"08 - Algorithms & Problem Solving Level 4</h2>
+								<p>Thrilled to share my achievement in "Algorithms & Problem Solving Level 4"! Conquered
+									over 65 problems and crafted two projects, showcasing proficiency in user management
+									and an advanced banking system. Dive into the code journey on GitHub</p>
+								<a href="pdf/8-basic.pdf" class="DownloadCertificateBtn" target="_blank">Download</a>
+							</article>
+						</figure>
+						<!-- basic 10 -->
+						<figure certificateName="Basic roadmap course10 10 - OOP as it Should Be (Concepts"
+							class="card">
+							<div><img src="img/webp/10-basic.webp" type="image/webp" alt="basic roadmap certificate 10 "
+									loading="lazy" fetchpriority="high" decoding="async" /></div>
+							<article class="certificateInfo">
+								<h2>"10 - OOP as it Should Be (Concepts)</h2>
+								<p>Leveled up my coding game with "OOP as it Should Be (Concepts)" - Course 10. Mastered
+									the core principles of OOP and applied them using string, date, and period
+									libraries.</p>
+								<a href="pdf/10-basic.pdf" class="DownloadCertificateBtn" target="_blank">Download</a>
+							</article>
+						</figure>
+						<!-- basic 11 -->
+						<figure certificateName="Basic roadmap course11 11 - OOP as it Should Be (Applications)"
+							class="card">
+							<div><img src="img/webp/11-basic.webp" type="image/webp" alt="basic roadmap certificate 11 "
+									loading="lazy" fetchpriority="high" decoding="async" /></div>
+							<article class="certificateInfo">
+								<h2>"11 - OOP as it Should Be (Applications)</h2>
+								<p>Mastered the practical applications of OOP principles, including utility libraries,
+									input validation, and a comprehensive bank system project built with C++. Ready for
+									more advanced challenges!</p>
+								<a href="pdf/11-basic.pdf" class="DownloadCertificateBtn" target="_blank">Download</a>
+							</article>
+						</figure>
+
+						<!-- basic 12 -->
+						<figure certificateName="Basic roadmap course12 12 - Data Structures - Level1" class="card">
+							<div><img src="img/webp/12-basic.webp" type="image/webp" alt="basic roadmap certificate 12 "
+									loading="lazy" fetchpriority="high" decoding="async" /></div>
+							<article class="certificateInfo">
+								<h2>"12 - Data Structures - Level1</h2>
+								<p>Mastered key data structures (arrays, stacks, queues, linked lists) and time
+									complexity (Big O). Solid understanding of ADTs and Map operations.</p>
+								<a href="pdf/12-basic.pdf" class="DownloadCertificateBtn" target="_blank">Download</a>
+							</article>
+						</figure>
+
+						<!-- basic 13 -->
+						<figure certificateName="Basic roadmap course13 13 - Algorithms & Problem Solving Level 5"
+							class="card progressCertificate">
+							<div><img src="img/webp/roadmap.webp" type="image/webp" alt="basic roadmap certificate 12 "
+									loading="lazy" fetchpriority="high" decoding="async" /></div>
+							<article class="certificateInfo">
+								<h2>"13 - Algorithms & Problem Solving Level 5</h2>
+								<p>Algorithms & Problem Solving Level 5: Implemented 8 projects applying data structures
+									learned in Course 12.</p>
+								<a href="#" class="DownloadCertificateBtn" target="_blank"> in Progress</a>
+							</article>
+						</figure>
+					</div>
+				</div>
+
+				<!-- <figure style="visibility: hidden" id="MantainGapFigure"></figure> -->
+			</div>
+
+
+
 			<footer class='FooterOutletComponentClass blurFooterOutletComponentClass'>
 				<div class="leftSide">
-				  <img src="img/logo.png" alt="travel stay reservation platform logo" />
-			
-				  <div class="socialContainer">
-				   <a href="https://www.facebook.com/ayoub.majid.5243" target="_blank"><i class="fa-brands fa-facebook"></i></a> 
-				   <a href="https://www.linkedin.com/in/youbista" target="_blank"><i class="fa-brands fa-linkedin"></i></a> 
-				   <a href="https://www.youtube.com/@AyoubMajjid" target="_blank"><i class="fa-brands fa-youtube"></i></a> 
-				   <a href="https://www.instagram.com/ayoub_majjid/" target="_blank"> <i class="fa-brands fa-instagram"></i></a> 
-				  </div>
-			
+					<img src="img/logo.png" alt="travel stay reservation platform logo" />
+
+					<div class="socialContainer">
+						<a href="https://www.facebook.com/ayoub.majid.5243" target="_blank"><i
+								class="fa-brands fa-facebook"></i></a>
+						<a href="https://www.linkedin.com/in/youbista" target="_blank"><i
+								class="fa-brands fa-linkedin"></i></a>
+						<a href="https://www.youtube.com/@AyoubMajjid" target="_blank"><i
+								class="fa-brands fa-youtube"></i></a>
+						<a href="https://www.instagram.com/ayoub_majjid/" target="_blank"> <i
+								class="fa-brands fa-instagram"></i></a>
+					</div>
+
 				</div>
-			
+
 				<div class="rightSide">
-				  <ul>
-					<li>
-					  <i class="fa-solid fa-angles-right" class="icon"></i>
-					  <a href="/">Home</a>
-					</li>
-					<li>
-					  <i class="fa-solid fa-angles-right" class="icon"></i>
-					  <a href="about.html">About Us</a>
-					</li>
-					<li>
-					  <i class="fa-solid fa-angles-right" class="icon"></i>
-					  <a href="services.html">Our Services</a>
-					</li>
-				 
-				  </ul>
-			
-				  <ul>
-				   
-					<li>
-					  <i class="fa-solid fa-angles-right" class="icon"></i>
-					  <a href="contact.html">Contact Us</a>
-					</li>
-					<li>
-					  <i class="fa-solid fa-angles-right" class="icon"></i>
-					  <a href="Certificates.html">Our Certificates</a>
-					</li>
-				   
-				  </ul>
-			
-				  <ul>
-				  
-					<li>
-					  <i class="fa-solid fa-angles-right" class="icon"></i>
-					  <a href="#">Our Projects</a>
-					</li>
-				  </ul>
+					<ul>
+						<li>
+							<i class="fa-solid fa-angles-right" class="icon"></i>
+							<a href="/">Home</a>
+						</li>
+						<li>
+							<i class="fa-solid fa-angles-right" class="icon"></i>
+							<a href="about.html">About Us</a>
+						</li>
+						<li>
+							<i class="fa-solid fa-angles-right" class="icon"></i>
+							<a href="services.html">Our Services</a>
+						</li>
+
+					</ul>
+
+					<ul>
+
+						<li>
+							<i class="fa-solid fa-angles-right" class="icon"></i>
+							<a href="contact.html">Contact Us</a>
+						</li>
+						<li>
+							<i class="fa-solid fa-angles-right" class="icon"></i>
+							<a href="Certificates.html">Our Certificates</a>
+						</li>
+
+					</ul>
+
+					<ul>
+
+						<li>
+							<i class="fa-solid fa-angles-right" class="icon"></i>
+							<a href="#">Our Projects</a>
+						</li>
+					</ul>
 				</div>
-			  </footer>
-			
-			
-			</div>
+			</footer>
+
 
 		</div>
 
-		<!-- Google tag (gtag.js) -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=G-BL998MEBFJ"></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
+	</div>
 
-  gtag('config', 'G-BL998MEBFJ');
-</script>
+	<!-- Google tag (gtag.js) -->
+	<script async src="https://www.googletagmanager.com/gtag/js?id=G-BL998MEBFJ"></script>
+	<script>
+		window.dataLayer = window.dataLayer || [];
+		function gtag() { dataLayer.push(arguments); }
+		gtag('js', new Date());
 
-		<script src="JS/source.js"></script>
-		<script src="JS/logic.js"></script>
-		<script src="JS/main.js"></script>
+		gtag('config', 'G-BL998MEBFJ');
+	</script>
 
-		<script src="JS/certificates/certificates.js"></script>
+	<script src="JS/source.js"></script>
+	<script src="JS/logic.js"></script>
+	<script src="JS/main.js"></script>
 
-		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/remixicon/4.2.0/remixicon.min.css" integrity="sha512-MqL4+Io386IOPMKKyplKII0pVW5e+kb+PI/I3N87G3fHIfrgNNsRpzIXEi+0MQC0sR9xZNqZqCYVcC61fL5+Vg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-	</body>
+	<script src="JS/certificates/certificates.js"></script>
+
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/remixicon/4.2.0/remixicon.min.css"
+		integrity="sha512-MqL4+Io386IOPMKKyplKII0pVW5e+kb+PI/I3N87G3fHIfrgNNsRpzIXEi+0MQC0sR9xZNqZqCYVcC61fL5+Vg=="
+		crossorigin="anonymous" referrerpolicy="no-referrer" />
+</body>
+
 </html>
