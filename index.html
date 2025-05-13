@@ -6,7 +6,7 @@
 <meta name="robots" content="index, follow" />
 <meta name="author" content="Ayoub Majjid" />
 <meta name="description" content="Welcome to Ayoub Majjid's personal portfolio — Software Engineer specializing in Full Stack Web Development (Flask, Django, React, MongoDB, SQL). Explore my projects, certifications, and professional experiences including Poste Maroc, CNIPE, and more." />
-<meta name="keywords" content="Ayoub Majjid, Software Engineer, Web Developer, Full Stack Developer, Portfolio,ayoub majjid portfolio,ayoub majjid dev , ayoub majjid site,Flask, Django, MongoDB, Python, React, Next.js, JavaScript, HTML, CSS, Poste Maroc, CNIPE, EMSI, GitHub, LinkedIn, YouTube, MOOC, AI chatbot, Travel App" />
+<meta name="keywords" content="Ayoub Majjid,about Ayoub Majjid, Software Engineer, Web Developer, Full Stack Developer, Portfolio,ayoub majjid portfolio,ayoub majjid dev , ayoub majjid site,Flask, Django, MongoDB, Python, React, Next.js, JavaScript, HTML, CSS, Poste Maroc, CNIPE, EMSI, GitHub, LinkedIn, YouTube, MOOC, AI chatbot, Travel App" />
 <meta property="og:title" content="Ayoub Majjid - Software Engineer Portfolio" />
 <meta property="og:description" content="Explore Ayoub Majjid's portfolio including web development projects, certifications, and real-world experience." />
 <meta property="og:type" content="website" />
@@ -30,7 +30,11 @@
   "@type": "Person",
   "name": "Ayoub Majjid",
   "url": "http://majjid.com/",
-  "image": "http://majjid.com/images/profile.png",
+  "mainEntityOfPage": {
+    "@type": "WebPage",
+    "@id": "http://majjid.com/"
+  },
+  "image": "http://majjid.com/img/webp/profile.webp",
   "sameAs": [
     "https://www.linkedin.com/in/youbista/",
     "https://github.com/ayoubmajid67",
@@ -51,26 +55,38 @@
   "address": {
     "@type": "PostalAddress",
     "addressLocality": "Skhirat",
-    "addressCountry": "Morocco"
+    "addressCountry": "MA"
   },
-  "description": "Ayoub Majjid is a passionate Software Engineer and Full Stack Developer based in Morocco. Skilled in React, Next.js, Flask, Django, Java, Spring Boot, and MongoDB. Known for building modern web platforms and scalable backend systems. Currently working on innovative projects with Poste Maroc and previously developed MOOC and booking platforms at CNIPE.",
-  "skills": [
-    "React.js",
-    "Next.js",
-    "JavaScript",
-    "Flask",
-    "Django",
-    "Java",
-    "Spring Boot",
-    "MongoDB",
-    "SQL Server",
-    "HTML",
-    "CSS",
-    "Git & GitHub",
-    "Docker",
-    "UML Design",
-    "Jira"
-  ],
+  "description": "Ayoub Majjid is a Moroccan Software Engineer and Full Stack Developer experienced in React, Next.js, Spring Boot, Flask, and MongoDB. He specializes in building scalable web platforms and APIs, with hands-on experience at Poste Maroc and CNIPE.",
+  "hasOccupation": {
+    "@type": "Occupation",
+    "name": "Software Engineer",
+    "description": "Develops, tests, and maintains full-stack web applications and scalable APIs using modern web technologies.",
+    "skills": [
+      "Web Development",
+      "API Design",
+      "Project Management",
+      "UI/UX Design",
+      "Database Architecture"
+    ],
+    "estimatedSalary": {
+      "@type": "MonetaryAmount",
+      "currency": "MD",
+      "value": {
+        "@type": "QuantitativeValue",
+        "value": "20000",
+        "unitText": "YEAR"
+      }
+    },
+    "occupationLocation": {
+      "@type": "Place",
+      "address": {
+        "@type": "PostalAddress",
+        "addressLocality": "Rabat",
+        "addressCountry": "MA"
+      }
+    }
+  },
   "knowsLanguage": [
     {
       "@type": "Language",
@@ -87,21 +103,10 @@
       "name": "Arabic",
       "proficiencyLevel": "C1"
     }
-  ],
-  "hasOccupation": {
-    "@type": "Occupation",
-    "name": "Software Engineer",
-    "description": "Develops, tests, and maintains full-stack web applications and scalable APIs using modern web technologies.",
-    "skills": [
-      "Web Development",
-      "API Design",
-      "Project Management",
-      "UI/UX Design",
-      "Database Architecture"
-    ]
-  }
+  ]
 }
 </script>
+
 
 
 
