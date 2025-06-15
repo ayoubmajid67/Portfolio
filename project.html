@@ -163,8 +163,14 @@
 
 
 			<div class="Title">
-				<h1><span>M</span>y <span>P</span>rojects <i class="ri-git-merge-line"></i> 33</h1>
-				<h2><i class="ri-reactjs-line"></i> Web , <i class="ri-terminal-box-line"></i> Cpp</h2>
+				<h1><span>M</span>y <span>P</span>rojects <i class="ri-git-merge-line"></i> <span id="totalProjects">0</span></h1>
+				<h2>
+					<i class="ri-reactjs-line"></i> Web,
+					<i class="ri-terminal-box-line"></i> Cpp,
+					<i class="fa-solid fa-database"></i> Data,
+					<i class="fa-solid fa-mobile-screen-button"></i> Mobile,
+					<i class="fa-solid fa-desktop"></i> Desktop
+				</h2>
 			</div>
 
 			<div class="searchContainer">
@@ -181,22 +187,32 @@
 				<div class="weContainerProjects domainContent">
 					<!-- 1 portfolio 1 -->
 					<!-- https://youbistamajid.000webhostapp.com -->
-					<article projectName=" portfolio 1 webProject1" class="card">
-						<img srcset="img/webp/project1.webp" loading="lazy" type="image/webp" alt="portfolio 1" />
-						<h3>1 - <span>P</span>ortfolio 1 <i class="ri-verified-badge-line"></i></h3>
-						<p>My portfolio offers a holistic view of me and my offerings. The 'Home' section connects
-							visitors to my CV and social media, 'About Me' provides background insight, 'Services' and
-							'Skills' showcase expertise, and 'Contact Me' ensures easy communication—a comprehensive
-							professional identity.</p>
-						<div class="ProjectResource">
-							<a class="WebtiseLink" href="https://ayoubmajid67.github.io/portfolio-1/"
-								target="_blank">Try it</a>
-
+					<article id="portfolio1" projectName=" portfolio 1 webProject1" class="card">
+						<div class="card-image">
+							<img srcset="img/webp/project1.webp" loading="lazy" type="image/webp" alt="portfolio 1" />
+						</div>
+						<div class="card-content">
+							<h3>1 - <span>P</span>ortfolio 1 <i class="ri-verified-badge-line"></i></h3>
+							<p>My portfolio offers a holistic view of me and my offerings. The 'Home' section connects
+								visitors to my CV and social media, 'About Me' provides background insight, 'Services' and
+								'Skills' showcase expertise, and 'Contact Me' ensures easy communication—a comprehensive
+								professional identity.</p>
+							<div class="ProjectResource">
+								<a href="https://github.com/ayoubmajid67/portfolio-1" class="WebtiseLink" target="_blank">
+									<i class="fa-brands fa-github"></i> GitHub
+								</a>
+								<a href="#"  class="WebtiseLink disabled" target="_blank">
+									<i class="fa-brands fa-linkedin"></i> LinkedIn
+								</a>
+								<a href="https://ayoubmajid67.github.io/portfolio-1/" class="WebtiseLink" target="_blank">
+									<i class="fa-solid fa-globe"></i> Demo
+								</a>
+							</div>
 						</div>
 					</article>
 
 					<!-- 2 To do list  -->
-					<article projectName=" to do list webProject2" class="card">
+					<article id="todo-list" projectName=" to do list webProject2" class="card">
 						<img srcset="img/webp/project2.webp" loading="lazy" type="image/webp" alt="To do List " />
 						<h3>2 - <span>T</span>o <span>D</span>o <span>L</span>ist <i class="ri-verified-badge-line"></i>
 						</h3>
@@ -205,20 +221,35 @@
 							on a quest to streamline my daily tasks and ensure that I can manage my time effectively.
 						</p>
 						<div class="ProjectResource">
-							<a href="https://ayoubmajid67.github.io/summar-2023/project%202/" class="WebtiseLink"
-								target="_blank">try it </a>
+							<a href="https://github.com/ayoubmajid67/summar-2023/tree/main/project%202" class="WebtiseLink" target="_blank">
+								<i class="fa-brands fa-github"></i> GitHub
+							</a>
+							<a   target="_blank" href="https://www.linkedin.com/posts/youbista_productivitymatters-goalgetter-personalgrowth-activity-7098615866333753344-YaRd?utm_source=share&utm_medium=member_desktop&rcm=ACoAADvjKzABpK_MLZWJYvsh4MHCymLEb8DcykI" class="WebtiseLink" target="_blank">
+								<i class="fa-brands fa-linkedin"></i> LinkedIn
+							</a>
+							<a href="https://ayoubmajid67.github.io/summar-2023/project%202/" class="WebtiseLink" target="_blank">
+								<i class="fa-solid fa-globe"></i> Demo
+							</a>
 						</div>
 					</article>
 
 					<!-- 3 portfolio 2   -->
-					<article projectName=" portfolio 2 webProject3" class="card">
+					<article id="portfolio2" projectName=" portfolio 2 webProject3" class="card">
 						<img src="img/webp/project3.webp" loading="lazy" type="image/webp" alt="To do list " />
 						<h3>3 - <span>P</span>ortfolio 2 <i class="ri-verified-badge-line"></i></h3>
 						<p>Presenting my new portfolio project—simple and functional, with five sections: Home for a
 							brief introduction, About for a deeper dive into my skills, Contact for easy connection,
 							Certificates for achievements, and Projects for showcasing my work.</p>
 						<div class="ProjectResource">
-							<a href="majjid.com" class="WebtiseLink" target="_blank">try it </a>
+							<a href="https://github.com/ayoubmajid67/Portfolio" class="WebtiseLink" target="_blank">
+								<i class="fa-brands fa-github"></i> GitHub
+							</a>
+							<a href="https://www.linkedin.com/posts/youbista_portfolio-professionaljourney-linkedinsharing-activity-7116743935246364673-8x_9?utm_source=share&utm_medium=member_desktop&rcm=ACoAADvjKzABpK_MLZWJYvsh4MHCymLEb8DcykI" class="WebtiseLink" target="_blank">
+								<i class="fa-brands fa-linkedin"></i> LinkedIn
+							</a>
+							<a href="https://majjid.com" class="WebtiseLink" target="_blank">
+								<i class="fa-solid fa-globe"></i> Demo
+							</a>
 						</div>
 					</article>
 
@@ -243,7 +274,7 @@
 						</article> -->
 
 					<!-- 4 API placeholder version 2  -->
-					<article projectName=" api placeholder version 2 webProject6" class="card">
+					<article id="api-placeholder" projectName=" api placeholder version 2 webProject6" class="card">
 						<img src="img/webp/project6.webp" loading="lazy" type="image/webp"
 							alt="API placeholder  version 2" />
 						<h3>4 - <span>A</span>pi <span>P</span>laceholder <span>V</span>ersion 2 <i
@@ -252,13 +283,20 @@
 							free to explore both and let me know which one you prefer! Your feedback is invaluable, so
 							please take a moment to try it out and share your thoughts.</p>
 						<div class="ProjectResource">
-							<a href="https://ayoubmajid67.github.io/summar-2023/project%20API%20Version%202/"
-								class="WebtiseLink" target="_blank">try it </a>
+							<a href="https://github.com/ayoubmajid67/summar-2023/tree/main/project%20API%20Version%202" class="WebtiseLink" target="_blank">
+								<i class="fa-brands fa-github"></i> GitHub
+							</a>
+							<a href="#" class="WebtiseLink disabled" target="_blank">
+								<i class="fa-brands fa-linkedin"></i> LinkedIn
+							</a>
+							<a href="https://ayoubmajid67.github.io/summar-2023/project%20API%20Version%202/INDEX.HTML" class="WebtiseLink" target="_blank">
+								<i class="fa-solid fa-globe"></i> Demo
+							</a>
 						</div>
 					</article>
 
 					<!-- 6 morocco prayer times  -->
-					<article projectName=" Morocco prayer times webProject7" class="card">
+					<article id="prayer-times" projectName=" Morocco prayer times webProject7" class="card">
 						<img src="img/webp/project7.webp" loading="lazy" type="image/webp" alt="Morocco prayer times" />
 						<h3>5 - <span>M</span>orocco <span>P</span>rayer <span>T</span>imes <i
 								class="ri-verified-badge-line"></i></h3>
@@ -266,51 +304,79 @@
 							personalized schedules with city filtering for accurate and accessible daily prayer times.
 							Stay tuned for its release and share for the benefit of all. 🕌</p>
 						<div class="ProjectResource">
-							<a href="https://ayoubmajid67.github.io/summar-2023/js/HIGT%20LEVEL/asignement/4-assignement/"
-								class="WebtiseLink" target="_blank">try it </a>
+							<a href="https://github.com/ayoubmajid67/summar-2023/tree/main/js/HIGT%20LEVEL/asignement/4-assignement" class="WebtiseLink" target="_blank">
+								<i class="fa-brands fa-github"></i> GitHub
+							</a>
+							<a  target="_blank" href="https://www.linkedin.com/posts/youbista_prayertimes-morocco-apiintegration-activity-7118863512348569600-mTy7?utm_source=share&utm_medium=member_desktop&rcm=ACoAADvjKzABpK_MLZWJYvsh4MHCymLEb8DcykI" class="WebtiseLink disabled" target="_blank">
+								<i class="fa-brands fa-linkedin"></i> LinkedIn
+							</a>
+							<a href="https://ayoubmajid67.github.io/summar-2023/js/HIGT%20LEVEL/asignement/4-assignement/" class="WebtiseLink" target="_blank">
+								<i class="fa-solid fa-globe"></i> Demo
+							</a>
 						</div>
 					</article>
 
 					<!-- 7 Zero web school template 1  -->
-					<article projectName=" template 1 webProject8" class="card">
+					<article id="template1" projectName=" template 1 webProject8" class="card">
 						<img src="img/webp/project8.webp" loading="lazy" type="image/webp"
 							alt="zero web school Template 1 " />
 						<h3>6 - <span>T</span>emplate <span>O</span>ne <i class="ri-verified-badge-line"></i></h3>
 						<p>Proudly presenting my HTML and CSS project: "Template 1"! Crafted a sleek and responsive
 							website featuring sections for Home, Services, Portfolio, About, and Contact. 💻</p>
 						<div class="ProjectResource">
-							<a href="https://ayoubmajid67.github.io/Zero-Web-School/template%201/" class="WebtiseLink"
-								target="_blank">try it </a>
+							<a href="https://github.com/ayoubmajid67/Zero-Web-School/tree/main/template%201" class="WebtiseLink" target="_blank">
+								<i class="fa-brands fa-github"></i> GitHub
+							</a>
+							<a  target="_blank" href="https://www.linkedin.com/posts/youbista_html-css-webdevelopment-activity-7131016041677115392-KWKp?utm_source=share&utm_medium=member_desktop&rcm=ACoAADvjKzABpK_MLZWJYvsh4MHCymLEb8DcykI" class="WebtiseLink disabled" target="_blank">
+								<i class="fa-brands fa-linkedin"></i> LinkedIn
+							</a>
+							<a href="https://ayoubmajid67.github.io/Zero-Web-School/template%201/" class="WebtiseLink" target="_blank">
+								<i class="fa-solid fa-globe"></i> Demo
+							</a>
 						</div>
 					</article>
 					<!-- 8 Zero web school template 2  -->
-					<article projectName=" template 2 webProject8" class="card">
+					<article id="template2" projectName=" template 2 webProject8" class="card">
 						<img src="img/webp/project9.webp" loading="lazy" type="image/webp"
 							alt="zero web school Template 2" />
 						<h3>7 - <span>T</span>emplate <span>T</span>wo <i class="ri-verified-badge-line"></i></h3>
 						<p>Template 2," featuring a sleek and functional layout with six sections: Home, Services,
 							Portfolio, About, Pricing, and Contact.</p>
 						<div class="ProjectResource">
-							<a href="https://ayoubmajid67.github.io/Zero-Web-School/template%202/" class="WebtiseLink"
-								target="_blank">try it </a>
+							<a href="https://github.com/ayoubmajid67/Zero-Web-School/tree/main/template%202" class="WebtiseLink" target="_blank">
+								<i class="fa-brands fa-github"></i> GitHub
+							</a>
+							<a target="_blank" href="https://www.linkedin.com/posts/youbista_webdesign-html-css-activity-7137472284243472384-ghzj?utm_source=share&utm_medium=member_desktop&rcm=ACoAADvjKzABpK_MLZWJYvsh4MHCymLEb8DcykI" class="WebtiseLink disabled" target="_blank">
+								<i class="fa-brands fa-linkedin"></i> LinkedIn
+							</a>
+							<a href="https://ayoubmajid67.github.io/Zero-Web-School/template%202/" class="WebtiseLink" target="_blank">
+								<i class="fa-solid fa-globe"></i> Demo
+							</a>
 						</div>
 					</article>
 
 					<!-- 9 Zero web school template 3  -->
-					<article projectName=" template 3 webProject9" class="card">
+					<article id="template3" projectName=" template 3 webProject9" class="card">
 						<img src="img/webp/project10.webp" loading="lazy" type="image/webp"
 							alt="zero web school Template 3" />
 						<h3>8 - <span>T</span>emplate <span>T</span>hree <i class="ri-verified-badge-line"></i></h3>
 						<p>Thrilled to unveil my latest web design achievement, "Template 3." This sleek creation boasts
 							six engaging sections, showcasing my prowess in HTML and CSS</p>
 						<div class="ProjectResource">
-							<a href="https://ayoubmajid67.github.io/Zero-Web-School/template%203/" class="WebtiseLink"
-								target="_blank">try it </a>
+							<a href="https://github.com/ayoubmajid67/Zero-Web-School/tree/main/template%203" class="WebtiseLink" target="_blank">
+								<i class="fa-brands fa-github"></i> GitHub
+							</a>
+							<a target="_blank" href="https://www.linkedin.com/posts/youbista_webdesign-html-css-activity-7142549826126168065-MiBr?utm_source=share&utm_medium=member_desktop&rcm=ACoAADvjKzABpK_MLZWJYvsh4MHCymLEb8DcykI" class="WebtiseLink disabled" target="_blank">
+								<i class="fa-brands fa-linkedin"></i> LinkedIn
+							</a>
+							<a href="https://ayoubmajid67.github.io/Zero-Web-School/template%203/" class="WebtiseLink" target="_blank">
+								<i class="fa-solid fa-globe"></i> Demo
+							</a>
 						</div>
 					</article>
 
 					<!-- 10 social media application   -->
-					<article projectName=" social media application webProject10" class="card">
+					<article id="social-media" projectName=" social media application webProject10" class="card">
 						<img src="img/webp/project11.webp" loading="lazy" type="image/webp"
 							alt="social media application " />
 						<h3>9 - <span>S</span>ocial <span>M</span>edia <i class="ri-verified-badge-line"></i></h3>
@@ -318,26 +384,40 @@
 							secure interactions and versatile features. Explore home, profile, and post details pages
 							with advanced authentication</p>
 						<div class="ProjectResource">
-							<a href="https://ayoubmajid67.github.io/Youbista/" class="WebtiseLink" target="_blank">try
-								it </a>
+							<a href="https://github.com/ayoubmajid67/Youbista" class="WebtiseLink" target="_blank">
+								<i class="fa-brands fa-github"></i> GitHub
+							</a>
+							<a href="https://www.linkedin.com/posts/youbista_webdevelopment-socialmediaapp-activity-7152437635951558656-DXF2?utm_source=share&utm_medium=member_desktop&rcm=ACoAADvjKzABpK_MLZWJYvsh4MHCymLEb8DcykI" class="WebtiseLink" target="_blank">
+								<i class="fa-brands fa-linkedin"></i> LinkedIn
+							</a>
+							<a href="https://ayoubmajid67.github.io/Youbista/" class="WebtiseLink" target="_blank">
+								<i class="fa-solid fa-globe"></i> Demo
+							</a>
 						</div>
 					</article>
 
 					<!-- 11 Tic Tac Toe game  -->
-					<article projectName=" tic tac toe webProject11" class="card">
+					<article id="tic-tac-toe" projectName=" tic tac toe webProject11" class="card">
 						<img src="img/webp/webPorject12.webp" loading="lazy" type="image/webp" alt="Tic Tac Toe game" />
 						<h3>10 - <span>X</span>O<span> G</span>ame <i class="ri-verified-badge-line"></i></h3>
 						<p>launched my very own Tic Tac Toe game! 💡 Developed from scratch with HTML, CSS, and
 							JavaScript. Big thanks to Yarob Al Mostafa for the amazing tutorial that guided me through
 							the process!</p>
 						<div class="ProjectResource">
-							<a href="https://ayoubmajid67.github.io/projects/project%201/" class="WebtiseLink"
-								target="_blank">try it </a>
+							<a href="https://github.com/ayoubmajid67/projects/tree/main/project%201" class="WebtiseLink" target="_blank">
+								<i class="fa-brands fa-github"></i> GitHub
+							</a>
+							<a target="_blank" href="https://www.linkedin.com/posts/youbista_tictactoe-gamedevelopment-javascript-activity-7163525182580604928-Wtcu?utm_source=share&utm_medium=member_desktop&rcm=ACoAADvjKzABpK_MLZWJYvsh4MHCymLEb8DcykI" class="WebtiseLink disabled" target="_blank">
+								<i class="fa-brands fa-linkedin"></i> LinkedIn
+							</a>
+							<a href="https://ayoubmajid67.github.io/projects/project%201/" class="WebtiseLink" target="_blank">
+								<i class="fa-solid fa-globe"></i> Demo
+							</a>
 						</div>
 					</article>
 
 					<!-- 12 WORLD CUP 2022 -->
-					<article projectName="World cup 2022 webProject12" class="card">
+					<article id="world-cup" projectName="World cup 2022 webProject12" class="card">
 						<img src="img/webp/webProject13.webp" loading="lazy" type="image/webp" alt="WORLD CUP 2022" />
 						<h3>11 - <span>W</span>orld <span>C</span>up <span>2</span>022 <i
 								class="ri-verified-badge-line"></i></h3>
@@ -345,13 +425,20 @@
 							intuitive, responsive interface. Used Axios for async data fetching, ensuring real-time
 							updates. Tested for compatibility.</p>
 						<div class="ProjectResource">
-							<a href="https://www.linkedin.com/posts/youbista_developed-a-fifa-world-cup-2022-web-application-activity-7165727148958322688--smd?utm_source=share&utm_medium=member_desktop&rcm=ACoAADvjKzABpK_MLZWJYvsh4MHCymLEb8DcykI"
-								class="WebtiseLink" target="_blank">try it </a>
-						</div>ee
+							<a href="https://github.com/ayoubmajid67/projects/tree/main/project%202" class="WebtiseLink" target="_blank">
+								<i class="fa-brands fa-github"></i> GitHub
+							</a>
+							<a href="https://www.linkedin.com/posts/youbista_developed-a-fifa-world-cup-2022-web-application-activity-7165727148958322688--smd" class="WebtiseLink" target="_blank">
+								<i class="fa-brands fa-linkedin"></i> LinkedIn
+							</a>
+							<a href="https://ayoubmajid67.github.io/projects/project%202/" class="WebtiseLink" target="_blank">
+								<i class="fa-solid fa-globe"></i> Demo
+							</a>
+						</div>
 					</article>
 
 					<!-- 13 Tourist web application  -->
-					<article class="card" projectName="tourist web application webProject13 ">
+					<article id="tourist-app" class="card" projectName="tourist web application webProject13 ">
 						<img src="img/webp/webProject14.webp" loading="lazy" type="image/webp"
 							alt=" Morocco Tourist web application " />
 						<h3>12 - <span>T</span>ourst <span>W</span>ep <span>A</span>pplication <i
@@ -360,12 +447,19 @@
 							this web app offers login/register options for users seeking personalized experiences in
 							exploring Morocco's rich cultural heritage.</p>
 						<div class="ProjectResource">
-							<a href="https://www.linkedin.com/posts/youbista_travel-adventure-ai-activity-7214371810274930689-PTAW?utm_source=share&utm_medium=member_desktop&rcm=ACoAADvjKzABpK_MLZWJYvsh4MHCymLEb8DcykI"
-								class="WebtiseLink" target="_blank"> Try it </a>
+							<a href="#"  class="WebtiseLink disabled" target="_blank">
+								<i class="fa-brands fa-github"></i> GitHub
+							</a>
+							<a href="https://www.linkedin.com/posts/youbista_travel-adventure-ai-activity-7214371810274930689-PTAW" class="WebtiseLink" target="_blank">
+								<i class="fa-brands fa-linkedin"></i> LinkedIn
+							</a>
+							<a href="#" class="WebtiseLink disabled" target="_blank">
+								<i class="fa-solid fa-globe"></i> Demo
+							</a>
 						</div>
 					</article>
 
-					<article class="card" projectName="Poste de maroc web application webProject14">
+					<article id="poste-maroc" class="card" projectName="Poste de maroc web application webProject14">
 						<img src="img/webp/webProject15.webp" loading="lazy" type="image/webp"
 							alt=" poste de maroc web application " />
 						<h3>13 - <span>P</span>oste de <span>M</span>aroc <span>A</span>pplication <i
@@ -374,11 +468,18 @@
 							platform, eliminating the need for multiple logins and accounts. This new system not only
 							simplifies processes but also empowers employees with more efficient tools.</p>
 						<div class="ProjectResource">
-							<a href="https://www.linkedin.com/posts/youbista_projectcompletion-digitaltransformation-postedemaroc-activity-7230255169785995264-nDR4?utm_source=share&utm_medium=member_desktop&rcm=ACoAADvjKzABpK_MLZWJYvsh4MHCymLEb8DcykI"
-								class="WebtiseLink" target="_blank"> Try it </a>
+							<a href="https://github.com/ayoubmajid67/pfa_3iir_poste_Maroc" class="WebtiseLink" target="_blank">
+								<i class="fa-brands fa-github"></i> GitHub
+							</a>
+							<a href="https://www.linkedin.com/posts/youbista_projectcompletion-digitaltransformation-postedemaroc-activity-7230255169785995264-nDR4" class="WebtiseLink" target="_blank">
+								<i class="fa-brands fa-linkedin"></i> LinkedIn
+							</a>
+							<a href="#" class="WebtiseLink disabled" target="_blank">
+								<i class="fa-solid fa-globe"></i> Demo
+							</a>
 						</div>
 					</article>
-					<article class="card" projectName="CNIPE courses platform webProject15 ">
+					<article id="cnipe-platform" class="card" projectName="CNIPE courses platform webProject15 ">
 						<img src="img/webp/webProject16.webp" loading="lazy" type="image/webp"
 							alt="CNIPE courses platform web application " />
 						<h3>14 - <span>C</span>NIPE <span>C</span>ourses <span>P</span>latform <i
@@ -387,12 +488,19 @@
 							rich catalog of formations and courses. Users can comment, review, and enroll in courses.
 							The system accommodates owners, admins, and regular users</p>
 						<div class="ProjectResource">
-							<a href="https://www.linkedin.com/posts/youbista_softwaredevelopment-mooc-flask-activity-7244747282779107328-Zr90?utm_source=share&utm_medium=member_desktop&rcm=ACoAADvjKzABpK_MLZWJYvsh4MHCymLEb8DcykI"
-								class="WebtiseLink" target="_blank"> Try it </a>
+							<a href="https://github.com/ayoubmajid67/internships/tree/main/Center%20National%20des%20Innovations%20P%C3%A9dagogiques%20et%20d%27Exp%C3%A9rimentation%20(CNIPE)" class="WebtiseLink" target="_blank">
+								<i class="fa-brands fa-github"></i> GitHub
+							</a>
+							<a href="https://www.linkedin.com/posts/youbista_softwaredevelopment-mooc-flask-activity-7244747282779107328-Zr90" class="WebtiseLink" target="_blank">
+								<i class="fa-brands fa-linkedin"></i> LinkedIn
+							</a>
+							<a href="#" class="WebtiseLink disabled" target="_blank">
+								<i class="fa-solid fa-globe"></i> Demo
+							</a>
 						</div>
 					</article>
 					<!-- haelt  -->
-					<article class="card" projectName="Haelt Portfolio platform webProject16 ">
+					<article id="haelt-portfolio" class="card" projectName="Haelt Portfolio platform webProject16 ">
 						<img src="img/webp/webProject17.webp" loading="lazy" type="image/webp"
 							alt="Haelt Portfolio platform web application " />
 						<h3>15 - <span>H</span>aelt <span>P</span>ortfolio <i class="ri-verified-badge-line"></i></h3>
@@ -400,11 +508,18 @@
 							construction company. This project highlights various completed projects, showcasing
 							essential details such as project amount, execution date, and the project owner.</p>
 						<div class="ProjectResource">
-							<a href="https://ayoubmajid67.github.io/haelt/" class="WebtiseLink" target="_blank"> Try it
+							<a href="https://github.com/ayoubmajid67/haelt" class="WebtiseLink" target="_blank">
+								<i class="fa-brands fa-github"></i> GitHub
+							</a>
+							<a href="#" class="WebtiseLink disabled" target="_blank">
+								<i class="fa-brands fa-linkedin"></i> LinkedIn
+							</a>
+							<a href="https://ayoubmajid67.github.io/haelt/" class="WebtiseLink" target="_blank">
+								<i class="fa-solid fa-globe"></i> Demo
 							</a>
 						</div>
 					</article>
-					<article class="card" projectName="React Todo list platform web application webProject16">
+					<article id="react-todo" class="card" projectName="React Todo list platform web application webProject16">
 						<img src="img/webp/webProject18.webp" loading="lazy" type="image/webp"
 							alt="React Todo list platform web application " />
 						<h3>16 - <span>R</span>eact <span>T</span>odo <span>L</span>ist <i
@@ -413,12 +528,19 @@
 							List application that allows users to manage their tasks efficiently. This project has been
 							an incredible journey, enhancing my skills in front-end development.</p>
 						<div class="ProjectResource">
-							<a href="https://ayoubmajid67.github.io/ReactProjects/project1/build/" class="WebtiseLink"
-								target="_blank"> Try it </a>
+							<a href="https://github.com/ayoubmajid67/ReactProjects/tree/main/project1" class="WebtiseLink" target="_blank">
+								<i class="fa-brands fa-github"></i> GitHub
+							</a>
+							<a target="_blank" href="https://www.linkedin.com/posts/youbista_react-webdevelopment-todolist-activity-7256061012234190849-9jjZ?utm_source=share&utm_medium=member_desktop&rcm=ACoAADvjKzABpK_MLZWJYvsh4MHCymLEb8DcykI" class="WebtiseLink" target="_blank">
+								<i class="fa-brands fa-linkedin"></i> LinkedIn
+							</a>
+							<a href="https://ayoubmajid67.github.io/ReactProjects/project1/build/" class="WebtiseLink" target="_blank">
+								<i class="fa-solid fa-globe"></i> Demo
+							</a>
 						</div>
 					</article>
 
-					<article class="card" projectName="React weather web application webProject17 ">
+					<article id="react-weather" class="card" projectName="React weather web application webProject17 ">
 						<img src="img/webp/webProject19.webp" loading="lazy" type="image/webp"
 							alt="React weather web application webProject18" />
 						<h3>17 - <span>R</span>eact <span>W</span>eather <span>A</span>pp <i
@@ -427,15 +549,22 @@
 							updates for cities across Morocco, featuring multi-language support and a modern interface.
 						</p>
 						<div class="ProjectResource">
-							<a href="https://ayoubmajid67.github.io/ReactProjects/project2/build/" class="WebtiseLink"
-								target="_blank"> Try it </a>
+							<a href="https://github.com/ayoubmajid67/ReactProjects/tree/main/project2" class="WebtiseLink" target="_blank">
+								<i class="fa-brands fa-github"></i> GitHub
+							</a>
+							<a target="_blank" href="https://www.linkedin.com/posts/youbista_im-thrilled-to-announce-the-completion-activity-7263316837185064960-mf5w?utm_source=share&utm_medium=member_desktop&rcm=ACoAADvjKzABpK_MLZWJYvsh4MHCymLEb8DcykI" class="WebtiseLink " target="_blank">
+								<i class="fa-brands fa-linkedin"></i> LinkedIn
+							</a>
+							<a href="https://ayoubmajid67.github.io/ReactProjects/project2/build/" class="WebtiseLink" target="_blank">
+								<i class="fa-solid fa-globe"></i> Demo
+							</a>
 						</div>
 					</article>
 
 
 
 
-					<article class=" card" projectName="Stock Management web application webProject18">
+					<article id="stock-management" class="card" projectName="Stock Management web application webProject18">
 						<img src="../img/webp//webProject20.webp" type="image/webp"
 							alt="Stock Management Web Application" />
 						<h3>18 - <span>S</span>tock <span>M</span>anagement <span>A</span>pplication <i
@@ -444,12 +573,19 @@
 							inventory tracking, enhances order management, and provides real-time stock updates to
 							optimize business operations.</p>
 						<div class="ProjectResource">
-							<a href="https://github.com/ayoubmajid67/Inventory_Management" class="WebtiseLink"
-								target="_blank">Try it</a>
+							<a href="https://github.com/ayoubmajid67/Inventory_Management" class="WebtiseLink" target="_blank">
+								<i class="fa-brands fa-github"></i> GitHub
+							</a>
+							<a target="_blank" href="https://www.linkedin.com/posts/youbista_inventorymanagement-angular-dotnet-activity-7285708731374268417-w3vK?utm_source=share&utm_medium=member_desktop&rcm=ACoAADvjKzABpK_MLZWJYvsh4MHCymLEb8DcykI" class="WebtiseLink disabled" target="_blank">
+								<i class="fa-brands fa-linkedin"></i> LinkedIn
+							</a>
+							<a href="#" class="WebtiseLink disabled" target="_blank">
+								<i class="fa-solid fa-globe"></i> Demo
+							</a>
 						</div>
 					</article>
 					<!-- MrBooking -->
-					<article class="progressProject card" projectName="MrBooking webProject19 progress">
+					<article id="mrbooking" class="progressProject card" projectName="MrBooking webProject19 progress">
 						<img src="img/webp/webProject21.webp" loading="lazy" type="image/webp"
 							alt="MrBooking Web App" />
 						<h3>19 - <span>S</span>tay <span>R</span>eservation <span>A</span>pp <i
@@ -459,13 +595,20 @@
 									built using React and Spring Boot with a seamless user experience.
 									</p>
 						<div class="ProjectResource">
-							<a href="https://www.linkedin.com/posts/youbista_excited-to-kick-off-mrbooking-a-travel-booking-activity-7313274620961316864-en4j?utm_source=share&utm_medium=member_desktop&rcm=ACoAADvjKzABpK_MLZWJYvsh4MHCymLEb8DcykI"
-								class="WebtiseLink" target="_blank">in progress</a>
+							<a href="#" class="WebtiseLink disabled" target="_blank">
+								<i class="fa-brands fa-github"></i> GitHub
+							</a>
+							<a href="https://www.linkedin.com/posts/youbista_excited-to-kick-off-mrbooking-a-travel-booking-activity-7313274620961316864-en4j" class="WebtiseLink" target="_blank">
+								<i class="fa-brands fa-linkedin"></i> LinkedIn
+							</a>
+							<a href="#" class="WebtiseLink disabled" target="_blank">
+								<i class="fa-solid fa-globe"></i> Demo
+							</a>
 						</div>
 					</article>
 
 					<!-- MyPocket -->
-					<article class="progressProject card" projectName="MyPocket webProject20 progress">
+					<article id="mypocket" class="progressProject card" projectName="MyPocket webProject20 progress">
 						<img src="img/webp/webProject22.webp" loading="lazy" type="image/webp"
 							alt="MyPocket Student App" />
 						<h3>20 - <span>M</span>y <span>P</span>ocket <span>A</span>pp <i
@@ -475,28 +618,42 @@
 									designed by students in Morocco to simplify everyday life.
 									</p>
 						<div class="ProjectResource">
-							<a href="https://www.linkedin.com/posts/youbista_say-hello-to-mypocket-the-ultimate-student-activity-7316548846640136193-UkV_?utm_source=share&utm_medium=member_desktop&rcm=ACoAADvjKzABpK_MLZWJYvsh4MHCymLEb8DcykI"
-								class="WebtiseLink" target="_blank">in progress</a>
+							<a target="_blank" href="#" class="WebtiseLink" target="_blank">
+								<i class="fa-brands fa-github"></i> GitHub
+							</a>
+							<a href="https://www.linkedin.com/posts/youbista_say-hello-to-mypocket-the-ultimate-student-activity-7316548846640136193-UkV_" class="WebtiseLink" target="_blank">
+								<i class="fa-brands fa-linkedin"></i> LinkedIn
+							</a>
+							<a href="#" class="WebtiseLink disabled" target="_blank">
+								<i class="fa-solid fa-globe"></i> Demo
+							</a>
 						</div>
 					</article>
 
 					<!-- Explore Maroc 2030 -->
-					<article class="progressProject card" projectName="Explore Maroc 2030 webProject21 progress">
+					<article id="explore-maroc" class="progressProject card" projectName="Explore Maroc 2030 webProject21 progress">
 						<img src="img/webp/webProject23.webp" loading="lazy" type="image/webp"
 							alt="Explore Maroc 2030 App" />
 						<h3>21 - <span>E</span>xplore <span>M</span>aroc <span>2</span>030 <i
 								class="ri-verified-badge-line"></i></h3>
 								<p>
 									Explore Maroc 2030 is your AI-powered travel companion,  
-									designed to discover Morocco’s gems with smart suggestions and routes.
+									designed to discover Morocco's gems with smart suggestions and routes.
 									</p>
 						<div class="ProjectResource">
-							<a href="https://www.linkedin.com/posts/youbista_say-hello-to-explore-maroc-2030-your-activity-7320224452397420544-Zd98?utm_source=share&utm_medium=member_desktop&rcm=ACoAADvjKzABpK_MLZWJYvsh4MHCymLEb8DcykI"
-								class="WebtiseLink" target="_blank">in progress</a>
+							<a target="_blank" href="#" class="WebtiseLink" target="_blank">
+								<i class="fa-brands fa-github"></i> GitHub
+							</a>
+							<a href="https://www.linkedin.com/posts/youbista_say-hello-to-explore-maroc-2030-your-activity-7320224452397420544-Zd98" class="WebtiseLink" target="_blank">
+								<i class="fa-brands fa-linkedin"></i> LinkedIn
+							</a>
+							<a href="#" class="WebtiseLink disabled" target="_blank">
+								<i class="fa-solid fa-globe"></i> Demo
+							</a>
 						</div>
 					</article>
 						<!-- 22Load Balancer Calculator -->
-<article class="card" projectName="Load Balancer Calculator webProject22">
+<article id="load-balancer" class="card" projectName="Load Balancer Calculator webProject22">
 	<img src="img/webp/webProject24.webp" loading="lazy" type="image/webp"
 		alt="Distributed Load Balancer System" />
 	<h3>22 - <span>D</span>istributed <span>L</span>oad <span>B</span>alancer <span>P</span>roject <i
@@ -507,8 +664,15 @@
 		utilizes Flask APIs for efficient computation.
 	</p>
 	<div class="ProjectResource">
-		<a href="https://www.linkedin.com/posts/youbista_loadbalancer-microservices-flask-activity-7328062793952149505-9UkK?utm_source=share&utm_medium=member_desktop&rcm=ACoAADvjKzABpK_MLZWJYvsh4MHCymLEb8DcykI"
-			class="WebtiseLink" target="_blank">Try it</a>
+		<a href="https://github.com/ayoubmajid67/client-server-architecture-project" class="WebtiseLink" target="_blank">
+			<i class="fa-brands fa-github"></i> GitHub
+		</a>
+		<a target="_blank" href="https://www.linkedin.com/posts/youbista_loadbalancer-microservices-flask-activity-7328062793952149505-9UkK?utm_source=share&utm_medium=member_desktop&rcm=ACoAADvjKzABpK_MLZWJYvsh4MHCymLEb8DcykI" class="WebtiseLink" target="_blank">
+			<i class="fa-brands fa-linkedin"></i> LinkedIn
+		</a>
+		<a href="#" class="WebtiseLink disabled" target="_blank">
+			<i class="fa-solid fa-globe"></i> Demo
+		</a>
 	</div>
 </article>
 
@@ -525,23 +689,34 @@
 						</article> -->
 				</div>
 			</div>
+
 			
 <!--  mobile container -->
 <div class="domainContainer webContainer">
 	<h2 class="webContainerDomain"><i class="fa-solid fa-mobile-screen-button"></i> <span>M</span>obile<span>P</span>rojects</h2>
 	<div class="weContainerProjects domainContent">
 
-		<article class="progressProject card" projectName="recipe preparation app mobileProject1 progress">
+		<article id="recipe-app" class="progressProject card" projectName="recipe preparation app mobileProject1 progress">
 			<img src="img/webp/mobileProject1.webp" type="image/webp" alt="Recipe Preparation Mobile App" />
 			<h3>1 - <span>R</span>ecipe <span>P</span>reparation <span>A</span>pp <i class="ri-verified-badge-line"></i></h3>
 			<p>A mobile app built with Java (Android) and Spring Boot for managing and exploring recipes.  
 			Users can browse by category, follow chefs, and view preparation steps. Data is managed with PostgreSQL.</p>
 			<div class="ProjectResource">
-				<a href="https://www.linkedin.com/posts/youbista_androiddev-java-springboot-activity-7325593080567422976-Rd-d?utm_source=share&utm_medium=member_desktop&rcm=ACoAADvjKzABpK_MLZWJYvsh4MHCymLEb8DcykI" class="WebtiseLink" target="_blank">In progress</a>
+				<a target="_blank" href="#" class="WebtiseLink disabled" target="_blank">
+					<i class="fa-brands fa-github"></i> GitHub
+				</a>
+				<a href="https://www.linkedin.com/posts/youbista_androiddev-java-springboot-activity-7325593080567422976-Rd-d" class="WebtiseLink" target="_blank">
+					<i class="fa-brands fa-linkedin"></i> LinkedIn
+				</a>
+				<a href="#" class="WebtiseLink disabled" target="_blank">
+					<i class="fa-solid fa-globe"></i> Demo
+				</a>
 			</div>
 		</article>
 	</div>
 </div>
+
+
 			<!-- desktop project 1  -->
 
 			<div class="domainContainer webContainer">
@@ -549,7 +724,7 @@
 					<span>P</span>rojects</h2>
 				<div class="weContainerProjects domainContent">
 					<!-- Audit Management Desktop Application -->
-					<article class=" card" projectName="audit management application desktopProject1 ">
+					<article id="audit-management" class="card" projectName="audit management application desktopProject1">
 						<img src="img/webp/desktopProject1.webp" type="image/webp"
 							alt="Audit Management Desktop Application" />
 						<h3>1 - <span>A</span>udit <span>M</span>anagement <span>A</span>pplication <i
@@ -558,12 +733,61 @@
 							processes, enables data tracking, and ensures comprehensive reporting, improving
 							organizational compliance and efficiency.</p>
 						<div class="ProjectResource">
-							<a href="https://www.linkedin.com/posts/youbista_java-auditmanagement-json-activity-7289340095797559298-ZMFj?utm_source=share&utm_medium=member_desktop&rcm=ACoAADvjKzABpK_MLZWJYvsh4MHCymLEb8DcykI"
-								class="WebtiseLink" target="_blank">Try it</a>
+							<a href="https://github.com/ayoubmajid67/audit-management-system_4iir" class="WebtiseLink" target="_blank">
+								<i class="fa-brands fa-github"></i> GitHub
+							</a>
+							<a href="https://www.linkedin.com/posts/youbista_java-auditmanagement-json-activity-7289340095797559298-ZMFj" class="WebtiseLink" target="_blank">
+								<i class="fa-brands fa-linkedin"></i> LinkedIn
+							</a>
+							<a href="#" class="WebtiseLink disabled" target="_blank">
+								<i class="fa-solid fa-globe"></i> Demo
+							</a>
+						</div>
+					</article>
+
+					<!-- Gestion des Commandes -->
+					<article id="gestion-commandes" class="card" projectName="gestion des commandes desktopProject2">
+						<img src="img/webp/desktopProject2.webp" loading="lazy" type="image/webp" alt="Gestion des Commandes Application" />
+						<h3>2 - <span>G</span>estion <span>d</span>es <span>C</span>ommandes <i class="ri-verified-badge-line"></i></h3>
+						<p>A complete CRUD-based system for managing clients and their orders, built with Java Swing and MySQL. Features include real-time database interactions, secure account handling with admin/user roles, and token-based authentication for enhanced security.</p>
+						<div class="ProjectResource">
+							<a href="https://github.com/ayoubmajid67/gestion_commandes_JEE_devoir" class="WebtiseLink" target="_blank">
+								<i class="fa-brands fa-github"></i> GitHub
+							</a>
+							<a href="https://www.linkedin.com/posts/youbista_java-swing-jdbc-activity-7315219462033453056-Jxw9" class="WebtiseLink" target="_blank">
+								<i class="fa-brands fa-linkedin"></i> LinkedIn
+							</a>
+							<a href="#" class="WebtiseLink disabled" target="_blank">
+								<i class="fa-solid fa-globe"></i> Demo
+							</a>
 						</div>
 					</article>
 				</div>
 			</div>
+
+				<!-- Data Engineering Container -->
+	<div class="domainContainer webContainer">
+		<h2 class="webContainerDomain"><i class="fa-solid fa-database"></i> <span>D</span>ata <span>E</span>ngineering <span>P</span>rojects</h2>
+		<div class="weContainerProjects domainContent">
+			<!-- PFA Data Warehouse Project -->
+			<article id="data-warehouse" class="progressProject card" projectName="data warehouse sales analysis dataProject1 progress">
+				<img src="img/webp/dataProject1.webp" loading="lazy" type="image/webp" alt="Data Warehouse Sales Analysis" />
+				<h3>1 - <span>D</span>ata <span>W</span>arehouse & <span>S</span>ales <span>A</span>nalysis <i class="ri-verified-badge-line"></i></h3>
+				<p>End-of-Year Project (PFA) focusing on creating a Data Warehouse using Medallion Architecture for analyzing sales data of a US company. Features include Power BI integration for interactive dashboards, geographical maps, and KPI tracking.</p>
+				<div class="ProjectResource">
+					<a href="#" class="WebtiseLink disabled" target="_blank">
+						<i class="fa-brands fa-github"></i> GitHub
+					</a>
+					<a href="#" class="WebtiseLink disabled" target="_blank">
+						<i class="fa-brands fa-linkedin"></i> LinkedIn
+					</a>
+					<a href="#" class="WebtiseLink disabled" target="_blank">
+						<i class="fa-solid fa-globe"></i> Demo
+					</a>
+				</div>
+			</article>
+		</div>
+	</div>
 
 
 			<!-- Cpp Container : -->
@@ -573,7 +797,7 @@
 
 				<div class="CppContainerProjects domainContent">
 					<!-- 1- Stone Paper Scissors  -->
-					<article projectName="cpp console application Stone Paper Scissors cppProject1" class="card">
+					<article id="stone-paper-scissors" projectName="cpp console application Stone Paper Scissors cppProject1" class="card">
 						<img src="img/webp/cppProject1.webp" loading="lazy" type="image/webp"
 							alt="Stone Paper Scissors  img " />
 
@@ -584,13 +808,20 @@
 							the game's essential components, such as player choices and game outcomes. Enums enhance
 							code readability</p>
 						<div class="ProjectResource">
-							<a href="https://github.com/ayoubmajid67/Basic-roadmap/tree/main/projects/project1-Course5"
-								target="_blank">try it </a>
+							<a href="https://github.com/ayoubmajid67/Basic-roadmap/tree/main/projects/project1-Course5" class="WebtiseLink" target="_blank">
+								<i class="fa-brands fa-github"></i> GitHub
+							</a>
+							<a href="#" class="WebtiseLink disabled" target="_blank">
+								<i class="fa-brands fa-linkedin"></i> LinkedIn
+							</a>
+							<a href="#" class="WebtiseLink disabled" target="_blank">
+								<i class="fa-solid fa-globe"></i> Demo
+							</a>
 						</div>
 					</article>
 
 					<!-- 2- mathematical Quiz -->
-					<article projectName="cpp console application mathematical Quiz  cppProject2" class="card">
+					<article id="math-quiz" projectName="cpp console application mathematical Quiz  cppProject2" class="card">
 						<img src="img/webp/cppProject2.webp" loading="lazy" type="image/webp" alt="" />
 
 						<h3>3 - <span>M</span>athematical <span>Q</span>uiz <i class="ri-verified-badge-line"></i></h3>
@@ -598,13 +829,20 @@
 							levels: easy, mid, hard, and a mixed challenge. You have the flexibility to choose from
 							various mathematical operators.</p>
 						<div class="ProjectResource">
-							<a href="https://github.com/ayoubmajid67/Basic-roadmap/tree/main/projects/project2-Coruse5"
-								target="_blank">try it </a>
+							<a href="https://github.com/ayoubmajid67/Basic-roadmap/tree/main/projects/project2-Coruse5" class="WebtiseLink" target="_blank">
+								<i class="fa-brands fa-github"></i> GitHub
+							</a>
+							<a href="#" class="WebtiseLink disabled" target="_blank">
+								<i class="fa-brands fa-linkedin"></i> LinkedIn
+							</a>
+							<a href="#" class="WebtiseLink disabled" target="_blank">
+								<i class="fa-solid fa-globe"></i> Demo
+							</a>
 						</div>
 					</article>
 
 					<!-- 3 bank 1  -->
-					<article projectName="cpp console application  bank 1   cppProject3" class="card">
+					<article id="bank1" projectName="cpp console application  bank 1   cppProject3" class="card">
 						<img src="img/webp/cppProject3.webp" loading="lazy" type="image/webp" alt="" />
 
 						<h3>3 - <span>B</span>ank <span>M</span>anagement <i class="ri-verified-badge-line"></i></h3>
@@ -613,13 +851,20 @@
 							information, finding clients, and an exit option. The project provides a menu-driven
 							interface for seamless interaction</p>
 						<div class="ProjectResource">
-							<a href="https://github.com/ayoubmajid67/Basic-roadmap/tree/main/projects/project3_course7"
-								target="_blank">try it </a>
+							<a href="https://github.com/ayoubmajid67/Basic-roadmap/tree/main/projects/project3_course7" class="WebtiseLink" target="_blank">
+								<i class="fa-brands fa-github"></i> GitHub
+							</a>
+							<a href="#" class="WebtiseLink disabled" target="_blank">
+								<i class="fa-brands fa-linkedin"></i> LinkedIn
+							</a>
+							<a href="#" class="WebtiseLink disabled" target="_blank">
+								<i class="fa-solid fa-globe"></i> Demo
+							</a>
 						</div>
 					</article>
 
 					<!-- 4 bank   1 extension  -->
-					<article projectName="cpp console application bank 1 extension  cppProject4" class="card">
+					<article id="bank1-extension" projectName="cpp console application bank 1 extension  cppProject4" class="card">
 						<img src="img/webp/cppProject4.webp" loading="lazy" type="image/webp" alt="" />
 
 						<h3>4 - <span>B</span>ank <span>M</span>anagement extension <i
@@ -628,13 +873,20 @@
 							Transaction Menu with multiple choices showcasing my proficiency in C++ programming and
 							system design.</p>
 						<div class="ProjectResource">
-							<a href="https://github.com/ayoubmajid67/Basic-roadmap/tree/main/projects/project4_course7"
-								target="_blank">try it </a>
+							<a href="https://github.com/ayoubmajid67/Basic-roadmap/tree/main/projects/project4_course7" class="WebtiseLink" target="_blank">
+								<i class="fa-brands fa-github"></i> GitHub
+							</a>
+							<a href="#" class="WebtiseLink disabled" target="_blank">
+								<i class="fa-brands fa-linkedin"></i> LinkedIn
+							</a>
+							<a href="#" class="WebtiseLink disabled" target="_blank">
+								<i class="fa-solid fa-globe"></i> Demo
+							</a>
 						</div>
 					</article>
 
 					<!-- 5 MANAGE  FLIGHTS -->
-					<article projectName="cpp console application  manage FLIGHTS  cppProject5" class="card">
+					<article id="flight-management" projectName="cpp console application  manage FLIGHTS  cppProject5" class="card">
 						<img src="img/webp/cppProject5.webp" loading="lazy" type="image/webp" alt="" />
 
 						<h3>5 - <span>M</span>anage <span>F</span>lights <i class="ri-verified-badge-line"></i></h3>
@@ -643,13 +895,20 @@
 							incorporates a sophisticated date class, and integrates with a user-friendly web interface.
 							🚁</p>
 						<div class="ProjectResource">
-							<a href="https://github.com/ayoubmajid67/Basic-roadmap/tree/main/projects/finalSchoolProject"
-								target="_blank">try it </a>
+							<a href="https://github.com/ayoubmajid67/Basic-roadmap/tree/main/projects/finalSchoolProject" class="WebtiseLink" target="_blank">
+								<i class="fa-brands fa-github"></i> GitHub
+							</a>
+							<a href="#" class="WebtiseLink disabled" target="_blank">
+								<i class="fa-brands fa-linkedin"></i> LinkedIn
+							</a>
+							<a href="#" class="WebtiseLink disabled" target="_blank">
+								<i class="fa-solid fa-globe"></i> Demo
+							</a>
 						</div>
 					</article>
 
 					<!-- 6 bank   2 extension  -->
-					<article projectName="cpp console application bank 2 extension  cppProject6" class="card">
+					<article id="bank2-extension" projectName="cpp console application bank 2 extension  cppProject6" class="card">
 						<img src="img/webp/cppProject5.webp" loading="lazy" type="image/webp" alt="" />
 
 						<h3>6 - <span>B</span>ank <span>M</span>anagement extension 2 <i
@@ -657,65 +916,100 @@
 						<p>Developed a comprehensive C++ banking system project, "bank1," "Algorithms & Problem Solving
 							Level 4" expands the banking system, elevating client interactions. .</p>
 						<div class="ProjectResource">
-							<a href="https://github.com/ayoubmajid67/Basic-roadmap/tree/main/projects/project5_course8"
-								target="_blank">try it </a>
+							<a href="https://github.com/ayoubmajid67/Basic-roadmap/tree/main/projects/project5_course8" class="WebtiseLink" target="_blank">
+								<i class="fa-brands fa-github"></i> GitHub
+							</a>
+							<a href="#" class="WebtiseLink disabled" target="_blank">
+								<i class="fa-brands fa-linkedin"></i> LinkedIn
+							</a>
+							<a href="#" class="WebtiseLink disabled" target="_blank">
+								<i class="fa-solid fa-globe"></i> Demo
+							</a>
 						</div>
 					</article>
 
 					<!-- 7 ATM SYSTEM   -->
-					<article projectName="cpp console application atm system cppProject7" class="card">
+					<article id="atm-system" projectName="cpp console application atm system cppProject7" class="card">
 						<img src="img/webp/cppProject6.webp" loading="lazy" type="image/webp" alt="" />
 
 						<h3>7 - <span>A</span>tm <span>S</span>ystem <i class="ri-verified-badge-line"></i></h3>
 						<p>introduces a comprehensive ATM interface with features like withdrawals, deposits, and robust
 							user management capabilities. .</p>
 						<div class="ProjectResource">
-							<a href="https://github.com/ayoubmajid67/Basic-roadmap/tree/main/projects/project6_course8"
-								target="_blank">try it </a>
+							<a href="https://github.com/ayoubmajid67/Basic-roadmap/tree/main/projects/project6_course8" class="WebtiseLink" target="_blank">
+								<i class="fa-brands fa-github"></i> GitHub
+							</a>
+							<a href="#" class="WebtiseLink disabled" target="_blank">
+								<i class="fa-brands fa-linkedin"></i> LinkedIn
+							</a>
+							<a href="#" class="WebtiseLink disabled" target="_blank">
+								<i class="fa-solid fa-globe"></i> Demo
+							</a>
 						</div>
 					</article>
 
 					<!-- 8 String  Library   -->
-					<article projectName="cpp console application string library  cppProject8" class="card">
+					<article id="string-library" projectName="cpp console application string library  cppProject8" class="card">
 						<img src="img/webp/cppProject7.webp" loading="lazy" type="image/webp" alt="" />
 
 						<h3>8 - <span>S</span>tring <span>L</span>ibrary <i class="ri-verified-badge-line"></i></h3>
 						<p>The string library project simplifies string operations like case conversion, trimming, word
 							counting, and more for easier coding.</p>
 						<div class="ProjectResource">
-							<a href="https://github.com/ayoubmajid67/Basic-roadmap/tree/main/projects/project7_course10"
-								target="_blank">try it </a>
+							<a href="https://github.com/ayoubmajid67/Basic-roadmap/tree/main/projects/project7_course10" class="WebtiseLink" target="_blank">
+								<i class="fa-brands fa-github"></i> GitHub
+							</a>
+							<a href="#" class="WebtiseLink disabled" target="_blank">
+								<i class="fa-brands fa-linkedin"></i> LinkedIn
+							</a>
+							<a href="#" class="WebtiseLink disabled" target="_blank">
+								<i class="fa-solid fa-globe"></i> Demo
+							</a>
 						</div>
 					</article>
 
 					<!--9 Date Library  -->
-					<article projectName="cpp console application date library  cppProject9" class="card">
+					<article id="date-library" projectName="cpp console application date library  cppProject9" class="card">
 						<img src="img/webp/cppProject8.webp" loading="lazy" type="image/webp" alt="" />
 
 						<h3>9 - <span>D</span>ate <span>L</span>ibrary <i class="ri-verified-badge-line"></i></h3>
 						<p>The Date project simplifies date handling, including validation, comparison, and printing
 							calendars. It offers functionality for getting and setting dates.</p>
 						<div class="ProjectResource">
-							<a href="https://github.com/ayoubmajid67/Basic-roadmap/tree/main/projects/project8_course10"
-								target="_blank">try it </a>
+							<a href="https://github.com/ayoubmajid67/Basic-roadmap/tree/main/projects/project8_course10" class="WebtiseLink" target="_blank">
+								<i class="fa-brands fa-github"></i> GitHub
+							</a>
+							<a href="#" class="WebtiseLink disabled" target="_blank">
+								<i class="fa-brands fa-linkedin"></i> LinkedIn
+							</a>
+							<a href="#" class="WebtiseLink disabled" target="_blank">
+								<i class="fa-solid fa-globe"></i> Demo
+							</a>
 						</div>
 					</article>
 
 					<!--10 Utile Library  -->
-					<article projectName="cpp console application utile library  cppProject10" class="card">
+					<article id="utile-library" projectName="cpp console application utile library  cppProject10" class="card">
 						<img src="img/webp/cppProject9.webp" loading="lazy" type="image/webp" alt="" />
 
 						<h3>10 - <span>U</span>tile <span>L</span>ibrary <i class="ri-verified-badge-line"></i></h3>
 						<p>The Util Library provides encryption, decryption, random number generation, symbol printing,
 							key generation, and vector manipulation functions.</p>
 						<div class="ProjectResource">
-							<a href="https://github.com/ayoubmajid67/Basic-roadmap/tree/main/projects/project9_course11"
-								target="_blank">try it </a>
+							<a href="https://github.com/ayoubmajid67/Basic-roadmap/tree/main/projects/project9_course11" class="WebtiseLink" target="_blank">
+								<i class="fa-brands fa-github"></i> GitHub
+							</a>
+							<a href="#" class="WebtiseLink disabled" target="_blank">
+								<i class="fa-brands fa-linkedin"></i> LinkedIn
+							</a>
+							<a href="#" class="WebtiseLink disabled" target="_blank">
+								<i class="fa-solid fa-globe"></i> Demo
+							</a>
 						</div>
 					</article>
 
 					<!-- 11-UInput Library  -->
-					<article projectName="cpp console application mathematical Quiz  cppProject11" class="card">
+					<article id="input-library" projectName="cpp console application mathematical Quiz  cppProject11" class="card">
 						<img src="img/webp/cppProject10.webp" loading="lazy" type="image/webp" alt="" />
 
 						<h3>11 - <span>I</span>nput <span>L</span>ibrary <i class="ri-verified-badge-line"></i></h3>
@@ -723,13 +1017,20 @@
 							floats, strings, and characters, with validation and error handling for enhanced user
 							experience.</p>
 						<div class="ProjectResource">
-							<a href="https://github.com/ayoubmajid67/Basic-roadmap/tree/main/projects/project10_course11"
-								target="_blank">try it </a>
+							<a href="https://github.com/ayoubmajid67/Basic-roadmap/tree/main/projects/project10_course11" class="WebtiseLink" target="_blank">
+								<i class="fa-brands fa-github"></i> GitHub
+							</a>
+							<a href="#" class="WebtiseLink disabled" target="_blank">
+								<i class="fa-brands fa-linkedin"></i> LinkedIn
+							</a>
+							<a href="#" class="WebtiseLink disabled" target="_blank">
+								<i class="fa-solid fa-globe"></i> Demo
+							</a>
 						</div>
 					</article>
 
 					<!-- 12-vehicle management system   -->
-					<article projectName="cpp console application vehicle management system  cppProject12" class="card">
+					<article id="vehicle-management" projectName="cpp console application vehicle management system  cppProject12" class="card">
 						<img src="img/webp/cppProject11.webp" loading="lazy" type="image/webp" alt="" />
 
 						<h3>12 - <span>V</span>ehicle <span>M</span>anagement <span>S</span>ystem <i
@@ -738,14 +1039,22 @@
 							monitoring/management. Implemented features, code quality, memory management emphasized.
 							Strengthened skills</p>
 						<div class="ProjectResource">
-							<a href="https://github.com/ayoubmajid67/projects/tree/main/project%203" target="_blank">try
-								it </a>
+							<a href="https://github.com/ayoubmajid67/projects/tree/main/project%203" class="WebtiseLink" target="_blank">
+								<i class="fa-brands fa-github"></i> GitHub
+							</a>
+							<a target="_blank" href="https://www.linkedin.com/posts/youbista_avec-rochdi-mohamed-amine-nous-avons-activity-7190435489701670912-1JIh?utm_source=share&utm_medium=member_desktop&rcm=ACoAADvjKzABpK_MLZWJYvsh4MHCymLEb8DcykI" class="WebtiseLink " target="_blank">
+								<i class="fa-brands fa-linkedin"></i> LinkedIn
+							</a>
+							<a href="#" class="WebtiseLink disabled" target="_blank">
+								<i class="fa-solid fa-globe"></i> Demo
+							</a>
 						</div>
 					</article>
 				</div>
 			</div>
 		</div>
 
+	
 
 		<footer class='FooterOutletComponentClass blurFooterOutletComponentClass'>
 			<div class="leftSide">
@@ -830,6 +1139,32 @@
 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/remixicon/4.2.0/remixicon.min.css"
 		integrity="sha512-MqL4+Io386IOPMKKyplKII0pVW5e+kb+PI/I3N87G3fHIfrgNNsRpzIXEi+0MQC0sR9xZNqZqCYVcC61fL5+Vg=="
 		crossorigin="anonymous" referrerpolicy="no-referrer" async />
+
+	<script>
+		document.addEventListener('DOMContentLoaded', function() {
+			// Calculate total projects
+			const projectCards = document.querySelectorAll('.card');
+			const totalProjects = projectCards.length;
+			document.getElementById('totalProjects').textContent = totalProjects;
+
+			// Handle project highlighting from URL
+			const urlParams = new URLSearchParams(window.location.search);
+			const projectId = urlParams.get('project');
+
+			if (projectId) {
+				const projectCard = document.getElementById(projectId);
+				if (projectCard) {
+					projectCard.scrollIntoView({ behavior: 'smooth', block: 'center' });
+					
+					projectCard.classList.add('highlight');
+					
+					setTimeout(() => {
+						projectCard.classList.remove('highlight');
+					}, 3000);
+				}
+			}
+		});
+	</script>
 </body>
 
 </html>

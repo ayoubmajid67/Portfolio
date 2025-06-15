@@ -3,6 +3,7 @@
     position: fixed;
     z-index: 2;
     right: 20px;
+    cursor: pointer;
     bottom: 20px;
     width: 50px;
     opacity: 0.6;

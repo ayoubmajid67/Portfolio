@@ -9,17 +9,28 @@
 
 .container {
 
-    background-image: url('./../../back/webp/projects.webp');
+    background-image: url('./../../back/webp/projectsBack1.webp');
     background-size: cover;
     background-repeat: no-repeat;
     background-blend-mode: color;
     background-attachment: fixed;
-    backdrop-filter: brightness(0.8) blur(1.2px);
+    backdrop-filter: brightness(0.8) blur(3px);
     background-position: center;
    
     display: block;
+    position: relative;
 
+    &:before{
+        content: "";
+        position: absolute;
+        width: 100vw;
+        height: 100%;
+        
+        backdrop-filter: blur(3px);
+    }
+    
 }
+
 
 .mainSection {
     margin-top: 50px;
@@ -27,33 +38,49 @@
     flex-flow: column nowrap;
     gap: 40px;
     padding: 10px;
+    position: relative;
+    
 }
 
-
-.mainSection .Title {
-    display: flex;
+.Title {
     text-align: center;
-    flex-flow: column nowrap;
-    gap: 13px;
-    padding: 6px;
-    margin-top: 7px;
-    color: white;
-    text-shadow: 1px 5px 4px rgba(0, 0, 0, 0.407)
+    margin-bottom: 2rem;
 }
 
-.mainSection .Title h4 {
-    opacity: 0.9;
-    font-weight: 600;
-    font-size: 1em;
-    align-self: center;
-    text-shadow: 1px 5px 4px rgba(0, 0, 0, 0.407);
+.Title h1 {
+    font-size: 3rem;
+    margin-bottom: 1rem;
+    color: var(--text-color);
 }
 
-.mainSection .Title h1 {
-    font-variant: small-caps;
-    text-wrap: nowrap;
-    align-self: center;
+.Title h1 span {
+    color: var(--accent-color);
+    font-weight: 800;
+}
 
+.Title h1 i {
+    color: var(--accent-color);
+    margin-left: 1rem;
+}
+
+.Title h2 {
+    font-size: 1.5rem;
+    color: var(--text-color);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+    flex-wrap: wrap;
+}
+
+.Title h2 i {
+    color: var(--accent-color);
+    font-size: 1.8rem;
+}
+
+#totalProjects {
+    color: var(--accent-color);
+    font-weight: 800;
 }
 
 .CppContainerDomain span,
@@ -80,11 +107,33 @@
 
 .CppContainerDomain,
 .webContainer .webContainerDomain {
-    font-variant: small-caps;
-    padding: 10px 0;
-    color: rgb(255, 243, 243);
-    text-align: center;
+    font-size: 2.5rem;
+    font-weight: 700;
+    color: var(--text-color);
+    margin-bottom: 2rem;
+    padding: 1rem 2rem;
+
+    border-radius: 10px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+    display: inline-block;
+    position: relative;
+    overflow: hidden;
+    color: white;
+   text-align: center;
 }
+
+.CppContainerDomain i,
+.webContainer .webContainerDomain i {
+    margin-right: 1rem;
+    color: var(--accent-color);
+}
+
+.CppContainerDomain span,
+.webContainer .webContainerDomain span {
+    color: var(--accent-color);
+    font-weight: 800;
+}
+
 
 .CppContainerProjects,
 .weContainerProjects {
@@ -106,109 +155,211 @@
     flex-flow: column nowrap;
     gap: 5px;
     justify-content: space-between;
-    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.417);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
     min-width: 250px;
     max-width: 100%;
     flex-basis: 400px;
     flex-shrink: 0;
-
-
-    border-radius: 0px 0px 12px 12px;
+    border-radius: 16px;
     margin-bottom: 4px;
-    background-color: #0b1212b5;
-    scale: 0.9;
+    background-color: rgba(11, 18, 18, 0.95);
+    scale: 0.95;
+    transition:  0.4s cubic-bezier(0.4, 0, 0.2, 1);
+    position: relative;
+    overflow: hidden;
+}
+
+.CppContainerProjects .card::before,
+.webContainer .card::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(45deg, rgba(8, 131, 118, 0.1), transparent);
+    opacity: 0;
+    transition: opacity 0.4s ease;
+}
+
+.CppContainerProjects .card:hover::before,
+.webContainer .card:hover::before {
+    opacity: 1;
 }
 
 .CppContainerProjects img,
 .weContainerProjects img {
     width: 100%;
+    height: 200px;
+    object-fit: cover;
+    
 }
 
 
 .card h3 {
-    padding: 0 10px;
-    font-size: 1.1em;
-    font-style: italic;
+    padding: 15px 20px 5px;
+    font-size: 1.2em;
+    font-weight: 600;
     color: white;
-    margin-bottom: 2px;
-    margin-top: 3px;
+    margin: 0;
+    position: relative;
 }
 
+.card h3::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 20px;
+    width: 40px;
+    height: 3px;
+    background: #088376;
+    transition: width 0.3s ease;
+}
+
+.card:hover h3::after {
+    width: 80px;
+}
 
 .card p {
-    margin: 5px 0;
-    font-size: 0.82em;
-    padding: 0 12px;
-
-    line-height: 1.3;
-    padding-bottom: 4px;
-    font-weight: 600;
-    font-family: arial;
-    color: white;
+    margin: 10px 0;
+    font-size: 0.9em;
+    padding: 0 20px;
+    line-height: 1.5;
+    color: rgba(255, 255, 255, 0.9);
+    font-family: 'Inter', sans-serif;
 }
-
 
 .card .ProjectResource {
-    background-color: rgb(0, 0, 0);
-    padding: 7px;
+    background-color: rgba(0, 0, 0, 0.8);
+    padding: 15px;
     text-align: center;
-    border-radius: 0px 0px 12px 12px;
-    transition: 0.4s;
-    cursor: pointer;
-
+    border-radius: 0 0 16px 16px;
+    transition: all 0.4s ease;
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    flex-wrap: wrap;
+    position: relative;
 }
-.card .ProjectResource:hover,
-.progressProject .ProjectResource {
-    background-color: #096e64;
+
+.card .ProjectResource a {
+    text-decoration: none;
+    color: white;
+    font-size: 1em;
+    text-transform: capitalize;
+    padding: 8px 16px;
+    border-radius: 8px;
+    background: rgba(255, 255, 255, 0.1);
+    transition: all 0.3s ease;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+.card .ProjectResource a:hover {
+    background: #088376;
+    transform: translateY(-2px);
+}
+
+.card .ProjectResource a.disabled {
+    opacity: 0.5;
+    cursor: not-allowed;
+    pointer-events: none;
+}
+
+.card .ProjectResource a i {
+    font-size: 1.1em;
 }
 
 .progressProject {
-    opacity: 0.6;
+    opacity: 0.85;
+    position: relative;
 }
 
-.ProjectResource a {
-    text-decoration: none;
+.progressProject::after {
+    content: 'In Progress';
+    position: absolute;
+    top: 20px;
+    right: -35px;
+    background: #088376;
     color: white;
-    font-size: 1.2em;
-    text-transform: capitalize;
-    text-wrap: nowrap;
-
+    padding: 8px 40px;
+    transform: rotate(45deg);
+    font-size: 0.8em;
+    font-weight: 600;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+    z-index: 1;
 }
 
-
-.CppContainerProjects .card h3 span,
-.ProjectResource:not(.progressProject .ProjectResource):hover {
- color: #088376;
+.progressProject .ProjectResource {
+    background: linear-gradient(45deg, rgba(8, 131, 118, 0.9), rgba(8, 131, 118, 0.7));
 }
 
-.card {
-    transition: 0.6s;
+.progressProject .ProjectResource a {
+    background: rgba(255, 255, 255, 0.15);
+}
 
-    filter: brightness(96%);
+.progressProject .ProjectResource a:hover {
+    background: rgba(255, 255, 255, 0.25);
+    transform: translateY(-2px);
+}
+
+.progressProject .ProjectResource a.disabled {
+    opacity: 0.7;
 }
 
 .card:not(.progressProject):hover {
-    transform: translateY(-10px);
+    transform: translateY(-10px) scale(1.02);
+    box-shadow: 0 15px 30px rgba(0, 0, 0, 0.3);
 }
 
 .card img {
-    filter: grayscale(10%) saturate(70%);
+    filter: grayscale(20%) saturate(90%);
+    transition: filter 0.4s ease;
 }
 
-@media (max-width:500px) {
+.card:hover img {
+    filter: grayscale(0%) saturate(100%);
+}
 
-
+@media (max-width: 500px) {
     .webContainer .card,
     .CppContainerProjects .card {
-        width: 90%;
-        overflow: hidden;
+        width: 95%;
+        margin: 0 auto;
     }
-
+    
+    .card .ProjectResource {
+        flex-direction: column;
+        gap: 10px;
+    }
+    
+    .card .ProjectResource a {
+        width: 100%;
+        justify-content: center;
+    }
 }
 
 
 
-#DropDown {
 
-}
 /* end */
+
+.card.highlight {
+    transform: scale(1.02) ;
+    box-shadow: 0 8px 25px var(--primaryColor) !important;
+    border: 2px solid var(--secondaryColor);
+    animation: highlight-pulse 2s infinite;
+}
+
+@keyframes highlight-pulse {
+    0% {
+        box-shadow: 0 8px 25px rgba(0, 0, 0, 0.2);
+    }
+    50% {
+        box-shadow: 0 8px 25px var(--primaryColor);
+    }
+    100% {
+        box-shadow: 0 8px 25px var(--secondaryColor);
+    }
+}
