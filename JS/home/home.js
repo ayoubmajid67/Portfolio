@@ -3,11 +3,14 @@ let pMainContent = document.getElementById("mainContent");
 
 //  change the content for mobile :
 let mobileContent = `
-Welcome to my portfolio! I'm a fourth-year computer engineering student at EMSI, passionate about full-stack web development. With expertise in HTML, CSS, and JavaScript react and more. Explore my projects to see how I bring designs to life and create seamless user experiences. Let's connect and collaborate!
+Hi! I’m Ayoub Majjid, a 4th-year computer engineering student at EMSI and currently a Tech Lead & Entrepreneur at Intellcap. I’m passionate about software development, system design, and project management. I love building scalable solutions and leading tech teams. Let’s build something great together!
 `;
 
 let medLargeContent = `
-Hello and welcome to my portfolio! I'm currently a fourth-year computer engineering student at EMSI, with a background in Experimental Sciences. My journey at EMSI has deepened my understanding of mathematics, physics, and chemistry, igniting my passion for computer science and engineering.  As a full-stack developer, I specialize in building dynamic and scalable applications using React, Next.js, Python, and more. I stay updated with industry trends to ensure seamless user experiences and efficient back-end solutions. Let's collaborate and create something amazing together!
+Hello and welcome to my portfolio! I’m Ayoub Majjid, a fourth-year computer engineering student at EMSI, with a background in Experimental Sciences. My journey at EMSI has strengthened my foundation in mathematics, physics, and chemistry, and deepened my passion for technology and system design.
+Currently, I’m working as a Tech Lead and Entrepreneur at Intellcap, where I lead the development of innovative digital solutions. My interests span project management, software development, and system architecture. I enjoy building robust, scalable systems and guiding teams from idea to execution.
+
+Let’s connect and create something impactful together!
 `;
 
 if (window.innerWidth <= 768) {

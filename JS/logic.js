@@ -23,10 +23,17 @@ function navOut() {
 // Function to handle screen width changes	
 function handleScreenWidthChange() {
 	var screenWidth = window.innerWidth;
-	let innerIconLIsts = ['<i class="fa-solid fa-house-chimney"></i>',
+	// let innerIconLIsts = ['<i class="fa-solid fa-house-chimney"></i>',
+	// 	 '<i class="fa-solid fa-circle-user"></i>', 
+	// 	 '<i class="fa-solid fa-toolbox"></i>',
+	// 	 '<i class="fa-solid fa-address-book"></i>',
+		  
+	// 	  '<i class="fa-solid fa-user-graduate"></i>',
+	// 	  '<i class="fa-solid fa-laptop-code"></i>'];
+	let innerIconLIsts = [
+		 '<i class="fa-solid fa-house-chimney"></i>',
 		 '<i class="fa-solid fa-circle-user"></i>', 
 		 '<i class="fa-solid fa-toolbox"></i>',
-		 '<i class="fa-solid fa-address-book"></i>',
 		  
 		  '<i class="fa-solid fa-user-graduate"></i>',
 		  '<i class="fa-solid fa-laptop-code"></i>'];
@@ -35,7 +42,8 @@ function handleScreenWidthChange() {
 			element.innerHTML = innerIconLIsts[index];
 		});
 	} else {
-		let innerTitleLists = ["home", "about","Services", "contact", "Certificates", "projects"];
+		// let innerTitleLists = ["home", "about","Services", "contact", "Certificates", "projects"];
+		let innerTitleLists = ["home", "about","Services", "Certificates", "projects"];
 		linkArray.forEach((element, index) => {
 			element.innerText = innerTitleLists[index];
 		});
