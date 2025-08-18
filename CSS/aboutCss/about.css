@@ -512,3 +512,11 @@ body {
    
     }
   }
+
+  @media (min-width: 1400px) {
+	.paragraph{
+         font-size: 0.96em;
+		 line-height: 1.7;
+
+	}
+  }	

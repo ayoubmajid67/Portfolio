@@ -3,13 +3,17 @@ let pMainContent = document.getElementById("mainContent");
 
 //  change the content for mobile :
 let mobileContent = `
-Hi! I’m Ayoub Majjid, a 4th-year computer engineering student at EMSI and currently a Tech Lead & Entrepreneur at Intellcap. I’m passionate about software development, system design, and project management. I love building scalable solutions and leading tech teams. Let’s build something great together!
+Hi! I’m Ayoub Majjid, a 5th-year computer engineering student at EMSI and currently a Tech Lead & Entrepreneur at Intellcap. I’m passionate about software development, system design, and project management. I love building scalable solutions and leading tech teams.
+I am now seeking a Final Year Project (PFE) / Pre-Hire (Pré-Embauche) opportunity in Dev devops.
+
 `;
 
 let medLargeContent = `
-Hello and welcome to my portfolio! I’m Ayoub Majjid, a fourth-year computer engineering student at EMSI, with a background in Experimental Sciences. My journey at EMSI has strengthened my foundation in mathematics, physics, and chemistry, and deepened my passion for technology and system design.
-Currently, I’m working as a Tech Lead and Entrepreneur at Intellcap, where I lead the development of innovative digital solutions. My interests span project management, software development, and system architecture. I enjoy building robust, scalable systems and guiding teams from idea to execution.
+Hello and welcome to my portfolio! I’m Ayoub Majjid, a fifth-year computer engineering student at EMSI, with a background in Experimental Sciences. My journey at EMSI has strengthened my foundation in mathematics, physics, and chemistry, and deepened my passion for technology and system design.
 
+Currently, I serve as Tech Lead and Entrepreneur at Intellcap, where I am leading 3 innovation projects. with the goal of transforming them into impactful and scalable startups. I enjoy guiding teams from idea to execution.
+
+I am now seeking a Final Year Project (PFE) / Pre-Hire (Pré-Embauche) opportunity in DevOps, Full Stack Development, or Software Engineering.
 Let’s connect and create something impactful together!
 `;
 
