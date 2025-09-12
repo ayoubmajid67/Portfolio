@@ -6,6 +6,26 @@ body{
   background-color: white;
 }
 
+.homeActions {
+    display: flex;
+    justify-content: center; /* center horizontally */
+    align-items: center;     /* align vertically */
+    gap: 30px;               /* space between social icons and CV */
+    margin-bottom: 20px;
+    flex-wrap: wrap;         /* wrap on small screens */
+}
+
+.socialContainerHome a {
+    font-size: 1.8em;
+    color: white;
+    margin: 0 8px;
+    transition: 0.3s;
+}
+
+.socialContainerHome a:hover {
+    color: black;
+}
+
 
 .mainSection {
   background-image: url(../../back/webp/home.webp);
@@ -75,8 +95,11 @@ body{
 }
 
 .Cv a {
+  
+
+
   text-decoration: none;
-  font-weight: 900;
+  font-weight: 600;
   font-size: 1.2em;
   align-self: center;
   font-weight: 600;

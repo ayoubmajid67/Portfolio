@@ -189,7 +189,7 @@ ul li .currentPage:hover {
         &>img {
             width: 100px;
         }
-
+.socialContainerHome,
         &>.socialContainer {
             display: flex;
             align-items: center;
@@ -259,7 +259,7 @@ ul li .currentPage:hover {
 
 
     &>.leftSide {
-    
+    .socialContainerHome,
         &>.socialContainer {
           
             a{
