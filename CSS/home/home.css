@@ -37,10 +37,6 @@ body{
   flex-direction: row;
   background-color: #00000067;
   height: calc(100dvh - 73px);
-
-
-
-
 }
 
 .FooterOutletComponentClass{
