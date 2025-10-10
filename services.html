@@ -220,7 +220,7 @@
       <div class="col-lg-7">
         <div class="buttons">
           <div class="green-button">
-            <a href="contact.html">Get in Touch</a>
+            <a href="#contact">Get in Touch</a>
           </div>
           <div class="white-button">
             <a href="#services">Explore Services</a>
@@ -348,16 +348,18 @@
                   <input type="name" name="name" id="name" class="UserName" placeholder="Your Name..." autocomplete="on" required>
                 </fieldset>
               </div>
+            
               <div class="col-lg-6">
                 <fieldset>
-                  <input type="phone" name="phone" class="UserPhone" id="phone" placeholder="Your Phone..." autocomplete="on" required>
+                  <input type="email" name="email" id="email"  class="UserEmail" pattern="[^ @]*@[^ @]*" placeholder="Your E-mail..." required="">
                 </fieldset>
               </div>
-              <div class="col-lg-6">
+               <div class="col-lg-6">
                 <fieldset>
-                  <input type="text" name="email" id="email" class="UserEmail" pattern="[^ @]*@[^ @]*" placeholder="Your E-mail..." required="">
+                  <input type="tel" name="phone" id="phone" class="UserPhone" placeholder="Your Phone..." required>
                 </fieldset>
               </div>
+
               <div class="col-lg-6">
                 <fieldset>
                   <input type="subject" name="subject" id="subject" class="Subject" placeholder="Subject..." autocomplete="on">
@@ -365,12 +367,13 @@
               </div>
               <div class="col-lg-12">
                 <fieldset>
-                  <textarea name="message" id="message" class="UserMessage" placeholder="Your Message"></textarea>
+                  <textarea name="message" id="message"  class="UserMessage" placeholder="Your Message"></textarea>
                 </fieldset>
               </div>
               <div class="col-lg-12">
                 <fieldset>
-                  <button type="submit" id="form-submit" class="green-button">Send Message</button>
+                  <button type="submit" id="submitBtn" role="status" class="green-button">Send Message</button>
+                   <div id="formStatus" role="status" aria-live="polite" style="margin-top:12px"></div>
                 </fieldset>
               </div>
             </div>
@@ -448,12 +451,70 @@
 
   <!-- Google tag (gtag.js) -->
 <script async src="https://www.googletagmanager.com/gtag/js?id=G-BL998MEBFJ"></script>
-<script>
+
+<script type="module">
   window.dataLayer = window.dataLayer || [];
   function gtag(){dataLayer.push(arguments);}
   gtag('js', new Date());
-
   gtag('config', 'G-BL998MEBFJ');
+
+  // Import email functionality
+  import { sendEmail } from './JS/email.js';
+
+  document.addEventListener('DOMContentLoaded', function () {
+    const form = document.getElementById('contact');
+    const statusEl = document.getElementById('formStatus');
+    const submitBtn = document.getElementById('submitBtn');
+
+    function setStatus(message, type = 'info') {
+      statusEl.textContent = message;
+      statusEl.style.color = type === 'error' ? '#b00020' : type === 'success' ? '#0b6623' : '#333';
+    }
+
+    form.addEventListener('submit', async function (e) {
+      e.preventDefault();
+
+      const name = document.getElementById('name').value.trim() || 'No Name';
+      const email = document.getElementById('email').value.trim() || 'No Email';
+      const phone = document.getElementById('phone').value.trim() || 'No Phone';
+      const subject = document.getElementById('subject').value.trim() || 'No Subject';
+      const message = document.getElementById('message').value.trim() || 'No Message';
+
+      if (!name || !email || !message || !subject) {
+        setStatus('Please fill in all required fields.', 'error');
+        return;
+      }
+
+      submitBtn.disabled = true;
+      submitBtn.textContent = 'Sending...';
+      setStatus('Sending your message...', 'info');
+
+      try {
+        const response = await sendEmail({
+          name,
+          email,
+          phone,
+          subject,
+          message
+        });
+
+        if (response) {
+          setStatus('Message sent successfully! Thank you.', 'success');
+          form.reset();
+        }
+
+        setStatus('Message sent successfully! Thank you.', 'success');
+        form.reset();
+      } catch (err) {
+        console.error('Unexpected error', err);
+        setStatus('Unexpected error while sending.', 'error');
+      } finally {
+        submitBtn.disabled = false;
+        submitBtn.textContent = 'Send Message';
+      }
+    }); 
+
+  }); 
 </script>
 
   <!-- js imports  -->
@@ -462,9 +523,6 @@
   <script src="JS/logic.js"></script>
   <script src="JS/main.js"></script>
 
-  		<!-- send email cdn  -->
-      <script src="https://smtpjs.com/v3/smtp.js"></script>
-     <!-- user form  -->
-	<script src="JS/contact/UserForm.js"></script>
+
 </body>
 </html>

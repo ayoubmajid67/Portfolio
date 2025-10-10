@@ -18,6 +18,9 @@
 <meta name="twitter:image" content="https://majjid.com/img/webp/profile.webp" />
 <link rel="canonical" href="https://majjid.com/" />
 
+	<!-- Set this meta dynamically at build/deploy from your .env, e.g. -->
+	<!-- <meta name="api-base" content="https://yourdomain.com"> -->
+
 <!-- Favicon -->
 <link rel="icon" type="image/png" href="https://majjid.com/img/logo.png" />
 
@@ -151,15 +154,16 @@
 				</div>
 
 				<div class="SendEmailContainer">
-					<form id="contact" >
-						<input type="text" name="" id="" class="UserName" placeholder="Your Name" maxlength="30" minlength="4" />
-						<input type="email" name="" id="" class="UserEmail" placeholder="Your Email" maxlength="50" minlength="12" required />
+						<form id="contact" aria-label="Contact form">
+							<input type="text" name="name" id="name" class="UserName" placeholder="Your Name" maxlength="30" minlength="4" required />
+							<input type="email" name="email" id="email" class="UserEmail" placeholder="Your Email" maxlength="50" minlength="5" required />
 
-						<input type="text" name="" id="" class="Subject" placeholder="Write a Subject " max="300" />
+							<input type="text" name="subject" id="subject" class="Subject" placeholder="Write a Subject " max="300" />
 
-						<textarea name="" id="" cols="30" rows="10" placeholder="Your Message" class="UserMessage" required></textarea>
-						<input type="submit" value="Submit" id="sendMsgBtn" />
-					</form>
+							<textarea name="message" id="message" cols="30" rows="10" placeholder="Your Message" class="UserMessage" required></textarea>
+							<input type="submit" value="Submit" id="sendMsgBtn" />
+							<div id="formStatus" role="status" aria-live="polite" style="margin-top:12px"></div>
+						</form>
 				</div>
 			</div>
 
@@ -237,9 +241,6 @@
 		<script src="JS/logic.js"></script>
 		<script src="JS/main.js"></script>
 
-		<!-- send email cdn  -->
-		<script src="https://smtpjs.com/v3/smtp.js"></script>
-		<!-- user form  -->
-		<script src="JS/contact/UserForm.js"></script>
+
 	</body>
 </html>
