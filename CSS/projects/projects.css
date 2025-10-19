@@ -7,6 +7,45 @@
 
 }
 
+.project-id {
+    display: inline-flex;
+    align-items: center;
+    gap: 5px;
+    cursor: pointer;
+    position: relative;
+}
+
+.project-id .copy-icon {
+    font-size: 1rem;
+    color: #555;
+    transition: color 0.2s;
+}
+
+.project-id .copy-icon:hover {
+    color: wheat;
+}
+
+/* Tooltip alert */
+.project-id .copy-alert {
+    position: absolute;
+    top: -25px;
+    left: 50%;
+    transform: translateX(-50%);
+    background: #4caf50;
+    color: white !important;
+
+    padding: 3px 8px;
+    border-radius: 4px;
+    font-size: 0.8rem;
+    opacity: 0;
+    pointer-events: none;
+    transition: opacity 0.3s;
+}
+
+.project-id.show-alert .copy-alert {
+    opacity: 1;
+}
+
 .container {
 
     background-image: url('./../../back/webp/projectsBack1.webp');
