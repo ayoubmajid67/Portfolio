@@ -1323,7 +1323,9 @@
 
 			if (projectId) {
 				const projectCard = document.getElementById(projectId);
-				if (projectCard) {
+
+				setTimeout(() => {
+						if (projectCard) {
 					projectCard.scrollIntoView({ behavior: 'smooth', block: 'center' });
 					
 					projectCard.classList.add('highlight');
@@ -1333,6 +1335,8 @@
 					// 	projectCard.classList.remove('highlight');
 					// }, 3000);
 				}
+				},2000);
+			
 			}
 
 
