@@ -1,10 +1,11 @@
 .container .navbar {
-    background-color: white;
+background: rgb(255, 255, 255);
     position: sticky;
     width: 100%;
     z-index: 100;
     top: 0;
-
+    backdrop-filter: blur(12px);
+    border-bottom: 1px solid rgba(255, 255, 255, 0.1);
 }
 
 .project-id {
@@ -144,27 +145,60 @@
 
 }
 
+/* Enhanced Category Headers with Gradient */
 .CppContainerDomain,
 .webContainer .webContainerDomain {
     font-size: 2.5rem;
     font-weight: 700;
+    width: 80%;
+    margin: auto;
     color: var(--text-color);
     margin-bottom: 2rem;
-    padding: 1rem 2rem;
-
-    border-radius: 10px;
-    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+    padding: 1.5rem 2.5rem;
+    border-radius: 16px;
     display: inline-block;
     position: relative;
     overflow: hidden;
-    color: white;
-   text-align: center;
+    text-align: center;
+    background: linear-gradient(135deg, rgba(8, 131, 118, 0.15) 0%, rgba(20, 129, 140, 0.1) 50%, rgba(190, 100, 59, 0.1) 100%);
+    backdrop-filter: blur(12px);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    box-shadow: 
+        0 8px 32px rgba(0, 0, 0, 0.2),
+        inset 0 1px 0 rgba(255, 255, 255, 0.1);
+}
+
+.CppContainerDomain::before,
+.webContainer .webContainerDomain::before {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 60%;
+    height: 3px;
+    background: linear-gradient(90deg, transparent, var(--accent-color), var(--secondaryColor), transparent);
+    border-radius: 2px;
+}
+
+.CppContainerDomain::after,
+.webContainer .webContainerDomain::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(135deg, rgba(255, 255, 255, 0.05) 0%, transparent 50%);
+    pointer-events: none;
+ 
 }
 
 .CppContainerDomain i,
 .webContainer .webContainerDomain i {
     margin-right: 1rem;
     color: var(--accent-color);
+    filter: drop-shadow(0 0 8px rgba(8, 131, 118, 0.5));
 }
 
 .CppContainerDomain span,
@@ -188,37 +222,55 @@
 
 }
 
+/* Enhanced Glassmorphism Cards */
 .CppContainerProjects .card,
 .webContainer .card {
     display: flex;
     flex-flow: column nowrap;
     gap: 5px;
     justify-content: space-between;
-    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
     min-width: 250px;
     max-width: 100%;
     flex-basis: 400px;
     flex-shrink: 0;
-    border-radius: 16px;
+    border-radius: 20px;
     margin-bottom: 4px;
-    background-color: rgba(11, 18, 18, 0.95);
+    background: linear-gradient(135deg, rgba(15, 23, 42, 0.95) 0%, rgba(30, 41, 59, 0.9) 100%);
+    backdrop-filter: blur(16px);
     scale: 0.95;
-    transition:  0.4s cubic-bezier(0.4, 0, 0.2, 1);
+    transition: all 0.5s cubic-bezier(0.4, 0, 0.2, 1);
     position: relative;
     overflow: hidden;
+    border: 1px solid rgba(255, 255, 255, 0.08);
+    box-shadow: 
+        0 10px 40px rgba(0, 0, 0, 0.3),
+        0 0 0 1px rgba(255, 255, 255, 0.05),
+        inset 0 1px 0 rgba(255, 255, 255, 0.1);
 }
 
+/* Gradient border effect on hover */
 .CppContainerProjects .card::before,
 .webContainer .card::before {
     content: '';
     position: absolute;
     top: 0;
     left: 0;
-    width: 100%;
-    height: 100%;
-    background: linear-gradient(45deg, rgba(8, 131, 118, 0.1), transparent);
+    right: 0;
+    bottom: 0;
+    border-radius: 20px;
+    padding: 2px;
+    background: linear-gradient(135deg, var(--accent-color), var(--secondaryColor), var(--primaryColor));
+    -webkit-mask: 
+        linear-gradient(#fff 0 0) content-box, 
+        linear-gradient(#fff 0 0);
+    mask: 
+        linear-gradient(#fff 0 0) content-box, 
+        linear-gradient(#fff 0 0);
+    -webkit-mask-composite: xor;
+    mask-composite: exclude;
     opacity: 0;
-    transition: opacity 0.4s ease;
+    transition: opacity 0.5s ease;
+    pointer-events: none;
 }
 
 .CppContainerProjects .card:hover::before,
@@ -226,92 +278,136 @@
     opacity: 1;
 }
 
+/* Subtle glow overlay on hover */
+.CppContainerProjects .card::after,
+.webContainer .card::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: radial-gradient(ellipse at top left, rgba(8, 131, 118, 0.15), transparent 50%);
+    opacity: 0;
+    transition: opacity 0.5s ease;
+    pointer-events: none;
+}
+
+.CppContainerProjects .card:hover::after,
+.webContainer .card:hover::after {
+    opacity: 1;
+}
+
 .CppContainerProjects img,
 .weContainerProjects img {
     width: 100%;
-    height: 200px;
+    height: 220px;
     object-fit: cover;
-    
+    border-radius: 20px 20px 0 0;
+    position: relative;
+    z-index: 1;
 }
 
 
 .card h3 {
-    padding: 15px 20px 5px;
-    font-size: 1.2em;
-    font-weight: 600;
+    padding: 18px 24px 8px;
+    font-size: 1.25em;
+    font-weight: 700;
     color: white;
     margin: 0;
     position: relative;
+    z-index: 1;
+    letter-spacing: 0.3px;
 }
 
 .card h3::after {
     content: '';
     position: absolute;
     bottom: 0;
-    left: 20px;
+    left: 24px;
     width: 40px;
     height: 3px;
-    background: #088376;
-    transition: width 0.3s ease;
+    background: linear-gradient(90deg, var(--accent-color), var(--secondaryColor));
+    border-radius: 2px;
+    transition: width 0.4s cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .card:hover h3::after {
-    width: 80px;
+    width: 100px;
 }
 
 .card p {
-    margin: 10px 0;
-    font-size: 0.9em;
-    padding: 0 20px;
-    line-height: 1.5;
-    color: rgba(255, 255, 255, 0.9);
-    font-family: 'Inter', sans-serif;
+    margin: 12px 0;
+    font-size: 0.92em;
+    padding: 0 24px;
+    line-height: 1.7;
+    color: rgba(255, 255, 255, 0.85);
+    font-family: 'Inter', 'Segoe UI', sans-serif;
+    position: relative;
+    z-index: 1;
 }
 
+/* Enhanced Action Buttons */
 .card .ProjectResource {
-    background-color: rgba(0, 0, 0, 0.8);
-    padding: 15px;
+    background: linear-gradient(180deg, rgba(15, 23, 42, 0.8) 0%, rgba(0, 0, 0, 0.9) 100%);
+    padding: 18px;
     text-align: center;
-    border-radius: 0 0 16px 16px;
+    border-radius: 0 0 20px 20px;
     transition: all 0.4s ease;
     display: flex;
     justify-content: center;
-    gap: 15px;
+    gap: 12px;
     flex-wrap: wrap;
     position: relative;
+    z-index: 1;
+    border-top: 1px solid rgba(255, 255, 255, 0.05);
 }
 
 .card .ProjectResource a {
     text-decoration: none;
     color: white;
-    font-size: 1em;
+    font-size: 0.95em;
+    font-weight: 500;
     text-transform: capitalize;
-    padding: 8px 16px;
-    border-radius: 8px;
-    background: rgba(255, 255, 255, 0.1);
-    transition: all 0.3s ease;
+    padding: 10px 18px;
+    border-radius: 10px;
+    background: linear-gradient(135deg, rgba(255, 255, 255, 0.08) 0%, rgba(255, 255, 255, 0.03) 100%);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
     display: flex;
     align-items: center;
     gap: 8px;
+    backdrop-filter: blur(4px);
 }
 
 .card .ProjectResource a:hover {
-    background: #088376;
-    transform: translateY(-2px);
+    background: linear-gradient(135deg, var(--accent-color) 0%, var(--primaryColor) 100%);
+    border-color: transparent;
+    transform: translateY(-3px);
+    box-shadow: 
+        0 8px 24px rgba(8, 131, 118, 0.4),
+        0 0 0 1px rgba(8, 131, 118, 0.3);
+}
+
+.card .ProjectResource a:hover i {
+    transform: scale(1.1);
 }
 
 .card .ProjectResource a.disabled {
-    opacity: 0.5;
+    opacity: 0.4;
     cursor: not-allowed;
     pointer-events: none;
+    background: rgba(255, 255, 255, 0.03);
 }
 
 .card .ProjectResource a i {
-    font-size: 1.1em;
+    font-size: 1.15em;
+    transition: transform 0.3s ease;
 }
 
+/* Progress Project Badge */
 .progressProject {
-    opacity: 0.85;
+    opacity: 0.9;
     position: relative;
 }
 
@@ -320,45 +416,61 @@
     position: absolute;
     top: 20px;
     right: -35px;
-    background: #088376;
+    background: linear-gradient(135deg, var(--accent-color) 0%, var(--primaryColor) 100%);
     color: white;
     padding: 8px 40px;
     transform: rotate(45deg);
     font-size: 0.8em;
     font-weight: 600;
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
-    z-index: 1;
+    box-shadow: 0 4px 12px rgba(8, 131, 118, 0.4);
+    z-index: 10;
+    letter-spacing: 0.5px;
 }
 
 .progressProject .ProjectResource {
-    background: linear-gradient(45deg, rgba(8, 131, 118, 0.9), rgba(8, 131, 118, 0.7));
+    background: linear-gradient(180deg, rgba(8, 131, 118, 0.3) 0%, rgba(8, 131, 118, 0.15) 100%);
 }
 
 .progressProject .ProjectResource a {
-    background: rgba(255, 255, 255, 0.15);
+    background: rgba(255, 255, 255, 0.1);
+    border-color: rgba(255, 255, 255, 0.15);
 }
 
 .progressProject .ProjectResource a:hover {
-    background: rgba(255, 255, 255, 0.25);
-    transform: translateY(-2px);
+    background: rgba(255, 255, 255, 0.2);
+    transform: translateY(-3px);
 }
 
 .progressProject .ProjectResource a.disabled {
-    opacity: 0.7;
+    opacity: 0.5;
 }
 
+/* Enhanced Hover Effect */
 .card:not(.progressProject):hover {
-    transform: translateY(-10px) scale(1.02);
-    box-shadow: 0 15px 30px rgba(0, 0, 0, 0.3);
+    transform: translateY(-12px) scale(1.01);
+    box-shadow: 
+        0 25px 50px rgba(0, 0, 0, 0.4),
+        0 0 40px rgba(8, 131, 118, 0.15);
 }
 
+/* Image Effects */
 .card img {
-    filter: grayscale(20%) saturate(90%);
-    transition: filter 0.4s ease;
+    filter: grayscale(15%) saturate(90%) brightness(0.95);
+    transition: all 0.5s cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .card:hover img {
-    filter: grayscale(0%) saturate(100%);
+    filter: grayscale(0%) saturate(110%) brightness(1);
+    transform: scale(1.03);
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .CppContainerDomain,
+    .webContainer .webContainerDomain {
+        font-size: 1.8rem;
+        padding: 1.2rem 1.5rem;
+    }
 }
 
 @media (max-width: 500px) {
@@ -366,6 +478,7 @@
     .CppContainerProjects .card {
         width: 95%;
         margin: 0 auto;
+        scale: 1;
     }
     
     .card .ProjectResource {
@@ -377,6 +490,16 @@
         width: 100%;
         justify-content: center;
     }
+
+    .card h3 {
+        padding: 15px 18px 6px;
+        font-size: 1.1em;
+    }
+
+    .card p {
+        padding: 0 18px;
+        font-size: 0.88em;
+    }
 }
 
 
@@ -386,7 +509,9 @@
 
 .card.highlight {
     transform: scale(1.02) ;
-    box-shadow: 0 8px 25px var(--primaryColor) !important;
+    box-shadow: 
+        0 8px 40px var(--primaryColor),
+        0 0 60px rgba(8, 131, 118, 0.3) !important;
     border: 2px solid var(--secondaryColor);
     animation: highlight-pulse 2s infinite;
 }
@@ -396,9 +521,32 @@
         box-shadow: 0 8px 25px rgba(0, 0, 0, 0.2);
     }
     50% {
-        box-shadow: 0 8px 25px var(--primaryColor);
+        box-shadow: 0 8px 40px var(--primaryColor), 0 0 50px rgba(8, 131, 118, 0.3);
     }
     100% {
-        box-shadow: 0 8px 25px var(--secondaryColor);
+        box-shadow: 0 8px 40px var(--secondaryColor), 0 0 50px rgba(190, 100, 59, 0.2);
     }
 }
+
+/* Floating Animation for Cards on Scroll */
+@keyframes fadeInUp {
+    from {
+        opacity: 0;
+        transform: translateY(40px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.card {
+    animation: fadeInUp 0.6s ease-out backwards;
+}
+
+.webContainer .card:nth-child(1) { animation-delay: 0.1s; }
+.webContainer .card:nth-child(2) { animation-delay: 0.2s; }
+.webContainer .card:nth-child(3) { animation-delay: 0.3s; }
+.webContainer .card:nth-child(4) { animation-delay: 0.4s; }
+.webContainer .card:nth-child(5) { animation-delay: 0.5s; }
+.webContainer .card:nth-child(6) { animation-delay: 0.6s; }
