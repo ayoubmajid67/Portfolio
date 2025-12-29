@@ -1,31 +1,24 @@
 body{
   display: block;
 
+     background-image: url(../../back/webp/about.webp);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-blend-mode: overlay;
+    background-size: cover;
+    min-height: 100vh;
+    background-color: rgba(0, 0, 0, 0.808);
+    background-attachment: fixed;
+    backdrop-filter: blur(2px);
 }
+
 .navbar {
   background-color: white;
 }
 
-.homeActions {
-    display: flex;
-    justify-content: center; /* center horizontally */
-    align-items: center;     /* align vertically */
-    gap: 30px;               /* space between social icons and CV */
-    margin-bottom: 20px;
-    flex-wrap: wrap;         /* wrap on small screens */
-}
-
-.socialContainerHome a {
-    font-size: 1.8em;
-    color: white;
-    margin: 0 8px;
-    transition: 0.3s;
-}
-
-.socialContainerHome a:hover {
-    color: black;
-}
-
+/* ============================================
+   MAIN SECTION & BACKGROUND
+   ============================================ */
 
 .mainSection {
   background-image: url(../../back/webp/home.webp);
@@ -33,144 +26,321 @@ body{
   background-repeat: no-repeat;
   background-position: center;
   justify-content: center;
-  background-blend-mode: color;
+  background-blend-mode: overlay;
   flex-direction: row;
-  background-color: #00000067;
-  height: calc(100dvh - 73px);
+  background-color: rgba(2, 14, 19, 0.562);
+  height: calc(100dvh - 10px);
+  position: relative;
+  background-attachment: fixed;
 }
 
-.FooterOutletComponentClass{
-  
-  margin-top: 50px;
-  background-color: #e3e2e21a;
+.mainSection::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  backdrop-filter: blur(2px);
+  background: linear-gradient(180deg, rgba(3, 46, 42, 0.062) 0%, rgba(10, 30, 35, 0.144) 50%, rgba(0, 0, 0, 0.4) 100%);
+  pointer-events: none;
+  z-index: 1;
 }
 
-* {
-  transition: 0;
-}
+/* ============================================
+   HOME CONTAINER (GLASSMORPHISM CARD)
+   ============================================ */
 
 .homeContainer {
   transform: scale(0.77);
   display: flex;
   flex-direction: column;
-  background-color: rgba(0, 0, 0, 0.4);
+  background: linear-gradient(
+    135deg,
+    rgba(0, 0, 0, 0.5) 0%,
+    rgba(10, 30, 35, 0.45) 50%,
+    rgba(0, 0, 0, 0.5) 100%
+  );
   min-height: 86%;
   justify-content: space-around;
   width: 80%;
-  padding: 24px;
+  padding: 32px;
   color: white;
-  border-radius: 12px;
-  margin-top: 35px;
-  box-shadow: 0px 0px 20px rgb(23 24 24 / 53%), inset 0px 0px 100px #ffffff15;
-  gap: 5px;
+  border-radius: 20px;
+  gap: 8px;
+  margin-top: -30px;
   overflow: hidden;
   align-items: center;
-  backdrop-filter: blur(18px);
+  backdrop-filter: blur(20px);
+  -webkit-backdrop-filter: blur(20px);
+  border: 1px solid rgba(255, 255, 255, 0.12);
+  position: relative;
+  z-index: 2;
+  box-shadow: 
+    0px 0px 30px rgb(23 24 24 / 53%), 
+    inset 0px 0px 100px #ffffff10,
+    0 0 40px rgba(8, 131, 118, 0.15);
 }
+
+/* ============================================
+   NAME HEADING WITH GRADIENT EFFECT
+   ============================================ */
 
 .name {
-  font-size: 3.3em;
+  font-size: 3.8em;
   padding-top: 3px;
-  letter-spacing: 1.2px;
+  letter-spacing: 2px;
   text-align: center;
-  opacity: 0.8;
   text-wrap: nowrap;
+  font-weight: 700;
+  background: linear-gradient(135deg, #ffffff 0%, #088376 50%, #ffffff 100%);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  filter: drop-shadow(0 2px 10px rgba(8, 131, 118, 0.3));
 }
 
-.Cv {
-  padding: 25px;
-  text-align: center;
-  width: 80%;
-  background-color: #ffffff80;
-  width: fit-content;
-  border-radius: 7px;
-  align-self: center;
-  position: relative;
-  
-
+.name span {
+  background: linear-gradient(135deg, #088376, #BE643B);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
 }
 
-.Cv a {
-  
+/* ============================================
+   ROLE SUBTITLE
+   ============================================ */
 
-
-  text-decoration: none;
-  font-weight: 600;
-  font-size: 1.2em;
-  align-self: center;
-  font-weight: 600;
-  color: rgb(9, 92, 78);
-  text-wrap: nowrap;
-  transition: 0.4s;
- margin-right: 10px;
+.role-subtitle {
+  font-size: 1.3em;
+  font-weight: 500;
+  letter-spacing: 3px;
+  text-transform: uppercase;
+  color: rgba(255, 255, 255, 0.7);
+margin-top: 10px;
   
 }
 
-.Cv select{
-  font-size: 1rem;
-  padding: 2px 6px;
-
-}
-
-.Cv a:hover {
-  color: black;
-}
-#cvLanguage{
-
-
-}
+/* ============================================
+   PARAGRAPH STYLING
+   ============================================ */
 
 .paragraph {
   overflow: hidden;
   width: 100%;
-  font-size: 1.4em;
-  font-weight: 600;
-  opacity: 0.6;
-  word-spacing: 2.1px;
-  line-height: 160%;
+  font-size: 1.3em;
+  font-weight: 400;
+  opacity: 0.85;
+  word-spacing: 2px;
+  line-height: 175%;
   text-overflow: ellipsis;
   text-align: center;
-  padding: 20px;
+  padding: 20px 30px;
+  color: rgba(255, 255, 255, 0.9);
 }
 
-@media (max-width:700px) {
+/* ============================================
+   HOME ACTIONS CONTAINER
+   ============================================ */
 
+.homeActions {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 40px;
+  margin-bottom: 20px;
+  flex-wrap: wrap;
+}
 
-  .homeContainer .paragraph {
-    font-size: 1.3rem;
+/* ============================================
+   SOCIAL ICONS
+   ============================================ */
+
+.socialContainerHome {
+  display: flex;
+  gap: 8px;
+}
+
+.socialContainerHome a {
+  font-size: 1.6em;
+  color: rgba(255, 255, 255, 0.8);
+  margin: 0 6px;
+  transition: all 0.3s ease;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 50px;
+  height: 50px;
+  border-radius: 12px;
+  background: rgba(255, 255, 255, 0.1);
+  border: 1px solid rgba(255, 255, 255, 0.15);
+}
+
+.socialContainerHome a:hover {
+  color: white;
+  background: linear-gradient(135deg, #088376, #14818C);
+  transform: translateY(-3px);
+  box-shadow: 0 8px 25px rgba(8, 131, 118, 0.3);
+  border-color: transparent;
+}
+
+/* ============================================
+   CV BUTTON - PREMIUM STYLING
+   ============================================ */
+
+.Cv {
+  padding: 0;
+  text-align: center;
+  width: fit-content;
+  border-radius: 14px;
+  align-self: center;
+  position: relative;
+  display: flex;
+  align-items: center;
+  background: linear-gradient(135deg, rgba(8, 131, 118, 0.9), rgba(20, 129, 140, 0.85));
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  overflow: hidden;
+  transition: all 0.3s ease;
+  box-shadow: 0 4px 20px rgba(8, 131, 118, 0.3);
+}
+
+.Cv:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 8px 30px rgba(8, 131, 118, 0.4);
+}
+
+.Cv a {
+  text-decoration: none;
+  font-weight: 600;
+  font-size: 1.1em;
+  align-self: center;
+  color: white;
+  text-wrap: nowrap;
+  transition: 0.3s;
+  padding: 16px 24px;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.Cv a:hover {
+  color: white;
+}
+
+.Cv select {
+  font-size: 0.95rem;
+  padding: 8px 12px;
+  background: rgba(255, 255, 255, 0.15);
+  border: none;
+  border-left: 1px solid rgba(255, 255, 255, 0.2);
+  color: white;
+  cursor: pointer;
+  outline: none;
+  transition: background 0.3s ease;
+}
+
+.Cv select:hover {
+  background: rgba(255, 255, 255, 0.25);
+}
+
+.Cv select option {
+  background: #0a1e23;
+  color: white;
+}
+
+/* ============================================
+   FOOTER ADJUSTMENTS
+   ============================================ */
+
+.FooterOutletComponentClass {
+  margin-top: 50px;
+  opacity: 0.8;
+
+}
+
+/* ============================================
+   RESPONSIVE STYLES
+   ============================================ */
+
+@media (max-width: 900px) {
+  .homeContainer {
+    transform: scale(0.82);
   }
-
+  
+  .name {
+    font-size: 3em;
+  }
 }
 
-@media (max-width:640px) {
+@media (max-width: 700px) {
+  .homeContainer .paragraph {
+    font-size: 1.2rem;
+    padding: 15px 20px;
+  }
+  
+  .socialContainerHome a {
+    width: 45px;
+    height: 45px;
+    font-size: 1.4em;
+  }
+}
+
+@media (max-width: 640px) {
   .homeContainer {
     width: 100%;
-    transform: scale(0.86);
+    transform: scale(0.88);
+    padding: 24px 16px;
   }
 
   .homeContainer {
     font-size: 0.75rem;
   }
-
+  
+  .name {
+    font-size: 2.5em;
+    letter-spacing: 1px;
+  }
+  
+  .homeActions {
+    gap: 20px;
+  }
 }
 
-@media (max-width:412px) {
+@media (max-width: 480px) {
+  .socialContainerHome a {
+    width: 42px;
+    height: 42px;
+    font-size: 1.3em;
+    margin: 0 3px;
+  }
+  
+  .Cv a {
+    padding: 14px 18px;
+    font-size: 1em;
+  }
+  
+  .Cv select {
+    padding: 6px 10px;
+  }
+}
 
-
+@media (max-width: 412px) {
   .homeContainer {
-    font-size: 0.9rem;
-    width: 150%;
+    font-size: 0.85rem;
+    width: 140%;
     flex-grow: 1;
-
   }
 
   .homeContainer .paragraph {
-    font-size: 1.2rem;
+    font-size: 1.1rem;
   }
-
+  
+  .name {
+    font-size: 2.2em;
+  }
 }
 
-@media (max-width:265px) {
+@media (max-width: 265px) {
   .homeContainer {
     display: none;
   }
@@ -183,10 +353,9 @@ body{
     background-image: url(../../testBack/6.jpg);
     background-size: cover;
     background-repeat: no-repeat;
-
   }
-
 }
-#DropDown{
+
+#DropDown {
   display: none;
 }
