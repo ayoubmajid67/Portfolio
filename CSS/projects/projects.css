@@ -1,10 +1,12 @@
+
+
 .container .navbar {
 background: rgb(255, 255, 255);
     position: sticky;
     width: 100%;
     z-index: 100;
     top: 0;
-    backdrop-filter: blur(12px);
+    backdrop-filter: blur(6px);
     border-bottom: 1px solid rgba(255, 255, 255, 0.1);
 }
 
@@ -48,27 +50,31 @@ background: rgb(255, 255, 255);
 }
 
 .container {
-
     background-image: url('./../../back/webp/projectsBack1.webp');
+    background-color: rgba(2, 14, 19, 0.562);
     background-size: cover;
     background-repeat: no-repeat;
-    background-blend-mode: color;
+    background-blend-mode: overlay;
     background-attachment: fixed;
     backdrop-filter: brightness(0.8) blur(3px);
     background-position: center;
-   
     display: block;
     position: relative;
+}
 
-    &:before{
-        content: "";
-        position: absolute;
-        width: 100vw;
-        height: 100%;
-        
-        backdrop-filter: blur(3px);
-    }
-    
+.container::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    width: 100%;
+    height: 100%;
+    backdrop-filter: blur(10px);
+    background: linear-gradient(180deg, rgba(3, 46, 42, 0.062) 0%, rgba(10, 30, 35, 0.144) 50%, rgba(0, 0, 0, 0.4) 100%);
+    pointer-events: none;
+    z-index: 0;
 }
 
 
@@ -79,8 +85,9 @@ background: rgb(255, 255, 255);
     gap: 40px;
     padding: 10px;
     position: relative;
-    
+    z-index: 2;
 }
+
 
 .Title {
     text-align: center;
