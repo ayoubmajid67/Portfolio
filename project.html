@@ -188,7 +188,7 @@
 				<div class="weContainerProjects domainContent">
 					<!-- 1 portfolio 1 -->
 					<!-- https://youbistamajid.000webhostapp.com -->
-					<article id="portfolio1" projectName=" portfolio 1 webProject1" class="card">
+					<article id="portfolio1" projectName=" portfolio 1 webProject1" class="card progressProject">
 						<div class="card-image">
 							<img srcset="img/webp/project1.webp" loading="lazy" type="image/webp" alt="portfolio 1" />
 						</div>
@@ -844,7 +844,7 @@
 				<a href="https://github.com/ayoubmajid67/project_management_flutter" class="WebtiseLink" target="_blank">
 					<i class="fa-brands fa-github"></i> GitHub
 				</a>
-				<a href="#" class="WebtiseLink disabled" target="_blank">
+				<a href="https://www.linkedin.com/posts/youbista_flutter-dart-firebase-activity-7412806132592988161-Uk-X?utm_source=share&utm_medium=member_desktop&rcm=ACoAADvjKzABpK_MLZWJYvsh4MHCymLEb8DcykI" class="WebtiseLink" target="_blank">
 					<i class="fa-brands fa-linkedin"></i> LinkedIn
 				</a>
 				<a href="#" class="WebtiseLink disabled" target="_blank">
@@ -1389,7 +1389,9 @@
 			const urlParams = new URLSearchParams(window.location.search);
 			const projectId = urlParams.get('project');
 
+			console.log("the url params is ",urlParams)
 
+             console.log("the project id is ",projectId)
 			if (projectId) {
 				const projectCard = document.getElementById(projectId);
 
@@ -1397,8 +1399,8 @@
 						if (projectCard) {
 					projectCard.scrollIntoView({ behavior: 'smooth', block: 'center' });
 					
-					projectCard.classList.add('highlight');
-					console.log(`Highlighted project: ${projectId}`);
+					projectCard.classList.add('articleHoverEffect');
+					console.log(`articleHoverEffect project: ${projectId}`);
 					
 					// setTimeout(() => {
 					// 	projectCard.classList.remove('highlight');
@@ -1418,7 +1420,7 @@
 
         // Generate project link from text
         const projectText = span.textContent.replace('[', '').replace(']', '').trim();
-        const projectLink = `https://majjid.com/project.html?project=#${projectText}`;
+        const projectLink = `https://majjid.com/project.html?project=${projectText}`;
         span.dataset.projectLink = projectLink;
 
         // Create alert tooltip

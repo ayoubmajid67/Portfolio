@@ -36,6 +36,39 @@ body::before {
   z-index: -1;
 }
 
+/* ============================================
+   NAVBAR STYLING
+   ============================================ */
+.navbar {
+  position: fixed;
+  width: 100%;
+  background: linear-gradient(135deg, rgba(0, 0, 0, 0.7) 0%, rgba(10, 30, 35, 0.6) 100%);
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.3);
+  color: white;
+  transition: all 0.4s ease;
+  z-index: 100;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.navbar a {
+  color: white !important;
+}
+
+.sticky {
+  background: rgba(255, 255, 255, 0.95);
+  backdrop-filter: blur(12px);
+}
+
+.sticky a {
+  color: black !important;
+}
+
+.sticky .navTitle {
+  color: black;
+}
+
 img{
     max-width: 100%;
 }

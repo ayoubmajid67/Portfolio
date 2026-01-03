@@ -2,12 +2,14 @@
 
 .container .navbar {
 background: rgb(255, 255, 255);
-    position: sticky;
     width: 100%;
     z-index: 100;
     top: 0;
     backdrop-filter: blur(6px);
     border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+
+    position: fixed;
+
 }
 
 .project-id {
@@ -56,7 +58,6 @@ background: rgb(255, 255, 255);
     background-repeat: no-repeat;
     background-blend-mode: overlay;
     background-attachment: fixed;
-    backdrop-filter: brightness(0.8) blur(3px);
     background-position: center;
     display: block;
     position: relative;
@@ -79,7 +80,7 @@ background: rgb(255, 255, 255);
 
 
 .mainSection {
-    margin-top: 50px;
+    margin-top: 100px;
     display: flex;
     flex-flow: column nowrap;
     gap: 40px;
@@ -247,7 +248,7 @@ background: rgb(255, 255, 255);
     scale: 0.95;
     transition: all 0.5s cubic-bezier(0.4, 0, 0.2, 1);
     position: relative;
-    overflow: hidden;
+    /* overflow: hidden; */
     border: 1px solid rgba(255, 255, 255, 0.08);
     box-shadow: 
         0 10px 40px rgba(0, 0, 0, 0.3),
@@ -281,10 +282,13 @@ background: rgb(255, 255, 255);
     pointer-events: none;
 }
 
+.webContainer .articleHoverEffect::before,
 .CppContainerProjects .card:hover::before,
 .webContainer .card:hover::before {
     opacity: 1;
 }
+
+
 
 /* Subtle glow overlay on hover */
 .CppContainerProjects .card::after,
@@ -301,6 +305,7 @@ background: rgb(255, 255, 255);
     pointer-events: none;
 }
 
+
 .CppContainerProjects .card:hover::after,
 .webContainer .card:hover::after {
     opacity: 1;
@@ -309,11 +314,12 @@ background: rgb(255, 255, 255);
 .CppContainerProjects img,
 .weContainerProjects img {
     width: 100%;
-    height: 220px;
-    object-fit: cover;
+    height: 100%;
+    object-fit: contain;
     border-radius: 20px 20px 0 0;
     position: relative;
     z-index: 1;
+    overflow: hidden;
 }
 
 
@@ -340,6 +346,7 @@ background: rgb(255, 255, 255);
     transition: width 0.4s cubic-bezier(0.4, 0, 0.2, 1);
 }
 
+.articleHoverEffect h3::after,
 .card:hover h3::after {
     width: 100px;
 }
@@ -413,53 +420,19 @@ background: rgb(255, 255, 255);
     transition: transform 0.3s ease;
 }
 
-/* Progress Project Badge */
-.progressProject {
-    opacity: 0.9;
-    position: relative;
-}
 
-.progressProject::after {
-    content: 'In Progress';
-    position: absolute;
-    top: 20px;
-    right: -35px;
-    background: linear-gradient(135deg, var(--accent-color) 0%, var(--primaryColor) 100%);
-    color: white;
-    padding: 8px 40px;
-    transform: rotate(45deg);
-    font-size: 0.8em;
-    font-weight: 600;
-    box-shadow: 0 4px 12px rgba(8, 131, 118, 0.4);
-    z-index: 10;
-    letter-spacing: 0.5px;
-}
-
-.progressProject .ProjectResource {
-    background: linear-gradient(180deg, rgba(8, 131, 118, 0.3) 0%, rgba(8, 131, 118, 0.15) 100%);
-}
-
-.progressProject .ProjectResource a {
-    background: rgba(255, 255, 255, 0.1);
-    border-color: rgba(255, 255, 255, 0.15);
-}
-
-.progressProject .ProjectResource a:hover {
-    background: rgba(255, 255, 255, 0.2);
-    transform: translateY(-3px);
-}
-
-.progressProject .ProjectResource a.disabled {
-    opacity: 0.5;
-}
 
 /* Enhanced Hover Effect */
-.card:not(.progressProject):hover {
+
+.articleHoverEffect,
+.card:not(.progressProject):hover { 
     transform: translateY(-12px) scale(1.01);
     box-shadow: 
         0 25px 50px rgba(0, 0, 0, 0.4),
         0 0 40px rgba(8, 131, 118, 0.15);
 }
+
+
 
 /* Image Effects */
 .card img {
@@ -467,6 +440,7 @@ background: rgb(255, 255, 255);
     transition: all 0.5s cubic-bezier(0.4, 0, 0.2, 1);
 }
 
+.articleHoverEffect img,
 .card:hover img {
     filter: grayscale(0%) saturate(110%) brightness(1);
     transform: scale(1.03);
@@ -558,3 +532,46 @@ background: rgb(255, 255, 255);
 .webContainer .card:nth-child(4) { animation-delay: 0.4s; }
 .webContainer .card:nth-child(5) { animation-delay: 0.5s; }
 .webContainer .card:nth-child(6) { animation-delay: 0.6s; }
+
+
+/* Progress Project Badge */
+.webContainer .progressProject {
+    opacity: 0.9;
+    position: relative;
+   
+}
+
+.webContainer .progressProject::after {
+    content: 'In Progress';
+    position: absolute;
+    top: 20px;
+    right: -35px;
+    background: linear-gradient(135deg, var(--accent-color) 0%, var(--primaryColor) 100%);
+    color: white;
+    padding: 8px 40px;
+    transform: rotate(45deg);
+    font-size: 0.8em;
+    font-weight: 600;
+    box-shadow: 0 4px 12px rgba(8, 131, 118, 0.4);
+    z-index: 10;
+    letter-spacing: 0.5px;
+}
+
+.webContainer .progressProject .ProjectResource {
+    background: linear-gradient(180deg, rgba(8, 131, 118, 0.3) 0%, rgba(8, 131, 118, 0.15) 100%);
+}
+
+.webContainer .progressProject .ProjectResource a {
+    background: rgba(255, 255, 255, 0.1);
+    border-color: rgba(255, 255, 255, 0.15);
+}
+
+.webContainer .progressProject .ProjectResource a:hover {
+    background: rgba(255, 255, 255, 0.2);
+    transform: translateY(-3px);
+}
+
+.webContainer .progressProject .ProjectResource a.disabled {
+    opacity: 0.5;
+}
+
