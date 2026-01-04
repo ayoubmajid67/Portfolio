@@ -332,6 +332,18 @@ body::before {
   font-size: 1.3rem;
 }
 
+/* LinkedIn Button Variant */
+.btn-linkedin {
+  background: linear-gradient(135deg, #0077B5 0%, #005885 100%);
+  box-shadow: 0 10px 25px rgba(0, 119, 181, 0.4);
+  margin-left: 15px;
+}
+
+.btn-linkedin:hover {
+  background: linear-gradient(135deg, #00a0dc 0%, #0077B5 100%);
+  box-shadow: 0 15px 35px rgba(0, 119, 181, 0.6);
+}
+
 /* ============================================
    COMPONENTS
    ============================================ */
