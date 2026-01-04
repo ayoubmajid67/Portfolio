@@ -71,6 +71,12 @@
             <a href="https://www.youtube.com/@AyoubMajjid" target="_blank"><i class="fa-brands fa-youtube"></i></a>
         </div>
         
+        <!-- Search Box -->
+        <div class="search-box">
+          <i class="fa-solid fa-search"></i>
+          <input type="text" id="roadmapSearch" placeholder="Search roadmap..." />
+        </div>
+        
         <!-- Table of Contents -->
         <section class="toc-section" id="toc">
           <div class="toc-card">
@@ -283,6 +289,10 @@
         <h2><span class="emoji">🎨</span> Front-End Roadmap</h2>
         <span class="duration-badge">⏱ Estimated Duration: 8–12 months</span>
 
+        <div class="note-box">
+          <p><strong>💡 Parallel Learning:</strong> You can start the Front-End roadmap once you complete the <strong>first 13 basic courses</strong>. Continue with courses 14–27 in parallel while working on front-end skills!</p>
+        </div>
+
         <h3>🌐 HTML & CSS</h3>
         <table class="roadmap-table">
           <thead>
@@ -312,6 +322,20 @@
             <tr><td>Template 2</td><td>⏱ ~3.5h</td><td><a href="https://youtu.be/heuDmrEAgUA" target="_blank">Watch</a></td></tr>
             <tr><td>Template 3</td><td>⏱ ~6h</td><td><a href="https://youtu.be/vkc99WHcDTk" target="_blank">Watch</a></td></tr>
             <tr><td>Template 4</td><td>⏱ ~6.5h</td><td><a href="https://youtu.be/DflEcuzjsyA" target="_blank">Watch</a></td></tr>
+          </tbody>
+        </table>
+
+        <h3>🔧 Git & GitHub</h3>
+        <table class="roadmap-table">
+          <thead>
+            <tr>
+              <th>Topic</th>
+              <th>Videos</th>
+              <th>Link</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr><td>Git Playlist</td><td>📺 19 videos 04:35:06</td><td><a href="https://youtube.com/playlist?list=PLYyqC4bNbCIeCHLTRtwdLpQvle_zIavZ-" target="_blank">Watch</a></td></tr>
           </tbody>
         </table>
 
@@ -366,7 +390,7 @@
             </tr>
           </thead>
           <tbody>
-            <tr><td>Java Introduction</td><td>⏱ Intro</td><td><a href="https://youtu.be/bm0OyhwFDuY" target="_blank">Watch</a></td></tr>
+            <tr><td>Java Full Course</td><td>📺 Playlist</td><td><a href="https://youtube.com/playlist?list=PLsyeobzWxl7pe_IiTfNyr55kwJPWbgxB5" target="_blank">Watch</a></td></tr>
             <tr><td>Spring Boot Course</td><td>📺 42 videos 08:49:49</td><td><a href="https://youtube.com/playlist?list=PLsyeobzWxl7qbKoSgR5ub6jolI8-ocxCF" target="_blank">Watch</a></td></tr>
             <tr><td>Spring Boot Project 1</td><td>⏱ ~5.5h</td><td><a href="https://youtu.be/FAxay2A9tCs" target="_blank">Watch</a></td></tr>
             <tr><td>Spring Boot Project 2</td><td>⏱ ~23.5h</td><td><a href="https://youtu.be/wZHYA31SsUI" target="_blank">Watch</a></td></tr>
@@ -613,6 +637,50 @@
   <script src="JS/source.js"></script>
   <script src="JS/logic.js"></script>
   <script src="JS/main.js"></script>
+
+  <!-- Roadmap Search Script -->
+  <script>
+    document.addEventListener('DOMContentLoaded', function() {
+      const searchInput = document.getElementById('roadmapSearch');
+      const sections = document.querySelectorAll('.roadmap-section');
+      
+      if (searchInput) {
+        searchInput.addEventListener('input', function(e) {
+          const query = e.target.value.toLowerCase().trim();
+          
+          sections.forEach(section => {
+            const sectionCard = section.querySelector('.section-card');
+            const text = section.textContent.toLowerCase();
+            
+            if (query === '') {
+              // Reset: show all sections
+              section.classList.remove('section-hidden', 'section-match');
+            } else if (text.includes(query)) {
+              // Match found
+              section.classList.remove('section-hidden');
+              section.classList.add('section-match');
+            } else {
+              // No match
+              section.classList.add('section-hidden');
+              section.classList.remove('section-match');
+            }
+          });
+          
+          // Show result count
+          const visibleCount = document.querySelectorAll('.roadmap-section:not(.section-hidden)').length;
+          console.log(`Found ${visibleCount} sections matching "${query}"`);
+        });
+        
+        // Clear search on Escape
+        searchInput.addEventListener('keydown', function(e) {
+          if (e.key === 'Escape') {
+            searchInput.value = '';
+            searchInput.dispatchEvent(new Event('input'));
+          }
+        });
+      }
+    });
+  </script>
 
 </body>
 </html>

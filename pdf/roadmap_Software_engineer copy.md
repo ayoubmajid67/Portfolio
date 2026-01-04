@@ -151,13 +151,15 @@ You will be able to:
 - **27 courses** in total
 - 👉 **Beginners:** Start with the first [13 courses](https://programmingadvices.com/l/products?sortKey=recommended&sortDirection=asc&page=1)
 
-> 💡 Once you complete course 13, continue **in parallel** with the Front-End roadmap.
+> 💡 **Parallel Learning:** Once you complete the **first 13 courses**, you can start the Front-End roadmap **in parallel** while continuing with courses 14–27!
 
 ---
 
 ## 🎨 Front-End Roadmap
 
-⏱ **Estimated Duration:** **8–12 months** (can run in parallel with basics)
+⏱ **Estimated Duration:** **8–12 months** (can run in parallel with basics from course 14)
+
+> 🚀 **Tip:** After completing courses 1–13, start Front-End while working on courses 14–27 simultaneously. This maximizes your learning efficiency!
 
 ### 🔹 Introduction
 
@@ -247,7 +249,7 @@ You will be able to:
 
 > ⚠️ Note: The link below is an intro video. For a full Java course, consider additional resources.
 
-[Watch Introduction](https://youtu.be/bm0OyhwFDuY)
+[Watch Introduction](https://youtube.com/playlist?list=PLsyeobzWxl7pe_IiTfNyr55kwJPWbgxB5&si=kIURdNI77CWnipe_)
 
 ### 🌱 Spring Boot
 
