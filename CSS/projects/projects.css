@@ -542,14 +542,13 @@ background: rgb(255, 255, 255);
 }
 
 .webContainer .progressProject::after {
-    content: 'In Progress';
+    content: "In Progress";
     position: absolute;
-    top: 20px;
-    right: -35px;
+   
     background: linear-gradient(135deg, var(--accent-color) 0%, var(--primaryColor) 100%);
     color: white;
-    padding: 8px 40px;
-    transform: rotate(45deg);
+    
+    transform: rotate(0deg);
     font-size: 0.8em;
     font-weight: 600;
     box-shadow: 0 4px 12px rgba(8, 131, 118, 0.4);
