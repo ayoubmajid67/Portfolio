@@ -58,6 +58,14 @@ Add a  **“Projects” page** :
 * Include: title, description, tech used, link, duration
 * Use `<article>` and `<section>` tags (semantic HTML)
 
+Add a **"Roadmap" page** (✅ Optimized):
+
+* Complete Software Engineer & DevOps learning path
+* 500+ hours of curated courses
+* Target keywords: "Ayoub Majjid roadmap", "Software Engineer roadmap"
+* Includes JSON-LD structured data (Person, WebPage, BreadcrumbList)
+* Priority 0.95 in sitemap
+
 ---
 
 ## ✅ 3. **Performance & UX**
