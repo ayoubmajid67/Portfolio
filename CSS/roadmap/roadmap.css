@@ -1,0 +1,582 @@
+/* 
+---------------------------------------------
+Roadmap Page Styles - Container Scroll Layout
+Sidebar fills container, content scrolls internally
+--------------------------------------------- 
+*/
+
+:root {
+  --sidebar-width: 280px;
+  --navbar-height: 90px;
+  --primaryColor: #0A3245;
+  --accent-color: #088376;
+  --secondaryColor: #BE643B;
+  --text-white: #ffffff;
+  --text-gray: rgba(255, 255, 255, 0.85);
+}
+
+/* ============================================
+   NAVBAR STYLING
+   ============================================ */
+.navbar .navTitle {
+  color: white;
+}
+
+body {
+  background-image: url('../../back/webp/about.webp');
+  background-color: rgba(0, 0, 0, 0.5);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-blend-mode: overlay;
+  background-attachment: fixed;
+  background-position: center;
+  min-height: 100vh;
+  position: relative;
+  color: white;
+  font-family: 'Poppins', sans-serif;
+  display: block;
+}
+
+body::before {
+  content: "";
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  width: 100%;
+  height: 100%;
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+  background: linear-gradient(180deg, rgba(0, 0, 0, 0.8) 0%, rgba(10, 30, 35, 0.8) 50%, rgba(0, 0, 0, 0.9) 100%);
+  pointer-events: none;
+  z-index: -1;
+}
+
+.navbar {
+  position: fixed;
+  width: 100%;
+  background: linear-gradient(135deg, rgba(0, 0, 0, 0.9) 0%, rgba(10, 30, 35, 0.8) 100%);
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.3);
+  color: white;
+  transition: all 0.4s ease;
+  z-index: 1000;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.navbar a {
+  color: white !important;
+}
+
+.sticky {
+  background: rgba(255, 255, 255, 0.95);
+  backdrop-filter: blur(12px);
+}
+
+.sticky a {
+  color: black !important;
+}
+
+.sticky .navTitle {
+  color: black;
+}
+
+/* ============================================
+   LAYOUT: Container-based scroll
+   - Container = 100vh - navbar (fixed size)
+   - Sidebar = 100% of container
+   - Content scrolls internally
+   - Footer outside, visible via body scroll
+   ============================================ */
+.roadmap-content {
+  position: relative;
+  z-index: 1;
+  margin-top: var(--navbar-height);
+}
+
+.roadmap-grid {
+  display: flex;
+  flex-direction: row;
+  height: calc(100vh - var(--navbar-height)); /* Exact viewport minus navbar */
+  overflow: hidden; /* Container doesn't scroll, children do */
+}
+
+/* LEFT COLUMN - SIDEBAR (100% container height) */
+.roadmap-left-column {
+  width: var(--sidebar-width);
+  min-width: var(--sidebar-width);
+  height: 100%; /* 100% of roadmap-grid */
+  overflow-y: auto; /* Scrolls if sidebar content exceeds */
+  padding: 30px 20px;
+  background: rgba(0, 0, 0, 0.3);
+  border-right: 1px solid rgba(255, 255, 255, 0.05);
+  scrollbar-width: thin;
+  scrollbar-color: var(--accent-color) transparent;
+  display: flex;
+  flex-direction: column;
+  gap: 25px;
+  flex-shrink: 0;
+}
+
+/* RIGHT COLUMN - CONTENT (scrolls internally) */
+.roadmap-right-column {
+  flex: 1;
+  height: 100%; /* 100% of roadmap-grid */
+  overflow-y: auto; /* Content scrolls here */
+  padding: 40px 60px;
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+  scrollbar-width: thin;
+  scrollbar-color: var(--accent-color) rgba(0,0,0,0.2);
+}
+
+/* ============================================
+   SIDEBAR COMPONENTS
+   ============================================ */
+.sidebar-title h2 {
+  font-size: 2rem;
+  color: white;
+  font-weight: 700;
+  margin-bottom: 5px;
+  font-family: 'Julee', cursive; 
+  text-shadow: 0 2px 4px rgba(0,0,0,0.5);
+}
+
+.sidebar-title p {
+  font-size: 0.9rem;
+  color: var(--text-gray);
+  margin: 0;
+  font-weight: 300;
+}
+
+.sidebar-social {
+  display: flex;
+  gap: 15px;
+}
+
+.sidebar-social a {
+  width: 42px;
+  height: 42px;
+  border-radius: 12px;
+  background: rgba(255, 255, 255, 0.08);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  text-decoration: none;
+  transition: all 0.3s ease;
+  border: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.sidebar-social a:hover {
+  background: var(--accent-color);
+  transform: translateY(-3px) scale(1.05);
+  border-color: var(--accent-color);
+  color: white;
+  box-shadow: 0 5px 15px rgba(8, 131, 118, 0.4);
+}
+
+.toc-section {
+  margin-top: 15px;
+}
+
+.toc-card {
+  padding: 0;
+  background: transparent;
+  box-shadow: none;
+  border: none;
+}
+
+.toc-card h3 {
+  font-size: 1.1rem;
+  color: var(--secondaryColor);
+  margin-bottom: 15px;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  font-weight: 700;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.toc-list {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.toc-list li a {
+  color: rgba(255, 255, 255, 0.75);
+  text-decoration: none;
+  padding: 10px 14px;
+  border-radius: 8px;
+  display: block;
+  transition: all 0.2s ease;
+  font-size: 0.95rem;
+  border-left: 3px solid transparent;
+  font-weight: 500;
+}
+
+.toc-list li a:hover {
+  background: rgba(255, 255, 255, 0.08);
+  color: white;
+  border-left-color: var(--accent-color);
+  padding-left: 18px;
+}
+
+/* ============================================
+   CONTENT SECTIONS
+   ============================================ */
+.section-card {
+  background: linear-gradient(145deg, rgba(16, 28, 45, 0.85) 0%, rgba(25, 40, 60, 0.8) 100%);
+  backdrop-filter: blur(20px);
+  -webkit-backdrop-filter: blur(20px);
+  border-radius: 24px;
+  padding: 40px;
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  box-shadow: 0 20px 50px rgba(0, 0, 0, 0.4);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.section-card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 25px 60px rgba(0, 0, 0, 0.5);
+  border-color: rgba(255, 255, 255, 0.15);
+}
+
+.section-card h2 {
+  font-size: 2rem;
+  color: white;
+  margin-bottom: 25px;
+  display: flex;
+  align-items: center;
+  gap: 15px;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+  padding-bottom: 20px;
+  font-weight: 700;
+}
+
+.section-card h2 i, .section-card h2 .emoji {
+  color: var(--accent-color);
+  filter: drop-shadow(0 0 10px rgba(8, 131, 118, 0.4));
+}
+
+.section-card h3 {
+  font-size: 1.5rem;
+  color: var(--secondaryColor);
+  margin: 35px 0 20px 0;
+  font-weight: 600;
+}
+
+.section-card h4 {
+  font-size: 1.25rem;
+  color: #fff;
+  margin: 25px 0 15px 0;
+  font-weight: 600;
+}
+
+.section-card p, .section-card li {
+  color: var(--text-gray);
+  line-height: 1.8;
+  font-size: 1.05rem;
+  margin-bottom: 12px;
+}
+
+.section-card a {
+  color: #4CC9F0;
+  text-decoration: none;
+  font-weight: 500;
+  transition: color 0.2s;
+  border-bottom: 1px dashed rgba(76, 201, 240, 0.4);
+}
+
+.section-card a:hover {
+  color: #fff;
+  border-bottom-style: solid;
+}
+
+/* ============================================
+   BUTTONS & ACTION ELEMENTS
+   ============================================ */
+.btn-report {
+  display: inline-flex;
+  align-items: center;
+  gap: 12px;
+  margin-top: 25px;
+  padding: 16px 32px;
+  background: linear-gradient(135deg, var(--secondaryColor) 0%, #D4793F 100%);
+  color: white !important;
+  font-size: 1.1rem;
+  font-weight: 600;
+  border-radius: 12px;
+  border: none;
+  box-shadow: 0 10px 25px rgba(190, 100, 59, 0.4);
+  transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+  text-decoration: none !important;
+  cursor: pointer;
+}
+
+.btn-report:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 15px 35px rgba(190, 100, 59, 0.6);
+  background: linear-gradient(135deg, #FF9F5F 0%, var(--secondaryColor) 100%);
+}
+
+.btn-report i {
+  font-size: 1.3rem;
+}
+
+/* ============================================
+   COMPONENTS
+   ============================================ */
+.roadmap-table {
+  width: 100%;
+  border-collapse: separate;
+  border-spacing: 0;
+  margin: 25px 0;
+  border-radius: 16px;
+  overflow: hidden;
+  background: rgba(0, 0, 0, 0.25);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  display: block;
+  overflow-x: auto;
+}
+
+.roadmap-table th {
+  background: linear-gradient(90deg, var(--accent-color), #056a5f);
+  padding: 18px 25px;
+  text-align: left;
+  color: white;
+  font-size: 1.05rem;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+  white-space: nowrap;
+}
+
+.roadmap-table td {
+  padding: 18px 25px;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.05);
+  font-size: 1rem;
+  min-width: 150px;
+}
+
+.roadmap-table tr:last-child td {
+  border-bottom: none;
+}
+
+.roadmap-table tr:hover td {
+  background: rgba(255, 255, 255, 0.03);
+}
+
+.note-box, .warning-box {
+  padding: 20px 25px;
+  border-radius: 12px;
+  margin: 30px 0;
+  background: rgba(8, 131, 118, 0.15);
+  border-left: 5px solid var(--accent-color);
+  box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+}
+
+.warning-box {
+  background: rgba(190, 100, 59, 0.15);
+  border-left-color: var(--secondaryColor);
+}
+
+.note-box p, .warning-box p {
+  margin: 0;
+  font-size: 1.05rem;
+  color: #fff;
+}
+
+.author-card {
+  display: flex; 
+  gap: 25px; 
+  align-items: center;
+  background: rgba(255, 255, 255, 0.05);
+  padding: 25px;
+  border-radius: 16px;
+  flex-wrap: wrap;
+}
+
+.role-badge {
+  background: rgba(8, 131, 118, 0.2);
+  color: #1affec; 
+  padding: 6px 14px;
+  border-radius: 20px;
+  font-size: 0.9rem;
+  margin-right: 8px;
+  border: 1px solid rgba(8, 131, 118, 0.4);
+  font-weight: 500;
+  display: inline-block;
+  margin-bottom: 5px;
+}
+
+.author-link {
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
+  margin-top: 15px;
+  padding: 12px 24px;
+  background: var(--accent-color);
+  color: white;
+  border-radius: 10px;
+  text-decoration: none;
+  font-weight: 600;
+  transition: all 0.3s ease;
+  box-shadow: 0 4px 15px rgba(8, 131, 118, 0.3);
+}
+
+.author-link:hover {
+  background: #0abead;
+  transform: translateY(-2px);
+  color: white;
+}
+
+/* ============================================
+   FOOTER
+   ============================================ */
+.FooterOutletComponentClass {
+  position: relative;
+  z-index: 50;
+}
+
+/* ============================================
+   RESPONSIVE DESIGN
+   ============================================ */
+@media (max-width: 1200px) {
+  .roadmap-right-column {
+    padding: 30px 40px;
+  }
+}
+
+@media (max-width: 992px) {
+  .roadmap-content {
+    margin-top: var(--navbar-height);
+  }
+  
+  .roadmap-grid {
+    flex-direction: column;
+    height: auto; /* No fixed height on mobile */
+    overflow: visible;
+  }
+
+  .roadmap-left-column {
+    width: 100%;
+    min-width: 100%;
+    height: auto;
+    overflow-y: visible;
+    border-right: none;
+    background: linear-gradient(180deg, rgba(0,0,0,0.6) 0%, transparent 100%);
+    padding: 20px;
+    border-bottom: 1px solid rgba(255,255,255,0.1);
+    text-align: center;
+  }
+
+  .sidebar-social {
+    justify-content: center;
+    margin-top: 10px;
+  }
+
+  .roadmap-right-column {
+    height: auto;
+    overflow-y: visible;
+    padding: 20px;
+  }
+  
+  .toc-list {
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 8px;
+  }
+  
+  .toc-list li a {
+    background: rgba(255,255,255,0.08);
+    padding: 8px 16px;
+    font-size: 0.9rem;
+    border: 1px solid rgba(255,255,255,0.1);
+  }
+}
+
+@media (max-width: 768px) {
+  .roadmap-right-column {
+    padding: 15px;
+  }
+  
+  .section-card {
+    padding: 25px;
+  }
+
+  .section-card h2 {
+    font-size: 1.6rem;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 10px;
+  }
+  
+  .section-card h3 {
+    font-size: 1.3rem;
+  }
+
+  .btn-report {
+    width: 100%;
+    justify-content: center;
+    padding: 14px 20px;
+  }
+
+  .author-card {
+    flex-direction: column;
+    text-align: center;
+    gap: 15px;
+  }
+  
+  .author-link {
+    width: 100%;
+    justify-content: center;
+  }
+}
+
+@media (max-width: 576px) {
+  .section-card {
+    padding: 20px;
+    border-radius: 16px;
+  }
+
+  .section-card h2 {
+    font-size: 1.4rem;
+  }
+
+  .section-card h3 {
+    font-size: 1.15rem;
+  }
+
+  .sidebar-title h2 {
+    font-size: 1.6rem;
+  }
+
+  .roadmap-table th, .roadmap-table td {
+    padding: 12px 15px;
+    font-size: 0.9rem;
+  }
+
+  .role-badge {
+    font-size: 0.8rem;
+    padding: 4px 10px;
+  }
+  
+  .toc-list li a {
+    font-size: 0.8rem;
+    padding: 6px 12px;
+  }
+}
+
+.FooterOutletComponentClass{
+margin-top: 20px;
+}

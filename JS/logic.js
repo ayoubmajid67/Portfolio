@@ -36,14 +36,15 @@ function handleScreenWidthChange() {
 		 '<i class="fa-solid fa-toolbox"></i>',
 		  
 		  '<i class="fa-solid fa-user-graduate"></i>',
-		  '<i class="fa-solid fa-laptop-code"></i>'];
+		  '<i class="fa-solid fa-laptop-code"></i>',
+		'<i class="fa-solid fa-route"></i>'];
 	if (screenWidth <= 768) {
 		linkArray.forEach((element, index) => {
 			element.innerHTML = innerIconLIsts[index];
 		});
 	} else {
 		// let innerTitleLists = ["home", "about","Services", "contact", "Certificates", "projects"];
-		let innerTitleLists = ["home", "about","Services", "Certificates", "projects"];
+		let innerTitleLists = ["home", "about","Services", "Certificates", "projects","Roadmap"];
 		linkArray.forEach((element, index) => {
 			element.innerText = innerTitleLists[index];
 		});

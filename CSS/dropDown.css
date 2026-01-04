@@ -1,7 +1,7 @@
 
 #DropDown {
     position: fixed;
-    z-index: 2;
+    z-index: 100;
     right: 20px;
     cursor: pointer;
     bottom: 20px;

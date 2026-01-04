@@ -249,6 +249,37 @@ margin-top: 10px;
 }
 
 /* ============================================
+   ROADMAP CTA BUTTON
+   ============================================ */
+
+.roadmap-cta {
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
+  padding: 14px 28px;
+  background: linear-gradient(135deg, rgba(190, 100, 59, 0.9), rgba(231, 138, 40, 0.85));
+  color: white;
+  text-decoration: none;
+  font-weight: 600;
+  font-size: 1.1em;
+  border-radius: 14px;
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  transition: all 0.3s ease;
+  box-shadow: 0 4px 20px rgba(190, 100, 59, 0.3);
+  margin-top: 15px;
+}
+
+.roadmap-cta:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 8px 30px rgba(190, 100, 59, 0.4);
+  background: linear-gradient(135deg, rgba(231, 138, 40, 0.95), rgba(190, 100, 59, 0.9));
+}
+
+.roadmap-cta i {
+  font-size: 1.2em;
+}
+
+/* ============================================
    FOOTER ADJUSTMENTS
    ============================================ */
 
