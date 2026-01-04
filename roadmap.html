@@ -76,6 +76,11 @@
           <i class="fa-solid fa-search"></i>
           <input type="text" id="roadmapSearch" placeholder="Search roadmap..." />
         </div>
+
+        <!-- Print/Download PDF Button -->
+        <a href="/pdf/roadmap_Software_engineer.pdf" target="_blank" class="btn-print">
+          <i class="fa-solid fa-file-pdf"></i> Download PDF
+        </a>
         
         <!-- Table of Contents -->
         <section class="toc-section" id="toc">
@@ -642,42 +647,139 @@
   <script>
     document.addEventListener('DOMContentLoaded', function() {
       const searchInput = document.getElementById('roadmapSearch');
-      const sections = document.querySelectorAll('.roadmap-section');
+      const rightColumn = document.querySelector('.roadmap-right-column');
+      let searchResults = [];
+      let currentResultIndex = 0;
+      
+      // Create results container
+      const resultsContainer = document.createElement('div');
+      resultsContainer.className = 'search-results';
+      resultsContainer.style.cssText = 'max-height: 200px; overflow-y: auto; margin-top: 10px; display: none;';
+      searchInput.parentElement.after(resultsContainer);
       
       if (searchInput) {
         searchInput.addEventListener('input', function(e) {
           const query = e.target.value.toLowerCase().trim();
           
-          sections.forEach(section => {
-            const sectionCard = section.querySelector('.section-card');
-            const text = section.textContent.toLowerCase();
-            
-            if (query === '') {
-              // Reset: show all sections
-              section.classList.remove('section-hidden', 'section-match');
-            } else if (text.includes(query)) {
-              // Match found
-              section.classList.remove('section-hidden');
-              section.classList.add('section-match');
-            } else {
-              // No match
-              section.classList.add('section-hidden');
-              section.classList.remove('section-match');
+          // Clear previous highlights
+          document.querySelectorAll('.search-highlight').forEach(el => {
+            el.outerHTML = el.textContent;
+          });
+          resultsContainer.innerHTML = '';
+          searchResults = [];
+          
+          if (query === '' || query.length < 2) {
+            resultsContainer.style.display = 'none';
+            return;
+          }
+          
+          // Find all text nodes containing the query
+          const walker = document.createTreeWalker(
+            rightColumn,
+            NodeFilter.SHOW_TEXT,
+            null,
+            false
+          );
+          
+          const matches = [];
+          let node;
+          while (node = walker.nextNode()) {
+            if (node.textContent.toLowerCase().includes(query)) {
+              matches.push(node);
             }
+          }
+          
+          // Build results list
+          matches.forEach((textNode, index) => {
+            const parent = textNode.parentElement;
+            if (!parent) return;
+            
+            // Find the section this belongs to
+            const section = parent.closest('.roadmap-section');
+            const sectionTitle = section ? section.querySelector('h2')?.textContent.trim() : 'Unknown';
+            
+            // Get context around the match
+            const text = textNode.textContent;
+            const matchIndex = text.toLowerCase().indexOf(query);
+            const start = Math.max(0, matchIndex - 20);
+            const end = Math.min(text.length, matchIndex + query.length + 20);
+            const context = (start > 0 ? '...' : '') + text.slice(start, end) + (end < text.length ? '...' : '');
+            
+            // Create result item
+            const resultItem = document.createElement('a');
+            resultItem.className = 'search-result-item';
+            resultItem.href = '#';
+            resultItem.innerHTML = `
+              <span class="result-section">${sectionTitle.substring(0, 30)}</span>
+              <span class="result-context">${context}</span>
+            `;
+            resultItem.style.cssText = 'display: block; padding: 8px 12px; color: white; text-decoration: none; border-bottom: 1px solid rgba(255,255,255,0.1); font-size: 0.85rem;';
+            
+            resultItem.addEventListener('click', function(e) {
+              e.preventDefault();
+              scrollToAndHighlight(textNode, query);
+            });
+            
+            resultsContainer.appendChild(resultItem);
+            searchResults.push({ node: textNode, query: query });
           });
           
-          // Show result count
-          const visibleCount = document.querySelectorAll('.roadmap-section:not(.section-hidden)').length;
-          console.log(`Found ${visibleCount} sections matching "${query}"`);
+          // Show results
+          if (matches.length > 0) {
+            resultsContainer.style.display = 'block';
+            const countLabel = document.createElement('div');
+            countLabel.style.cssText = 'padding: 6px 12px; background: var(--accent-color); color: white; font-size: 0.8rem; font-weight: 600;';
+            countLabel.textContent = `Found ${matches.length} result(s)`;
+            resultsContainer.insertBefore(countLabel, resultsContainer.firstChild);
+          } else {
+            resultsContainer.style.display = 'block';
+            resultsContainer.innerHTML = '<div style="padding: 10px; color: rgba(255,255,255,0.6); font-size: 0.85rem;">No results found</div>';
+          }
         });
         
-        // Clear search on Escape
+        // Enter to go to first result
         searchInput.addEventListener('keydown', function(e) {
+          if (e.key === 'Enter' && searchResults.length > 0) {
+            e.preventDefault();
+            scrollToAndHighlight(searchResults[0].node, searchResults[0].query);
+          }
           if (e.key === 'Escape') {
             searchInput.value = '';
             searchInput.dispatchEvent(new Event('input'));
           }
         });
+      }
+      
+      function scrollToAndHighlight(textNode, query) {
+        // Clear previous highlights
+        document.querySelectorAll('.search-highlight').forEach(el => {
+          el.outerHTML = el.textContent;
+        });
+        
+        const parent = textNode.parentElement;
+        if (!parent) return;
+        
+        // Highlight the text
+        const text = textNode.textContent;
+        const regex = new RegExp(`(${query})`, 'gi');
+        const highlighted = text.replace(regex, '<mark class="search-highlight">$1</mark>');
+        
+        const span = document.createElement('span');
+        span.innerHTML = highlighted;
+        textNode.replaceWith(span);
+        
+        // Scroll to the highlight
+        const mark = span.querySelector('.search-highlight');
+        if (mark) {
+          mark.scrollIntoView({ behavior: 'smooth', block: 'center' });
+          
+          // Flash effect
+          mark.style.transition = 'background 0.3s';
+          mark.style.background = '#f59e0b';
+          setTimeout(() => {
+            mark.style.background = 'rgba(8, 131, 118, 0.6)';
+          }, 500);
+        }
       }
     });
   </script>
