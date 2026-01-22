@@ -541,5 +541,80 @@ services page
     }
   }
 
+  /* EMSI Service Styling */
+  .emsi-content {
+    margin-top: 30px;
+
+    h5 {
+      font-size: 18px;
+      font-weight: 700;
+      color: #fff;
+      margin-top: 25px;
+      margin-bottom: 15px;
+      display: flex;
+      align-items: center;
+      
+      &:first-child {
+        margin-top: 0;
+      }
+    }
+
+    .service-list {
+      list-style: none;
+      padding-left: 0;
+      margin-bottom: 20px;
+
+      li {
+        color: #ddd;
+        margin-bottom: 12px;
+        padding-left: 25px;
+        position: relative;
+
+        &::before {
+          content: "✓";
+          position: absolute;
+          left: 0;
+          color: var(--primaryColor);
+          font-weight: 700;
+          font-size: 16px;
+        }
+
+        strong {
+          color: #fff;
+        }
+      }
+    }
+
+    p {
+      color: #ddd;
+      margin-bottom: 20px;
+      line-height: 1.6;
+    }
+
+    .contact-cta {
+      margin-top: 30px;
+      margin-bottom: 20px;
+
+      .contact-link {
+        font-size: 14px;
+        color: #fff;
+        background-color: var(--primaryColor);
+        padding: 12px 30px;
+        display: inline-block;
+        border-radius: 5px;
+        font-weight: 600;
+        text-transform: capitalize;
+        letter-spacing: 0.5px;
+        transition: all 0.3s;
+        text-decoration: none;
+
+        &:hover {
+          background-color: var(--secondaryColor);
+          transform: translateY(-2px);
+        }
+      }
+    }
+  }
+
 
   
