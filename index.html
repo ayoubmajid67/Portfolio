@@ -147,12 +147,13 @@
 			<div class="mainSection">
 
 				<div class="homeContainer">
-					<!-- <p class="intro_home">hi my name is : </p> -->
-
+					<!-- Left Column: Text Content -->
+				<div class="home-content-left">
 					<h1 class="name"><span>A</span>youb<span> m</span>ajjid</h1>
 					<p class="role-subtitle">Software Engineer & Tech Lead</p>
 
-					<p class="paragraph" id="mainContent">
+
+				<p class="paragraph" id="mainContent">
 Hello and welcome to my portfolio! I’m Ayoub Majjid, a fifth-year computer engineering student at EMSI, with a background in Experimental Sciences. My journey at EMSI has strengthened my foundation in mathematics, physics, and chemistry, and deepened my passion for technology and system design.
 
 Currently, I serve as Tech Lead and Entrepreneur at Intellcap, where I am leading 3 innovation projects. with the goal of transforming them into impactful and scalable startups. I enjoy building robust, scalable systems and guiding teams from idea to execution.
@@ -185,13 +186,31 @@ Let’s connect and create something impactful together!
 </div>
 				</div>
 
-				
-				
+				<!-- Right Column: Video -->
+				<div class="home-content-right">
+					<div class="intro-video-container" id="introVideoSection">
+						<div class="video-wrapper">
+							<video 
+								id="introVideo" 
+								controls 
+								poster="img/logo.png"
+								preload="metadata"
+								aria-label="Intro video about Ayoub Majjid"
+							>
+								<source src="vidoes/intro_ayoub_majjid.mp4" type="video/mp4">
+								Your browser does not support the video tag.
+							</video>
+							<div class="video-overlay" id="videoOverlay">
+								<button class="play-btn" id="playBtn" aria-label="Play intro video">
+									<i class="fa-solid fa-play"></i>
+								</button>
+								<span class="video-label">Watch My Intro</span>
+							</div>
+						</div>
+					</div>
+				</div>
 			</div>
 
-			
-
-			
 		</div>
 
 		

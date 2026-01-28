@@ -27,3 +27,39 @@ let selectLanguageSelect = document.querySelector(".Cv select");
 selectLanguageSelect.onchange = function () {
 	cva.href = this.value == "Fr" ? "../pdf/cv/Fr.pdf" : "../pdf/cv/En.pdf";
 };
+
+// ============================================
+// INTRO VIDEO CONTROLS
+// ============================================
+
+const introVideo = document.getElementById('introVideo');
+const videoOverlay = document.getElementById('videoOverlay');
+const playBtn = document.getElementById('playBtn');
+
+if (introVideo && videoOverlay && playBtn) {
+	// Play video when clicking the overlay or play button
+	const playVideo = () => {
+		introVideo.play();
+		videoOverlay.classList.add('hidden');
+	};
+
+	playBtn.addEventListener('click', playVideo);
+	videoOverlay.addEventListener('click', playVideo);
+
+	// Show overlay when video is paused
+	introVideo.addEventListener('pause', () => {
+		if (!introVideo.ended) {
+			videoOverlay.classList.remove('hidden');
+		}
+	});
+
+	// Show overlay when video ends
+	introVideo.addEventListener('ended', () => {
+		videoOverlay.classList.remove('hidden');
+	});
+
+	// Hide overlay when video starts playing
+	introVideo.addEventListener('play', () => {
+		videoOverlay.classList.add('hidden');
+	});
+}
