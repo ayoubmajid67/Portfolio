@@ -2,19 +2,14 @@
 let pMainContent = document.getElementById("mainContent");
 
 //  change the content for mobile :
-let mobileContent = `
-Hi! I'm Ayoub Majjid, a 5th-year computer engineering student at EMSI. Previously a Tech Lead & Entrepreneur at Intellcap for 11 months, I'm passionate about software development, system design, and project management. I love building scalable solutions and leading tech teams.
-Currently, I'm a Java Developer Intern at Capgemini TS, gaining hands-on experience in enterprise-grade software development, modern backend architectures, and industry best practices.
+let mobileContent = `I'm Ayoub Majjid, a State Engineer in MIAGE and EMSI graduate. I specialize in software architecture, microservices, DevOps, and digital transformation.
+Currently, I am a Digital Transformation Lead & Tech Lead at Capgemini, and was previously an Entrepreneur at Intellcap.`;
 
-`;
+let medLargeContent = `I'm Ayoub Majjid, a State Engineer in MIAGE, EMSI graduate, and specialist in software architecture, microservices, DevOps, and digital transformation. I combine technical expertise with hands-on leadership to deliver scalable systems.
 
-let medLargeContent = `
-Hello and welcome to my portfolio! I'm Ayoub Majjid, a fifth-year computer engineering student at EMSI, with a background in Experimental Sciences. My journey at EMSI has strengthened my foundation in mathematics, physics, and chemistry, and deepened my passion for technology and system design.
+Currently, I serve as a Digital Transformation Lead and Tech Lead at Capgemini, driving process industrialization and coordinating teams for successful project delivery. Previously, I was an Entrepreneur at Intellcap, leading three innovation projects with the goal of scaling them into startups.
 
-Previously, I served as Tech Lead and Entrepreneur at Intellcap for 11 months, where I led 3 innovation projects with the goal of transforming them into impactful and scalable startups. I enjoy guiding teams from idea to execution.
-Currently, I'm a Java Developer Intern at Capgemini TS, gaining hands-on experience in enterprise-grade software development, modern backend architectures, and industry best practices.
-Let's connect and create something impactful together!
-`;
+Let's connect and build something impactful together!`;
 
 if (window.innerWidth <= 768) {
 	pMainContent.innerText = mobileContent;
